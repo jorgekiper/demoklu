@@ -111,9 +111,57 @@ Pago Servicio Container
   }
 }
 .titlGroupCt {
-  width: 100%; max-width: 700px; height: auto; padding: 0; margin: 40px auto 0; position: relative; box-sizing: border-box;
+  width: 100%; min-width: 700px; height: auto; padding: 0; margin: 40px auto 0; position: relative; box-sizing: border-box;
   &__title {
     font-weight: 600; color: var(--klu-color-onix);
+  }
+}
+.frmInps {
+  width: 100%; max-width: 700px; height: auto; padding: 0; margin: 25px auto 50px; position: relative; box-sizing: border-box;
+  &__phone {
+    width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box;
+    & .input-group-text {
+      color: var(--klu-color-gray-light); background-color: var(--klu-white); border: 1px solid var(--klu-color-grey-standart); border-radius: 4px; padding: 0.657rem 0.75rem;
+    }
+    & input.form-control {
+      background: var(--klu-white)!important; padding: 0.657rem 0.75rem;
+    }
+  }
+  &__saldo {
+    width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box;
+    & .input-group-text {
+      color: var(--klu-white); background-color: var(--klu-secondary-color); border: 1px solid var(--klu-secondary-color); border-radius: 4px; padding: 0.657rem 0.75rem;
+    }
+    & input.form-control {
+      background: var(--klu-white)!important; padding: 0.657rem 0.75rem;
+    }
+  }
+  &__monto {
+    width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box;
+    & input.form-control {
+      background: var(--klu-white)!important; padding: 0.875rem 0.75rem;
+    }
+    & .infoInp {
+      color: #7A7A7A; font-size: 12px; font-family: 'Montserrat'; font-style: italic; font-weight: 300; padding: 0; margin: 0;
+    }
+  }
+}
+.thankCt {
+  width: 100%; max-width: 700px; height: auto; padding: 0; margin: 40px auto 0; position: relative; box-sizing: border-box; display: flex; justify-content: center; align-items: center; flex-direction: column;
+  & img {
+    display: block; margin: 0 auto 25px; padding: 0; width: 100%; max-width: 220px; height: auto; border: 0;
+  }
+  &__desc {
+    width: 100%; height: auto; padding: 0; margin: 0; text-align: center; box-sizing: border-box;
+    & a.btn-secondary {
+      color: var(--klu-white); background-color: var(--klu-secondary-color); border-color: var(--klu-secondary-color);
+      &:hover {
+        color: var(--klu-white); background-color: var(--klu-color-yellow-hover); border-color: var(--klu-color-yellow-hover); box-shadow: none;
+      }
+      &:focus {
+        color: var(--klu-white); background-color: var(--klu-secondary-color); border-color: var(--klu-secondary-color);
+      }
+    }
   }
 }
   

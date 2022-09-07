@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<!--https://getbootstrap.com/docs/5.1/components/-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./assets/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <link href="../klu-app/src/assets/theme/base/klu-colors-v1.0.0.css" rel="stylesheet">
+    <!--<link href="./assets/klu/css/klu-colors-v1.0.0.css" rel="stylesheet">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/bs5/dt-1.12.1/af-2.4.0/b-2.2.3/b-html5-2.2.3/b-print-2.2.3/cr-1.5.6/date-1.1.2/fc-4.1.0/fh-3.2.4/kt-2.7.0/r-2.3.0/rg-1.2.0/rr-1.2.8/sc-2.0.7/sb-1.3.4/sp-2.0.2/sl-1.4.0/sr-1.1.1/datatables.min.css" />
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/v/bs5/dt-1.12.1/af-2.4.0/b-2.2.3/b-html5-2.2.3/b-print-2.2.3/cr-1.5.6/date-1.1.2/fc-4.1.0/fh-3.2.4/kt-2.7.0/r-2.3.0/rg-1.2.0/rr-1.2.8/sc-2.0.7/sb-1.3.4/sp-2.0.2/sl-1.4.0/sr-1.1.1/datatables.min.js"></script>
+
+    <title>My Account</title>
+</head>
+
+<body>
+    <div class="container" id="my-account">
+       <div class="row text-end">
+        <div class="col-md-6">
+            <h4>Información  General</h4>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-link">
+                <img src="./assets/klu/img/icons/myaccount/back-arrow.svg" />
+                Volver a mi cuenta</button>
+        </div>   
+       </div>
+       <div class="row d-flex justify-content-center">
+
+        <ul class="nav nav-pills mb-3" id="my-account-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="btn btn-light klu-w-300 active" id="pills-my-account-tab" data-bs-toggle="pill" data-bs-target="#pills-my-account" type="button" role="tab" aria-controls="pills-my-account" aria-selected="true">
+                <img src="./assets/klu/img/icons/myaccount/card.svg" /> Información personal</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="btn btn-light" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="btn btn-light" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-my-account" role="tabpanel" aria-labelledby="pills-my-account-tab">
+                <div class="">
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <label for="input-account-nombre" class="form-label klu-standard">Nombre</label>
+                            <input type="email" class="form-control klu-standard klu-w-540 " id="input-account-nombre" aria-describedby="Nombre" placeholder="Victor Manuel Pernia Politan">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="input-account-email" class="form-label klu-standard">Correo</label>
+                            <input type="email" class="form-control klu-standard klu-w-540 " id="input-account-email" aria-describedby="Email" placeholder="sofiatorres456@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <label for="input-account-curp" class="form-label klu-standard">Curp</label>
+                            <input type="email" class="form-control klu-standard klu-w-540 " id="input-account-curp" aria-describedby="CURP" placeholder="SOTR873456HDDF0223">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="input-account-telefono" class="form-label klu-standard">Número de teléfono</label>
+                            <input type="email" class="form-control klu-standard klu-w-540 " id="input-account-telefono" aria-describedby="Email" placeholder="sofiatorres456@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <label for="input-account-curp" class="form-label klu-standard">Nombre</label>
+                            <input type="text" class="form-control klu-standard klu-w-540 " id="input-account-curp" aria-describedby="CURP" placeholder="Victor Manuel Pernia Politan">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="input-account-telefono" class="form-label klu-standard">Correo</label>
+                            <input type="email" class="form-control klu-standard klu-w-540 " id="input-account-telefono" aria-describedby="Email" placeholder="sofiatorres456@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <label for="input-account-curp" class="form-label klu-standard">Nombre</label>
+                            <input type="text" class="form-control klu-standard klu-w-540 " id="input-account-curp" aria-describedby="CURP" placeholder="Victor Manuel Pernia Politan">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="input-account-telefono" class="form-label klu-standard">Correo</label>
+                            <input type="email" class="form-control klu-standard klu-w-540 " id="input-account-telefono" aria-describedby="Email" placeholder="sofiatorres456@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <label for="input-account-curp" class="form-label klu-standard">Nombre</label>
+                            <input type="text" class="form-control klu-standard klu-w-540 " id="input-account-curp" aria-describedby="CURP" placeholder="Victor Manuel Pernia Politan">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="input-account-telefono" class="form-label klu-standard">Correo</label>
+                            <input type="email" class="form-control klu-standard klu-w-540 " id="input-account-telefono" aria-describedby="Email" placeholder="sofiatorres456@gmail.com">
+
+                            <div class="mt-5 text-end">
+                                <button class="btn btn-secondary klu-w-280">Configurar 2FA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Profile</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">Contact</div>
+          </div>
+
+       </div>
+    </div>
+
+
+
+
+    
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

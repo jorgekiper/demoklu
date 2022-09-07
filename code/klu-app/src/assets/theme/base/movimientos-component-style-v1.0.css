@@ -1,0 +1,118 @@
+/*****************************************
+Últimos movimientos component
+*****************************************/
+.last-movements{
+    margin-top: 40px;
+}
+
+table.table.last-movements__table{
+    margin-bottom: 0px;
+}
+
+.last-movements__title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: -13px;
+}
+
+.last-movements__filters{}
+
+.last-movements__download{
+font-size: 16px;
+font-weight: 600;
+width: 360px;
+height: 40px;
+}
+
+.last-movements__img-download{
+    width: 18px;
+    margin-right: 5px;
+    margin-top: -5px;
+    /* margin-left: 46px; */
+}
+
+.last-movements__table{
+    margin-top: 40px;
+    color: var(--klu-color-grey);
+    text-align: center;
+}
+
+.last-movements__table-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--klu-color-onix);
+}
+
+.last-movements__table--container{
+    height: 683.8px;
+}
+
+.last-movements__table-body{
+    margin-top: 42px;
+    font-size: 16px;
+    font-weight: 500;
+   
+}
+
+.last-movements__table-body tr{
+    height: 60px;
+    vertical-align: middle;
+}
+
+.last-movements__status{}
+
+.last-movements__status--refused{
+    color: var(--klu-color-red-error) !important;
+}
+
+.last-movements__status--earring{
+    color: var(--klu-color-orange-warning) !important;
+}
+
+.last-movements__status--accepted{
+    color: var(--klu-color-green-success) !important;
+}
+
+.last-movements__ticket{
+    background-color: none;
+}
+.last-movements__ticket:hover{
+    /* content: url('../../../../../klu-html/assets/klu/img/icons/movimientos/ticket.svg'); */
+    content: url('../../images/icons/movements/ticket.svg');
+}
+
+.last-movements__pagination{
+    margin-top: 42px;
+}
+
+.last-movements__calendar{
+    width: 240px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: -89px;
+    font-size: 13px;
+    color: var(--klu-dark-gray-1);
+    padding-right: 5px;
+    margin-right: 40px;
+}
+.last-movements__calendar--icon{
+    margin-left: 124px;
+    margin-top: -2px;
+}
+
+
+
+.movements__nav a.active{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {
+    
+}

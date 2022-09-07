@@ -1,0 +1,11 @@
+{
+    "code": "200",
+    "data": {
+        "userId": "f982577f-2a9a-48d2-b0f7-9c3e749b6c5f",
+        "Terms": "1"
+    },
+    "session": {
+        "sessionId": "459df96d-2950-4b38-86a6-b0e8d26a0c05b6c5f",
+        "newLastUpdate": "2022-08-04 12:53:12.8028426"
+    }
+}

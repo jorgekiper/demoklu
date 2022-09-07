@@ -1,0 +1,327 @@
+  /*****************************************
+      Anchos y Altos
+  *****************************************/
+  .klu-w-164 {
+    width: 164px;
+  }
+  
+  .klu-w-180 {
+    width: 180px;
+  }
+  
+  .klu-w-240 {
+    width: 240px;
+  }
+  
+  .klu-w-280 {
+    width: 280px;
+  }
+  
+  .klu-w-300 {
+    width: 300px;
+  }
+  
+  .klu-w-400 {
+    width: 400px;
+  }
+  
+  .klu-w-540 {
+    width: 540px;
+  }
+  
+  .klu-fw {
+    width: 100%;
+  }
+  
+  .klu-h-100 {
+    height: 100px;
+  }
+  
+  .klu-h-80 {
+    height: 80px !important;
+  }
+  
+  .klu-font-semi {
+    font-family: var(--klu-font-family);
+  }
+  
+  .text-muted {
+    color: var(--klu-dark-gray-1);
+  }
+  
+  .bg-primary {
+    background-color: var(--klu-primary-color) !important;
+  }
+  
+  .bg-light {
+    background-color: var(--klu-light-color) !important;
+  }
+  
+  .klu-br-6 {
+    border-radius: 6px;
+  }
+  
+  .klu-px-80{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  /*****************************************
+      Font weight and italics
+  *****************************************/
+  
+  
+
+  
+  /*
+  Progress Bar
+  */
+  .progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: var(--klu-light-color);
+    border-radius: 0.25rem;
+  }
+  
+  .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--klu-secondary-color);
+    transition: width 0.6s ease;
+  }
+  
+  .btn-bank-stock {
+    color: #000;
+    background-color: white;
+    border-color: white;
+  }
+  
+  
+  .box-shadow {
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.04);
+  }
+  
+  
+  /*****************************************
+      SALDOS
+  *****************************************/
+  .klu-card-container {
+    background-color: var(--klu-light-color);
+    height: 311px;
+    text-align: center;
+  }
+  
+  .klu-card {
+    width: 154px;
+    height: 243px;
+  }
+  
+  .klu-card-text {
+    font-style: "Medium";
+    font-size: 14px;
+    line-height: 17px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 8%;
+    vertical-align: top;
+    color: var(--klu-primary-color);
+  }
+  
+  .klu-card-btn-demo {
+    font-style: "SemiBold";
+    font-size: 16px;
+    line-height: 22px;
+    line-height: 113%;
+    text-align: center;
+    vertical-align: top;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .klu-saldos-text-semi {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    line-height: 128%;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  .klu-saldos-text-bold {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    vertical-align: top;
+  
+  }
+  
+  #balances-section span {
+    color: #000;
+  }
+  
+  .progress-bar {
+    width: 50%;
+  }
+  
+  
+  /*****************************************
+      SEPARADOR
+  *****************************************/
+  #content-separador img {
+    max-width: 100%;
+  }
+  
+  /*****************************************
+      ACCIONES DE USUARIO
+  *****************************************/
+  .d-flex.align-items-start {
+    min-height: 588px !important;
+  }
+  
+  #v-pills-tabContent {
+    min-height: 100%;
+  }
+  
+  
+  #v-pills-tabContent {
+    max-height: 588px;
+  }
+  
+  #v-pills-tab {
+    font-size: 14px;
+  }
+  
+  #v-pills-tab button {
+    font-weight: 600;
+  }
+  
+  #v-pills-tab button:hover {
+    color: var(--klu-primary-color);
+    background-color: var(--klu-dark-color);
+  }
+  
+  .nav-link {
+    height: 4em;
+  }
+  
+  
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {
+    color: var(--klu-primary-color);
+    background-color: var(--klu-dark-color);
+  }
+  
+  .nav-link {
+    color: #000;
+  }
+  
+  .nav-link:focus,
+  .nav-link:hover {
+    color: var(--klu-primary-color);
+  }
+  
+  /*
+  #input-beneficiario,
+  #input-banco-receptor,
+  #input-clabe,
+  #input-referencia,
+  #select-contacto-transfer,
+  #input-cta-tarjeta,
+  #select-banco-transfer,
+  #input-beneficiario,
+  #input-alias-contacto,
+  #input-contepto,
+  #input-ref-numerica,
+  #input-monto-envio
+  {
+    max-width: 300px;
+  }
+  */
+  
+  #content-bank-info,
+  #content-send-money,
+  #content-my-contacts,
+  #content-payment-services {
+    padding-top: 3em;
+    padding-left: 80px !important;
+  }
+  
+  #content-send-money label,
+  #content-bank-info label {
+    color: var(--klu-color-grey-02);
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  #content-send-money button {
+    max-width: 300px
+  }
+  
+  /*****************************************
+      SECCION ULTIMOS MOVIMIENTOS
+  *****************************************/
+  
+  .klu-btn-refused {
+    color: #ea3546 !important;
+  }
+  
+  .klu-btn-accepted {
+    color: #23ce6b !important;
+  }
+  
+  .klu-btn-earring {
+    color: #fc7a57 !important;
+  }
+  
+  /*****************************************
+      Ticket
+  *****************************************/
+  #ticket-modal .modal-content{
+    width: 637px;
+    height: 840px;
+  }
+  
+  #ticket-modal table {
+    font-size: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    color: #7A7A7A;
+  }
+  
+  #table-ticket{
+    border-collapse: separate;
+  border-spacing: 0px 26px;
+  }
+  
+  
+  /*****************************************
+      My Account
+  *****************************************/
+  
+  
+  /*****************************************
+      MEDIA QUERIES
+  *****************************************/
+  @media (min-width: 992px) {
+    .klu-card-btn {
+      height: 60px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+  
+    .h4,
+    h4 {
+      font-size: 22px !important;
+    }
+  
+  }

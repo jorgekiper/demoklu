@@ -1,0 +1,139 @@
+/*****************************************
+Botonera Dispersion
+*****************************************/
+.dispersion__table {
+    border-collapse: separate;
+    border-spacing: 40px 21px;
+    width: 92%;
+    margin-top: -18px;
+
+}
+
+.botonera__addfile {
+    box-sizing: border-box;
+    background: rgba(255, 200, 87, 0.1);
+    position: absolute;
+    width: 660px;
+    height: 180px;
+    margin-left: 80px;
+    margin-top: 20px;
+    border: 2.5px dashed #FFC857;
+    border-radius: 8px;
+}
+
+
+.dispersion__elipse {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--klu-secondary-color);
+    margin: auto;
+    margin-top: -27px;
+    margin-left: 311px;
+}
+
+.dispersion__rectangle {
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 660px;
+    height: 40px;
+    background-color: var(--klu-color-grey-standart);
+    border-radius: 4px;
+}
+
+.dispersion__tableinfo{
+    width: 80%;
+margin-left: 80px;
+margin-top: 15px;
+}
+
+
+
+/*****************************************
+Dispersion-textos
+*****************************************/
+
+.dispersion__seleccionar--archivo {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--klu-secondary-color);
+
+}
+
+.dispersion__arrastrar--archivo {
+    font-size: 14px;
+    text-align: center;
+    color: var(--klu-dark-gray-0);
+}
+
+.dispersion__enproceso {
+    color: var(--klu-secondary-color);
+}
+
+.dispersion__programada {
+    color: var(--klu-color-cadet-blue);
+}
+
+.dispersion__subtexto--titulo {
+    font-size: 18px;
+    color: var(--klu-dark-gray-1);
+}
+
+.dispersion__parrafo {
+    font-size: 14px;
+    margin-top: 219px;
+    margin-left: 47px;
+    color: var(--klu-dark-gray-1)
+}
+
+.dispersion__parrafo--dos {
+    font-size: 14px;
+    margin-left: 47px;
+    margin-top: -10px;
+    color: var(--klu-dark-gray-1)
+}
+.dispersion__rectangle--text{
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: -21px;
+}
+
+.dispersion__cancelar{
+    margin-top: 38px;
+    margin-left: 79%;
+    font-size: 16px;
+}
+
+.dispersion__fuente--resultado{
+    font-size: 18px;
+    color: var(--klu-primary-color);
+}
+.dispersion_mensaje--error{
+    font-size: 14px;
+    color: var(--klu-color-red-error);
+}
+
+/*****************************************
+Dispersion-images
+*****************************************/
+
+.dispersion__image--position {
+    margin-left: 48%;
+    margin-top: 60px;
+}
+
+
+
+.dispersion__image--csv{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {}

@@ -1,0 +1,305 @@
+{
+  "code": "200",
+  "data": {
+    "data": [
+      {
+        "id": 8,
+        "information": {
+          "nameService": "ATT",
+          "movementType": 7,
+          "clabe": "ATT",
+          "urlLogo": "https://klu.mx/assets/img/iconos-servicios/servicios/at&t.svg",
+          "datos": 1,
+          "multiservicio": 1,
+          "comission": 0,
+          "serviceDetail": [
+            {
+              "detailId": 61,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - ATT",
+                "amount": 10
+              }
+            },
+            {
+              "detailId": 62,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - ATT",
+                "amount": 20
+              }
+            },
+            {
+              "detailId": 63,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - ATT",
+                "amount": 50
+              }
+            },
+            {
+              "detailId": 64,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - ATT",
+                "amount": 70
+              }
+            },
+            {
+              "detailId": 65,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - ATT",
+                "amount": 100
+              }
+            },
+            {
+              "detailId": 66,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - ATT",
+                "amount": 120
+              }
+            },
+            {
+              "detailId": 67,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - ATT",
+                "amount": 150
+              }
+            },
+            {
+              "detailId": 68,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - ATT",
+                "amount": 200
+              }
+            },
+            {
+              "detailId": 69,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - ATT",
+                "amount": 300
+              }
+            },
+            {
+              "detailId": 70,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - ATT",
+                "amount": 500
+              }
+            },
+            {
+              "detailId": 71,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - ATT",
+                "amount": 1000
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 9,
+        "information": {
+          "nameService": "Telcel",
+          "movementType": 7,
+          "clabe": "Telcel",
+          "urlLogo": "https://klu.mx/assets/img/iconos-servicios/servicios/telcel.svg",
+          "datos": 1,
+          "multiservicio": 1,
+          "comission": 0,
+          "serviceDetail": [
+            {
+              "detailId": 51,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Telcel",
+                "amount": 10
+              }
+            },
+            {
+              "detailId": 52,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Telcel",
+                "amount": 20
+              }
+            },
+            {
+              "detailId": 53,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Telcel",
+                "amount": 30
+              }
+            },
+            {
+              "detailId": 54,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Telcel",
+                "amount": 50
+              }
+            },
+            {
+              "detailId": 55,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Telcel",
+                "amount": 80
+              }
+            },
+            {
+              "detailId": 56,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Telcel",
+                "amount": 100
+              }
+            },
+            {
+              "detailId": 57,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Telcel",
+                "amount": 150
+              }
+            },
+            {
+              "detailId": 58,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Telcel",
+                "amount": 200
+              }
+            },
+            {
+              "detailId": 59,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Telcel",
+                "amount": 300
+              }
+            },
+            {
+              "detailId": 60,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Telcel",
+                "amount": 500
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": 10,
+        "information": {
+          "nameService": "Movistar",
+          "movementType": 7,
+          "clabe": "Movistar",
+          "urlLogo": "https://klu.mx/assets/img/iconos-servicios/servicios/movistar.svg",
+          "datos": 1,
+          "multiservicio": 1,
+          "comission": 0,
+          "serviceDetail": [
+            {
+              "detailId": 9,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 10
+              }
+            },
+            {
+              "detailId": 10,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 20
+              }
+            },
+            {
+              "detailId": 11,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 30
+              }
+            },
+            {
+              "detailId": 12,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 50
+              }
+            },
+            {
+              "detailId": 13,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 60
+              }
+            },
+            {
+              "detailId": 14,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 70
+              }
+            },
+            {
+              "detailId": 15,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 80
+              }
+            },
+            {
+              "detailId": 16,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 100
+              }
+            },
+            {
+              "detailId": 17,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 120
+              }
+            },
+            {
+              "detailId": 18,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 150
+              }
+            },
+            {
+              "detailId": 19,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 200
+              }
+            },
+            {
+              "detailId": 20,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 250
+              }
+            },
+            {
+              "detailId": 21,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 300
+              }
+            },
+            {
+              "detailId": 22,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 400
+              }
+            },
+            {
+              "detailId": 23,
+              "detail": {
+                "name": "Pago de servicios - Telefonia - Movistar",
+                "amount": 500
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "session": {
+    "sessionId": "2f37f262-b455-4d19-b7d6-3bc166ac80bb68afe",
+    "newLastUpdate": "2022-08-16 16:56:39.3560019"
+  }
+}

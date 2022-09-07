@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="es">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../assets/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link href="../../klu-app/src/assets/theme/base/klu-colors-v1.0.0.css" rel="stylesheet">
+    <link href="../../klu-app/src/assets/theme/base/navbar-component-style-v1.0.css" rel="stylesheet">
+    <link href="../../klu-app/src/assets/theme/base/botonera-container-component-style-v1.0.css" rel="stylesheet">
+    <link href="../../klu-app/src/assets/theme/base/botonera-dispersion-component-style-v1.0.css" rel="stylesheet">
+    <link href="../../klu-app/src/assets/theme/base/pago-servicos-style-v.10.css" rel="stylesheet">
+    <title>Base</title>
+</head>
+
+<body>
+
+
+
+    <div class="botonera__linea"></div>
+    <div class="container pt-5" id="bank-stocks">
+        <div class="row">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills  col-3" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <button class="mb-4 text-start ps-4 nav-link active botonera__botonCategoria " id="k-pills-info-tab"
+                        data-bs-toggle="pill" data-bs-target="#k-pills-info" type="button" role="tab"
+                        aria-controls="k-pills-info" aria-selected="true">
+                        <img src="../assets/klu/img/icons/cash.svg" /> Información bancaria</button>
+
+                    <button class="mb-4 text-start ps-4 nav-link botonera__botonCategoria" id="k-pills-envio-tab"
+                        data-bs-toggle="pill" data-bs-target="#k-pills-envio" type="button" role="tab"
+                        aria-controls="k-pills-envio" aria-selected="false">
+                        <img src="../assets/klu/img/icons/card.svg" /> Enviar dinero</button>
+
+                    <button class="mb-4 text-start ps-4 nav-link botonera__botonCategoria" id="k-pills-cuentas-tab"
+                        data-bs-toggle="pill" data-bs-target="#k-pills-contactos" type="button" role="tab"
+                        aria-controls="k-pills-contactos" aria-selected="false">
+                        <img src="../assets/klu/img/icons/accounts.svg" class="botonera__iconos--centrados" /> Mis
+                        contactos</button>
+
+                    <button class="mb-4 text-start ps-4 nav-link botonera__botonCategoria" id="k-pills-servicios-tab"
+                        data-bs-toggle="pill" data-bs-target="#k-pills-pago-servicios" type="button" role="tab"
+                        aria-controls="k-pills-pago-servicios" aria-selected="false">
+                        <img src="../assets/klu/img/icons/services.svg" class="botonera__iconos--centrados" /> Pago de
+                        servicios</button>
+
+                    <button class="mb-4 text-start ps-4 nav-link botonera__botonCategoria" id="k-pills-transacción-tab"
+                        data-bs-toggle="pill" data-bs-target="#v-pills-transacción" type="button"
+                        aria-controls="v-pills-transacción" aria-selected="false">
+                        <img src="../assets/klu/img/icons/world.svg" /> Transferencias internacionales </button>
+
+                    <button class="mb-4 text-start ps-4 nav-link botonera__botonCategoria" id="k-pills-dispersion-tab"
+                        data-bs-toggle="pill" data-bs-target="#k-pills-dispersion" type="button"
+                        aria-controls="k-pills-dispersion" aria-selected="false">
+                        <img src="../assets/klu/img/icons/dispersión.svg" /> Dispersión masiva</button>
+
+                    <button class="mb-4 text-start ps-4 nav-link botonera__botonCategoria" id="k-pills-estado-tab"
+                        data-bs-toggle="pill" data-bs-target="#k-pills-estado" type="button"
+                        aria-controls="k-pills-estado" aria-selected="false">
+                        <img src="../assets/klu/img/icons/comprobante.svg" /> Estado de cuenta </button>
+                </div>
+                <div class="tab-content col-9 klu-info-container bg-light botonera__container-dimension"
+                    id="v-pills-tabContent">
+                    <div class="tab-pane fade show active " id="k-pills-info" role="tabpanel"
+                        aria-labelledby="k-pills-info-tab">
+                        <div id="content-bank-info">
+                            <h4 class="botonera__titulos">Información bancaria</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="input-beneficiario"
+                                        class="form-label botonera__textoInput--general">Beneficiario</label>
+                                    <div class="d-flex">
+                                        <input type="email" class="form-control botonera__inputs--general"
+                                            id="input-beneficiario" placeholder="FUPER MX">
+                                        <button type="button" class="botonera__imagen--boton"><img
+                                                src="../assets/klu/img/icons/copy.svg" /></button>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="input-banco-receptor"
+                                        class="form-label botonera__textoInput--especifico">Banco receptor</label>
+                                    <div class="d-flex">
+                                        <input type="email" class="form-control botonera__inputs--espeficico"
+                                            id="input-banco-receptor" placeholder="STP/KLU">
+                                        <button type="button" class="botonera__imagen--boton"><img
+                                                src="../assets/klu/img/icons/copy.svg" /></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="input-clabe"
+                                        class="form-label botonera__textoInput--general">Clabe</label>
+                                    <div class="d-flex">
+                                        <input type="email" class="form-control botonera__inputs--general"
+                                            id="input-clabe" placeholder="64618018120013356">
+                                        <button type="button" class="botonera__imagen--boton"><img
+                                                src="../assets/klu/img/icons/copy.svg" /></button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="input-referencia"
+                                        class="form-label botonera__textoInput--especifico">Referencia</label>
+                                    <div class="d-flex">
+                                        <input type="password"
+                                            class="form-control is-error botonera__inputs--espeficico"
+                                            id="input-referencia" placeholder="BW-161654695">
+                                        <button type="button" class="botonera__imagen--boton"><img
+                                                src="../assets/klu/img/icons/copy.svg" /></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--info bank-->
+
+                    <div class="tab-pane fade" id="k-pills-envio" role="tabpanel" aria-labelledby="k-pills-envio-tab">
+                        <div class="primera" style="display:none">
+                            <div id="content-send-money">
+                                <h4 class="klu-envio botonera__titulos">Enviar dinero</h4>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="select-contacto-transfer"
+                                            class="form-label botonera__textoInput--general">Selecciona un
+                                            contacto</label>
+                                        <select class="form-select botonera__inputs--general"
+                                            id="select-contacto-transfer">
+                                            <option selected>...</option>
+                                            <option value="1">Brenda</option>
+                                            <option value="2">Jose</option>
+                                            <option value="3">Dani</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="input-cta-tarjeta"
+                                            class="form-label botonera__textoInput--especifico">Cuenta CLABE/Número de
+                                            tarjeta</label>
+                                        <input type="text" class="form-control botonera__inputs--espeficico"
+                                            id="input-cta-tarjeta">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="select-banco-transfer"
+                                            class="form-label botonera__textoInput--general">Selecciona un banco</label>
+                                        <select class="form-select botonera__inputs--general"
+                                            id="select-banco-transfer">
+                                            <option selected>...</option>
+                                            <option value="1">Banamex</option>
+                                            <option value="2">Banco Azteca</option>
+                                            <option value="3">Santander</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="input-beneficiario"
+                                            class="form-label botonera__textoInput--especifico">Beneficiario</label>
+                                        <input type="text" class="form-control botonera__inputs--espeficico"
+                                            id="input-beneficiario">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="input-alias-contacto"
+                                            class="form-label botonera__textoInput--general">Alias de contacto</label>
+                                        <input type="text" class="form-control botonera__inputs--general"
+                                            id="input-alias-contacto">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="input-contepto"
+                                            class="form-label botonera__textoInput--especifico">Concepto</label>
+                                        <input type="text" class="form-control botonera__inputs--espeficico"
+                                            id="input-contepto">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="input-fer-numerica"
+                                            class="form-label botonera__textoInput--general">Referencia númerica (Max.
+                                            7)</label>
+                                        <input type="text" class="form-control botonera__inputs--general"
+                                            id="input-fer-numerica">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="input-monto-envio"
+                                            class="form-label botonera__textoInput--especifico">Ingresa un monto</label>
+                                        <input type="text" class="form-control botonera__inputs--espeficico"
+                                            id="input-monto-envio">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <!--Empty-->
+                                    </div>
+                                    <div class="col-6 d-grid gap-2 mx-auto">
+                                        <button class="btn btn-secondary botonera__container-transferir "
+                                            type="submit">Transferir</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="segunda" style="display:none">
+                            <h4 class="klu-envio botonera__titulos">Enviar dinero</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="select-contacto-transfer"
+                                        class="form-label botonera__textoInput--general">Selecciona un
+                                        contacto</label>
+                                    <select class="form-select botonera__inputs--general" id="select-contacto-transfer">
+                                        <option selected>...</option>
+                                        <option value="1">Brenda</option>
+                                        <option value="2">Jose</option>
+                                        <option value="3">Dani</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label for="input-cta-tarjeta"
+                                        class="form-label botonera__textoInput--especifico">Cuenta CLABE/Número de
+                                        tarjeta</label>
+                                    <input type="text" class="form-control botonera__inputs--espeficico"
+                                        placeholder="5342 4473 5342 9067" id="input-cta-tarjeta">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="select-banco-transfer"
+                                        class="form-label botonera__textoInput--general">Selecciona un banco</label>
+                                    <select class="form-select botonera__inputs--general" id="select-banco-transfer">
+                                        <option selected>...</option>
+                                        <option value="1">Banamex</option>
+                                        <option value="2">Banco Azteca</option>
+                                        <option value="3">Santander</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label for="input-beneficiario"
+                                        class="form-label botonera__textoInput--especifico">Beneficiario</label>
+                                    <input type="text" class="form-control botonera__inputs--espeficico"
+                                        placeholder="Manuel Pernia Politan" id="input-beneficiario">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="input-alias-contacto"
+                                        class="form-label botonera__textoInput--general">Alias de contacto</label>
+                                    <input type="text" class="form-control botonera__inputs--general"
+                                        placeholder="Manu Klu" id="input-alias-contacto">
+                                </div>
+                                <div class="col-6">
+                                    <label for="input-contepto"
+                                        class="form-label botonera__textoInput--especifico">Correo (opcional)</label>
+                                    <input type="text" class="form-control botonera__inputs--espeficico"
+                                        placeholder="manu243@gmial.com" id="input-contepto">
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <label for="input-alias-contacto"
+                                    class="form-label botonera__textoInput--general">Número de teléfono
+                                    (opcional)</label>
+                                <div class="input-group botonera__inputs--general">
+                                    <div class="input-group-text botonera__botongroup " id="btnGroupAddon">
+                                        <img src="../assets/klu/img/icons/mexico.svg" />+52
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <!--Empty-->
+                                </div>
+                                <div class="col-6 d-grid gap-2 mx-auto">
+                                    <button class="btn btn-secondary botonera__container-transferir "
+                                        type="submit">Guardar contacto</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="segunda" style="display:true">
+                            <h4 class="klu-envio botonera__titulos">Enviar dinero</h4>
+                            <img src="../assets/klu/img/icons/exito.svg" class="botonera__imagen--exito" />
+                            <h2 class="botonera__resultado--exito">¡Exito!</h2>
+                            <p class="botonera__resultado--parrafo">Tu transferencia se ha realizado
+                                <br>
+                                correctamente
+                            </p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <!--Empty-->
+                                </div>
+                                <div class="col-6 d-grid gap-2 mx-auto">
+                                    <button class="btn btn-secondary botonera__confirmación"
+                                        type="submit">Continuar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--transfer money-->
+
+                    <div class="tab-pane fade" id="k-pills-contactos" role="tabpanel"
+                        aria-labelledby="k-pills-contactos-tab">
+                        <div>
+                            <h4 class="botonera__titulos">Mis contactos</h4>
+                            <table class="table table-striped text-center botonera__container-tabla" id="myTable">
+                                <thead class="botonera__container-table-title">
+                                    <tr>
+                                        <th scope="col">Banco</th>
+                                        <th scope="col">Clabe</th>
+                                        <th scope="col">Alias</th>
+                                        <th scope="col">Beneficiario</th>
+                                        <th scope="col">Ultima modificación</th>
+                                        <th scope="col">Acciones</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody class="botonera_container-tabla-body">
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">BBVA</th>
+                                        <td>9948... </td>
+                                        <td>Manu...</td>
+                                        <td>Manuel Pernia</td>
+                                        <td>17/03/1998 - 08:35 pm</td>
+                                        <td>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/edit.svg" alt="ticket">
+                                            </a>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/trash.svg" alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">BBVA</th>
+                                        <td>9948... </td>
+                                        <td>Manu...</td>
+                                        <td>Manuel Pernia</td>
+                                        <td>17/03/1998 - 08:35 pm</td>
+                                        <td>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/edit.svg" alt="ticket">
+                                            </a>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/trash.svg" alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">BBVA</th>
+                                        <td>9948... </td>
+                                        <td>Manu...</td>
+                                        <td>Manuel Pernia</td>
+                                        <td>17/03/1998 - 08:35 pm</td>
+                                        <td>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/edit.svg" alt="ticket">
+                                            </a>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/trash.svg" alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">BBVA</th>
+                                        <td>9948... </td>
+                                        <td>Manu...</td>
+                                        <td>Manuel Pernia</td>
+                                        <td>17/03/1998 - 08:35 pm</td>
+                                        <td>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/edit.svg" alt="ticket">
+                                            </a>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/trash.svg" alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">BBVA</th>
+                                        <td>9948... </td>
+                                        <td>Manu...</td>
+                                        <td>Manuel Pernia</td>
+                                        <td>17/03/1998 - 08:35 pm</td>
+                                        <td>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/edit.svg" alt="ticket">
+                                            </a>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/trash.svg" alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">BBVA</th>
+                                        <td>9948... </td>
+                                        <td>Manu...</td>
+                                        <td>Manuel Pernia</td>
+                                        <td>17/03/1998 - 08:35 pm</td>
+                                        <td>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/edit.svg" alt="ticket">
+                                            </a>
+                                            <a>
+                                                <img src="../assets/klu/img/icons/trash.svg" alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-6">
+                                    <!--empty-->
+                                </div>
+                                <div class="col-6 d-grid gap-2 mx-auto">
+                                    <button class="btn btn-secondary botonera__inputs--espeficico" type="submit">Agregar
+                                        contacto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- my contactos-->
+
+                    <div class="tab-pane fade " id="k-pills-pago-servicios" role="tabpanel"
+                        aria-labelledby="k-pills-pago-servicios-tab">
+                        <div>
+                            <h4 class="botonera__titulos">Pago de servicios</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="icon-telefonia">
+                                        <div class="card botonera__servicios--generales">
+                                            <div class="card-body text-center ">
+                                                <img src="../assets/klu/img/icons/services/telefonia.svg" class=""
+                                                    alt="..." />
+                                                <h5 class="card-title">Telefonia</h5>
+                                                <p class="card-text">Telcel, AT&T, Movistar y más.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="icon-telefonia">
+                                        <div class="card botonera__servicios--otros">
+                                            <div class="card-body text-center">
+                                                <img src="../assets/klu/img/icons/services/internet-telefono.svg"
+                                                    class="" alt="..." />
+                                                <h5 class="card-title">Internet y/ telefono</h5>
+                                                <p class="card-text">Telmex, IZZI, Total play y más.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="icon-telefonia">
+                                        <div class=" card botonera__servicios--generales">
+                                            <div class="card-body text-center">
+                                                <img src="../assets/klu/img/icons/services/servicios-generales.svg"
+                                                    class="" alt="..." />
+                                                <h5 class="card-title">Servicios generales</h5>
+                                                <p class="card-text">Luz, Gas.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="icon-telefonia">
+                                        <div class="card botonera__servicios--otros">
+                                            <div class="card-body text-center">
+                                                <img src="../assets/klu/img/icons/services/transporte.svg" class=""
+                                                    alt="..." />
+                                                <h5 class="card-title">Transporte</h5>
+                                                <p class="card-text">PASE, Televía.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <!--empty-->
+                                <label class="form-label botonera__label">Anterior</label>
+                            </div>
+                            <div class="col-6 d-grid gap-2 mx-auto">
+                                <button class="btn btn-secondary botonera__botonServicios"
+                                    type="submit">Siguiente</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Pago de servicios-->
+
+                    <div class="tab-pane fade " id="k-pills-dispersion" role="tabpanel"
+                        aria-labelledby="k-pills-dispersion-tab">
+                        <div class="primera" style="display:true">
+                            <h4 class="botonera__titulos">Dispersión masiva <span
+                                    class="dispersion__subtexto--titulo ">(Historial)</span></h4>
+                            <table class="table table-striped text-center botonera__container-tabla" id="myTable">
+                                <thead class="botonera__container-table-title">
+                                    <tr>
+                                        <th scope="col">ID de dispersión</th>
+                                        <th scope="col">Fecha</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col">Acciones/Estatus</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody class="botonera__container-tabla-body">
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">0298ff8w88(9%0</th>
+                                        <td>17/03/1998 - 08:35 pm </td>
+                                        <td>$8,000.00</td>
+                                        <td>Finalizado</td>
+
+                                        <td>
+
+                                            <a>
+                                                <img src="../assets/klu/img/icons/Klu-resources/icon/24/eye.svg"
+                                                    alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">0298ff8w88(9%0</th>
+                                        <td>17/03/1998 - 08:35 pm </td>
+                                        <td>$8,000.00</td>
+                                        <td><span class="dispersion__programada">Programada</span></td>
+
+                                        <td>
+
+                                            <a>
+                                                <img src="../assets/klu/img/icons/eyes-color-gray.svg" alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">0298ff8w88(9%0</th>
+                                        <td>17/03/1998 - 08:35 pm </td>
+                                        <td>$8,000.00</td>
+                                        <td><span class="dispersion__enproceso">En proceso</span></td>
+
+                                        <td>
+
+                                            <a>
+                                                <img src="../assets/klu/img/icons/eye-color.svg" alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">0298ff8w88(9%0</th>
+                                        <td>17/03/1998 - 08:35 pm </td>
+                                        <td>$8,000.00</td>
+                                        <td><span class="dispersion__enproceso">En proceso</span></td>
+
+                                        <td>
+
+                                            <a>
+                                                <img src="../assets/klu/img/icons/eye-color.svg" alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">0298ff8w88(9%0</th>
+                                        <td>17/03/1998 - 08:35 pm </td>
+                                        <td>$8,000.00</td>
+                                        <td><span class="dispersion__enproceso">En proceso</span></td>
+
+                                        <td>
+
+                                            <a>
+                                                <img src="../assets/klu/img/icons/balance/warning.svg" alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="botonera__container-tabla-body-tr">
+                                        <th scope="row">0298ff8w88(9%0</th>
+                                        <td>17/03/1998 - 08:35 pm </td>
+                                        <td>$8,000.00</td>
+                                        <td>Finalizado</td>
+
+                                        <td>
+
+                                            <a>
+                                                <img src="../assets/klu/img/icons/Klu-resources/icon/24/eye.svg"
+                                                    alt="ticket">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-6">
+                                    <!--empty-->
+                                </div>
+                                <div class="col-6 d-grid gap-2 mx-auto">
+                                    <button class="btn btn-secondary botonera__inputs--espeficico" type="submit">Crear
+                                        dispersión masiva</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="segunda" style="display:none">
+                            <h4 class="botonera__titulos">Dispersión masiva <span
+                                    class="dispersion__subtexto--titulo ">(Crear)</span></h4>
+
+                            <div class="dispersion__box">
+                                <img src="../assets/klu/img/icons/new-split-white.svg"
+                                    class="dispersion__image--position" />
+                                <div class="dispersion__elipse"></div>
+
+
+                                <h4 class="dispersion__seleccionar--archivo">Select a CVS file to upload</h4>
+                                <h2 class="dispersion__arrastrar--archivo">or drag and drop it here</h2>
+                            </div>
+                            <p class="dispersion__parrafo">*Para ingresar el número de tarjeta o cuenta clabe se debe
+                                colocar al inicio un apóstrofe</p>
+                            <p class="dispersion__parrafo--dos">(Ejemplo: '123XXX)</p>
+                            <div class="klu-px-80">
+                                <table class="table dispersion__table" id="table-ticket">
+                                    <tbody>
+                                        <tr>
+                                            <td class="ticket__text-right">Descargar lista de bancos </img></td>
+                                            <td><img src="../assets/klu/img/icons/download-yellow.svg"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ticket__text-right">Descargar plantillas para SPEI</td>
+                                            <td><img src="../assets/klu/img/icons/download-yellow.svg"></img></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ticket__text-right">Descargar plantillas para tarjetas
+                                                corporativas</td>
+                                            <td><img src="../assets/klu/img/icons/download-yellow.svg"></img></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tercera" style="display:none">
+                            <h4 class="botonera__titulos">Dispersión masiva</h4>
+                            <div class="dispersion__rectangle">
+                                <img src="../assets/klu/img/icons/Klu-resources/icon/24/csv-fill.svg"
+                                    class="dispersion__image--csv" />
+                                <h6 class="dispersion__rectangle--text">nomina-septiembre-2022.cvs</h6>
+                            </div>
+                            <div class="klu-px-80">
+                                <table class="table dispersion__table" id="table-ticket">
+                                    <tbody>
+                                        <tr>
+                                            <td class="botonera__fuente-grande">Nombre de la dispersión
+                                                <h5 class="botonera__fuente">nomina-septiembre-2022.cvs</h5>
+                                            </td>
+                                            <td class="botonera__fuente-grande text-end">Total de registros
+                                                <h5 class="botonera__fuente"># 1820 registros</h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="botonera__fuente-grande">Por una cantidad de</td>
+                                            <td>
+                                                <h5 class="text-end dispersion__fuente--resultado">$ 2,490,288.00 MXN
+                                                </h5>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <!--empty-->
+                                    <label class="form-label dispersion__cancelar">Cancelar</label>
+                                </div>
+                                <div class="col-6 d-grid gap-2 mx-auto">
+                                    <button class="btn btn-secondary botonera__container-transferir"
+                                        type="submit">Dispersar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cuarta" style="display:none">
+                            <h4 class="botonera__titulos">Dispersión masiva</h4>
+                            <div class="dispersion__rectangle">
+                                <img src="../assets/klu/img/icons/Klu-resources/icon/24/csv-fill.svg"
+                                    class="dispersion__image--csv" />
+                                <h6 class="dispersion__rectangle--text">nomina-septiembre-2022.cvs</h6>
+                            </div>
+                            <div class="klu-px-80">
+                                <table class="table dispersion__table" id="table-ticket">
+                                    <tbody>
+                                        <tr>
+                                            <td class="botonera__fuente-grande">Nombre de la dispersión
+                                                <h4 class="botonera__fuente">nomina-septiembre-2022.cvs</h4>
+                                            </td>
+                                            <td class="botonera__fuente-grande text-end">Total de registros
+                                                <h5 class="botonera__fuente"># 1820 registros</h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="dispersion_mensaje--error">Error - Tu archivo cuenta con 12
+                                                errors Error</td>
+                                            <td>
+                                                <h4 class="text-end dispersion_mensaje--error">Descargar detalle</h4>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <!--empty-->
+                                </div>
+                                <div class="col-6 d-grid gap-2 mx-auto">
+                                    <button class="btn btn-secondary botonera__container-transferir"
+                                        type="submit">Terminar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--dispersion masiva-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

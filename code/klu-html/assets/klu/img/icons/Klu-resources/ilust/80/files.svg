@@ -1,0 +1,36 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_313_82)">
+<rect x="17.75" y="7.75" width="48.5" height="58.5" rx="2.25" fill="#FFC857" stroke="#203D5C" stroke-width="1.5"/>
+<rect x="14.75" y="10.75" width="48.5" height="58.5" rx="2.25" fill="#AFB9C4" stroke="#203D5C" stroke-width="1.5"/>
+<mask id="path-3-inside-1_313_82" fill="white">
+<rect x="43" y="21" width="16" height="5" rx="1"/>
+</mask>
+<rect x="43" y="21" width="16" height="5" rx="1" fill="#FFC857" stroke="#203D5C" stroke-width="3" mask="url(#path-3-inside-1_313_82)"/>
+<mask id="path-4-inside-2_313_82" fill="white">
+<rect x="20" y="30" width="38" height="5" rx="1"/>
+</mask>
+<rect x="20" y="30" width="38" height="5" rx="1" fill="#FFC857" stroke="#203D5C" stroke-width="3" mask="url(#path-4-inside-2_313_82)"/>
+<mask id="path-5-inside-3_313_82" fill="white">
+<rect x="20" y="39" width="38" height="5" rx="1"/>
+</mask>
+<rect x="20" y="39" width="38" height="5" rx="1" fill="#FFC857" stroke="#203D5C" stroke-width="3" mask="url(#path-5-inside-3_313_82)"/>
+<mask id="path-6-inside-4_313_82" fill="white">
+<rect x="20" y="48" width="38" height="5" rx="1"/>
+</mask>
+<rect x="20" y="48" width="38" height="5" rx="1" fill="#FFC857" stroke="#203D5C" stroke-width="3" mask="url(#path-6-inside-4_313_82)"/>
+<mask id="path-7-inside-5_313_82" fill="white">
+<rect x="20" y="57" width="38" height="5" rx="1"/>
+</mask>
+<rect x="20" y="57" width="38" height="5" rx="1" fill="#FFC857" stroke="#203D5C" stroke-width="3" mask="url(#path-7-inside-5_313_82)"/>
+<rect x="59.821" y="66.309" width="6.5" height="19.5" rx="3.25" transform="rotate(-45.7588 59.821 66.309)" fill="#FFC857" stroke="#203D5C" stroke-width="1.5"/>
+<circle cx="57.9691" cy="59.9691" r="11.25" transform="rotate(-45.7588 57.9691 59.9691)" fill="#FFC857" stroke="#203D5C" stroke-width="1.5"/>
+<circle cx="28.4235" cy="21.4235" r="5.91399" fill="#FFC857" stroke="#203D5C" stroke-width="1.5"/>
+<path d="M27 22L28 23L31 20" stroke="#203D5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="57.9691" cy="59.969" r="8.25" transform="rotate(-45.7588 57.9691 59.969)" fill="#AFB9C4" stroke="#203D5C" stroke-width="1.5"/>
+</g>
+<defs>
+<clipPath id="clip0_313_82">
+<rect width="80" height="80" fill="white"/>
+</clipPath>
+</defs>
+</svg>

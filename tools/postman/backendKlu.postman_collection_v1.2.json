@@ -1,0 +1,1081 @@
+{
+	"info": {
+		"_postman_id": "d194b031-a9ce-49cd-a83f-dcdc0e4643df",
+		"name": "backendKlu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Contactos",
+			"item": [
+				{
+					"name": "Save Bank Account",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"kWiaZz3eUbL4UT3yOn37eZz5cHLvkT9Ivm9YgcaHi7A=\",\r\n    \"deviceId\": \"pruebas\",\r\n    \"userId\": \"79e0fddd-c0cb-4f86-9abf-53429120ae28\",\r\n    \"sessionId\": \"bf6ce4eb-9d22-426b-8c5e-b9af5901eb770ae28\",\r\n    \"channel\" : 2,\r\n    \"secondAuth\" : \"zlzrkenhl475ntk4qokfejpqeranlunar\",\r\n    \"typeOfSecondAuth\": 2,\r\n    \"bankAccount\": {\r\n        \"Clabe\": \"547826584215698453\",\r\n        \"Beneficiary\": \"Martin Lopez\",\r\n        \"BankId\": 13,\r\n        \"Alias\": \"Mart\",\r\n        \"Correo\": \"martin232@hotmail.com\",\r\n        \"Telefono\": \"+522314785269\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/Contacts/Create",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"Contacts",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bank Accounts",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"qN\\u002BTL48HAtKK8bGyuAzZke0Tv8QkhAatyYHcc91CbrU=\",\r\n    \"deviceId\": \"pruebas\",\r\n    \"userId\": \"4b1076d0-e7c3-4603-b2f2-57c1b2e2f7b7\",\r\n    \"sessionId\": \"de9e8310-e7c4-4b5b-a86c-e140f36bd9bb0ae28\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/Contacts/Get",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"Contacts",
+								"Get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Bank Account",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"idiWDIaZyNyvf/aPw5CmvXD2LYVPipnqEHedRs\\u002ByVcU=\",\r\n    \"deviceId\": \"pruebas\",\r\n    \"userId\": \"79e0fddd-c0cb-4f86-9abf-53429120ae28\",\r\n    \"sessionId\": \"d1cbcc2a-5b69-48c6-8310-bf2733d9cc2b0ae28\",\r\n    \"channel\" : 2,\r\n    \"secondAuth\" : \"yRSwXtI9mL6X291MoJ2c\",\r\n    \"typeOfSecondAuth\": 1,\r\n    \"bankAccount\": {\r\n        \"Id\": 11108,\r\n        \"Clabe\": \"547856984210235689\",\r\n        \"Beneficiary\": \"Luis Eduardo Lopez Grajales\",\r\n        \"BankId\": 12,\r\n        \"Alias\": \"Luis Eduardo\",\r\n        \"Correo\": \"luiseduardol@hotmail.com\",\r\n        \"Telefono\": \"+523627391384\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/Contacts/Edit",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"Contacts",
+								"Edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Bank Account",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"QGrqhnR83fhEwO3nyIjrsGuEBu93oAKMRQYpsIEOFeg=\",\r\n    \"deviceId\": \"pruebas\",\r\n    \"userId\": \"79e0fddd-c0cb-4f86-9abf-53429120ae28\",\r\n    \"sessionId\": \"82597028-bf5d-4f9f-88ed-3ffe3554d9c30ae28\",\r\n    \"channel\" : 2,\r\n    \"secondAuth\" : \"zlzrkenhl475ntk4qokfejpqeranlunar\",\r\n    \"typeOfSecondAuth\": 6,\r\n    \"bankAccount\": {\r\n        \"Id\": 1111184\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/Contacts/Delete",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"Contacts",
+								"Delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apiKey\" : \"L8hRmttc8Lc34dA8zc6EwdvLCtn6yd\",\r\n    \"deviceId\" : \"1659653879867-ihent-8l4hp-vxe8j-bixxl-htjvj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/Token",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"Token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login (ejemplo desde web)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\" : \"Fd/C4Zzo6GVP4dLEfvcIx0VlJi/\\u002BKFSlP5ceJ9hRI6Q=\",\r\n    \"deviceId\" : \"pruebas\",\r\n    \"email\" : \"moralmexicana@yopmail.com\",\r\n    \"credential\" : \"Luna1601*\",\r\n    \"rememberMe\" : false,\r\n     \"latUsr\" : \"25.74477152094594\",\r\n    \"longUsr\": \"-100.17531076721475\", \r\n    \"channel\" :  1,\r\n    \"ip\" : \"183.123.23.23\",\r\n    \"macAddress\" : \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/Login",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login (ejemplo desde app)",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\" : \"sM06pWnVc/RjQ5AbqFzIG2nIZhZ/bwUQ22Xqzb1Smy8=\",\r\n    \"deviceId\" : \"pruebas\",\r\n    \"email\" : \"moralmexicana@yopmail.com\",\r\n    \"credential\" : \"Luna1601*\",\r\n    \"credentialType\" : 1,\r\n    \"rememberMe\" : false,\r\n     \"latUsr\" : \"25.74477152094594\",\r\n    \"longUsr\": \"-100.17531076721475\", \r\n    \"channel\" :  1,\r\n    \"versionApp\" : \"3.1\",\r\n    \"ip\" : \"183.123.23.23\",\r\n    \"macAddress\" : \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/Login",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LoginTwoFactor",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\" : \"kp23XKyWIeepN2ibsPhxFAZ9kFExL0hsIg0V5Xsukic=\",\r\n    \"deviceId\" : \"pruebas\",\r\n    \"email\" : \"jose.ramirez@klubusiness.mx\",\r\n    \"twoFactorCode\" : \"767912\",\r\n    \"latUsr\" : \"25.74477152094594\",\r\n    \"longUsr\": \"-100.17531076721475\",\r\n    \"ip\" : \"183.123.23.23\",\r\n    \"macAddress\" : \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/LoginTwoFactor",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"LoginTwoFactor"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "SetSessionActivity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deviceId\" : \"pruebas\",\r\n    \"token\" : \"\",\r\n    \"userId\" : \"\",\r\n    \"sessionId\" : \"\",\r\n    \"action\" : 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/SetSessionActivity",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"SetSessionActivity"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TwoFactor",
+			"item": [
+				{
+					"name": "TwoFactorLoadCodes",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\" : \"MiQr0SNyjeqYWaFdp4K7DGguGCzkrNzopQ7eIdSi604=\",\r\n    \"deviceId\" : \"pruebas\",\r\n    \"userId\" : \"1d882a76-9e69-4098-a639-51081fa3c7b7\",\r\n    \"sessionId\" : \"568bc505-2f02-4c1c-9e3f-777c73c554d33c7b7\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/TwoFactor/LoadCodes",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"TwoFactor",
+								"LoadCodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DisableTwoFactor",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\" : \"v3F4YqJbHtSkUZ2ft33WB1DtBUhHCkskbt/K5tcpfyA=\",\r\n    \"deviceId\" : \"pruebas\",\r\n    \"userId\" : \"1d882a76-9e69-4098-a639-51081fa3c7b7\",\r\n    \"sessionId\" : \"707437ba-ae7c-48ac-997a-00591edaa6963c7b7\",\r\n    \"verificationCode\" : \"367653\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/TwoFactor/Disable",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"TwoFactor",
+								"Disable"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EnableTwoFactor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\" : \"v3F4YqJbHtSkUZ2ft33WB1DtBUhHCkskbt/K5tcpfyA=\",\r\n    \"deviceId\" : \"pruebas\",\r\n    \"userId\" : \"1d882a76-9e69-4098-a639-51081fa3c7b7\",\r\n    \"sessionId\" : \"707437ba-ae7c-48ac-997a-00591edaa6963c7b7\",\r\n    \"verificationCode\" : \"367653\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/TwoFactor/Enable",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"TwoFactor",
+								"Enable"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Servicios",
+			"item": [
+				{
+					"name": "Services",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"deviceId\" : \"pruebas\",\r\n    \"token\" : \"EItt4TVIvtYRuszvO9XQ8o5EQyUIj15deqA2EchhCcY=\",\r\n    \"sessionId\" : \"04eb88af-7fb5-4caf-88db-e518085768dd3c7b7\",\r\n    \"category\" : 4,\r\n    \"channel\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/Services",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"Services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ServicePay",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"lwy0Iv9tcInIdhKUEIxK4L33AlQZ3/EJaJ2OPnR279g=\",\r\n    \"deviceId\":\"pruebas\",\r\n    \"userId\": \"0c09864e-0e71-4b6b-b765-78f46317957e\",\r\n    \"sessionId\" : \"cdce67c4-dd55-4850-b4fe-512ae29a8bff7957e\",\r\n    \"clabe\" : \"CFE\",\r\n    \"movementType\" : 6,\r\n    \"receiverInfo\" : \"018101801019871803150000019250\",\r\n    \"amount\" : 300,\r\n    \"ip\" : \"183.123.23.23\",\r\n    \"latitude\" : \"25.74477152094594\",\r\n    \"longitude\": \"-100.17531076721475\",\r\n    \"browser\" : \"Chrome\",\r\n    \"so\" : \"Web\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://klumoralesv1.b1trus7panel26.com/ServicePay",
+							"protocol": "https",
+							"host": [
+								"klumoralesv1",
+								"b1trus7panel26",
+								"com"
+							],
+							"path": [
+								"ServicePay"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Add Upload Document",
+			"protocolProfileBehavior": {
+				"strictSSL": false,
+				"followRedirects": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "c8JVlyjA0qbPN3hJdd27GRil/grC1V9cpR4fmOBRUQM=",
+							"type": "text"
+						},
+						{
+							"key": "deviceId",
+							"value": "pruebas",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "f304808c-0d86-4b24-880b-9b20bb6191d0",
+							"type": "text"
+						},
+						{
+							"key": "document",
+							"type": "file",
+							"src": "/C:/Users/dmendozag/Pictures/animals.PNG"
+						},
+						{
+							"key": "typeDocument",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "sessionId",
+							"value": "760423bf-24ca-4556-be56-77b1e8504c4a0ae28",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/UploadDocument",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"UploadDocument"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Balance (ejemplo con canal 1)",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deviceId\" : \"pruebas\",\r\n    \"token\" : \"ujejFR/HyOlyRn6KD3PfshnM45h3KZTOJ3r0yze0Zkg=\",\r\n    \"userId\" : \"f982577f-2a9a-48d2-b0f7-9c3e749b6c5f\",\r\n    \"sessionId\" : \"0095c782-d6a7-48fd-9823-689fee755440b6c5f\",\r\n    \"channel\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/Balance",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"Balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RequestCorporateCards (canal web twofactor)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deviceId\" : \"pruebas\",\r\n    \"token\" : \"EnYHp8ZKdVh0gk098XRdK3/N3zQF09023S0Q86nUMXs=\",\r\n    \"userId\" : \"4cdc2c12-4673-4bed-92ab-e2037bd56b74\",\r\n    \"sessionId\" : \"\",\r\n    \"numtarjetas\" : 3,\r\n    \"nombrecompleto\" : \"Jose Natividad\",\r\n    \"telcontacto\" : \"+528135782244\",\r\n    \"correocontacto\" : \"nato.ramirez@outlook.com\",\r\n    \"channel\" : 1,\r\n    \"secondAuth\" : \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/RequestCorporateCards",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"RequestCorporateCards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data Spei",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"oviT5ufy4FdWD3uFmGrJc0aGGJlHYckAil9EZtwXYR8=\",\r\n    \"deviceId\": \"pruebas\",\r\n    \"userId\": \"f982577f-2a9a-48d2-b0f7-9c3e749b6c5f\",\r\n    \"sessionId\": \"6b1b00d3-04c8-43cb-981a-39e73502a250b6c5f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/DataSpei",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"DataSpei"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bank Accounts",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"oqzEn83UxlQCux8kSa9ugOrx/vSzRIEoCkeDUHoXkq0=\",\r\n    \"deviceId\": \"pruebas\",\r\n    \"userId\": \"f982577f-2a9a-48d2-b0f7-9c3e749b6c5f\",\r\n    \"sessionId\": \"52a85081-7ba8-4e63-b08d-0d68e456a552b6c5f\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/Contacts/Get",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"Contacts",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Ticket",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"QMiSzrqKAcl7CGBik\\u002B5lR/LOblGSRogtYtvD\\u002ByJNs2g=\",\r\n    \"deviceId\": \"pruebas\",\r\n    \"userId\": \"d5db0b54-1834-4c49-b6bc-a7a3a1569bde\",\r\n    \"numeroOperacion\":79,\r\n    \"sessionId\": \"650beb4e-c570-4131-903a-4a42683979cf0ae28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/Ticket",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"Ticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetNameToLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deviceId\" : \"pruebas\",\r\n    \"token\" : \"phuvLccR4\\u002B85fqqfSwNqUG8eNcWWzH8YxJp15nHOadI=\",\r\n    \"email\" : \"nato.ramirez@outlook.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/GetNameToLogin",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"GetNameToLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Balance (ejemplo canal 2 o 3)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deviceId\" : \"pruebas\",\r\n    \"token\" : \"ujejFR/HyOlyRn6KD3PfshnM45h3KZTOJ3r0yze0Zkg=\",\r\n    \"userId\" : \"f982577f-2a9a-48d2-b0f7-9c3e749b6c5f\",\r\n    \"sessionId\" : \"0095c782-d6a7-48fd-9823-689fee755440b6c5f\",\r\n    \"channel\" : 2,\r\n    \"versionApp\" : \"3.1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/Balance",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"Balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Banks",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"PhLqpv9gO9rDUk2vwx/8LJWj8fQVibsdedWo5XC2ULs=\",\r\n    \"deviceId\": \"pruebas\",\r\n    \"userId\": \"79e0fddd-c0cb-4f86-9abf-53429120ae28\",\r\n    \"sessionId\": \"e1645490-cce3-4687-ad85-ea10427839770ae28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/Banks/Get",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"Banks",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dispersiones",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"HkGiMxiVEgZLESCtyX/fa7JpfN\\u002B6Nk7\\u002B4e6kc/w48Sc=\",\r\n    \"deviceId\": \"pruebas\",\r\n    \"userId\": \"f982577f-2a9a-48d2-b0f7-9c3e749b6c5f\",\r\n    \"sessionId\": \"583ee64c-7180-4af8-8b50-877f017adcd3b6c5f\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/Dispersion/Get",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"Dispersion",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RequestCorporateCards (canal app - pin transfer)",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deviceId\" : \"pruebas\",\r\n    \"token\" : \"EnYHp8ZKdVh0gk098XRdK3/N3zQF09023S0Q86nUMXs=\",\r\n    \"userId\" : \"4cdc2c12-4673-4bed-92ab-e2037bd56b74\",\r\n    \"sessionId\" : \"\",\r\n    \"numtarjetas\" : 3,\r\n    \"nombrecompleto\" : \"Jose Natividad\",\r\n    \"telcontacto\" : \"8135782244\",\r\n    \"correocontacto\" : \"nato.ramirez@outlook.com\",\r\n    \"channel\" : 2,\r\n    \"secondAuth\" : \"\",\r\n    \"typeOfSecondAuth\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/RequestCorporateCards",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"RequestCorporateCards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProcessDispersion",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"verificationCode\" : \"FJk15MNSKA\",\r\n    \"dispersionId\" : 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/Dispersion/Process",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"Dispersion",
+						"Process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dispersiones",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eE6Ywh3vRUVpabPBOhJTdylEi0CPse5EB9QGVHR12XU\",\r\n    \"deviceId\": \"pruebas\",\r\n    \"userId\": \"0c09864e-0e71-4b6b-b765-78f46317957e\",\r\n    \"sessionId\": \"e192fcee-130c-4609-a922-b0e1dbf2283f0ae28\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/Dispersion/Get",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"Dispersion",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dispersiones Encoladas (Add)",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"Q4wa274y7XyRzdmLenXCKcQWGE\\u002BGohHoCId\\u002B9VWjFfI=\",\r\n    \"deviceId\":\"pruebas\",\r\n    \"userId\":\"0c09864e-0e71-4b6b-b765-78f46317957e\",\r\n    \"sessionId\": \"2c91876e-7bf1-4f3e-8d69-6891e853b6a80ae28\",\r\n    \"IdDispersion\": 8,\r\n    \"Codigo\": \"458uf4u6gw\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/DispersionesEncoladas",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"DispersionesEncoladas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get History Lastest Movements",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"EbksCzg7FIVx6oCIfcRYmipy8EEYXF4aaPXf0qGkTOM=\",\r\n    \"deviceId\":\"1659653879867-ihent-8l4hp-vxe8j-bixxl-htjvj\",\r\n    \"userId\":\"6f312f65-dd05-4328-81e6-84bcfe668afe\",\r\n    \"startDate\":null,\r\n    \"endDate\":null,\r\n    \"channel\": 1,\r\n    \"sessionId\": \"ecd68f3f-ebe2-4422-853d-e191b6fa31ea68afe\",\r\n    \"pageNumber\": 1,\r\n    \"pageSize\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/HistoryMovements/Get",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"HistoryMovements",
+						"Get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download Files",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"MQaH3Phf0A89oUresiTBQO6Lsa\\u002Bkpu8fM8c8ei7ccaw=\",\r\n    \"deviceId\":\"pruebas\",\r\n    \"userId\":\"43b12a30-f3a2-483a-8318-81a7c9cec133\",\r\n    \"startDate\":null,\r\n    \"endDate\":null,\r\n    \"sessionId\": \"780e348c-5db9-493a-a167-b98b82d3ca680ae28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/HistoryMovements/DownloadFiles",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"HistoryMovements",
+						"DownloadFiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AssignCorporateCard",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\" : \"VDTpRTuEUElx4FS55/oXPFlwR6jUVZ/NGdFEoTIoTF8=\",\r\n    \"deviceId\" : \"pruebas\",\r\n    \"sessionId\" : \"cdce67c4-dd55-4850-b4fe-512ae29a8bff7957e\",\r\n    \"userId\": \"0c09864e-0e71-4b6b-b765-78f46317957e\",\r\n    \"cardNumber\" : \"5204165126030988\",\r\n    \"cardNumberConfirmation\" : \"5204165126030988\",\r\n    \"alias\" : \"Jose Ramirez\",\r\n    \"tag\" : \"Programador\",\r\n    \"email\" : \"nato.ramirez@outlook.com\",\r\n    \"password\" : \"Morrissey1/\",\r\n    \"passwordConfirmation\" : \"Morrissey1/\",\r\n    \"ip\" : \"183.123.23.23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/CorporateCards/AssignCard",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"CorporateCards",
+						"AssignCard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddBalance",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\" : \"eXZURQdmZBU/av28q5aNJXxKL25RGOQRBsHzhfFqDcg=\",\r\n    \"deviceId\" : \"pruebas\",\r\n    \"userId\" : \"0c09864e-0e71-4b6b-b765-78f46317957e\",\r\n    \"sessionId\" : \"cdce67c4-dd55-4850-b4fe-512ae29a8bff7957e\",\r\n    \"cardNumber\" : \"5204165126030988\",\r\n    \"amount\" : 50.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://klumoralesv1.b1trus7panel26.com/CorporateCards/AddBalance",
+					"protocol": "https",
+					"host": [
+						"klumoralesv1",
+						"b1trus7panel26",
+						"com"
+					],
+					"path": [
+						"CorporateCards",
+						"AddBalance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

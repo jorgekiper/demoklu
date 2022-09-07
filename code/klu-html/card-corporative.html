@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./assets/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="../klu-app/src/assets/theme/base/klu-colors-v1.0.0.css" rel="stylesheet">
+    <link href="../klu-app/src/assets/theme/base/navbar-component-style-v1.0.css" rel="stylesheet">
+    <link href="../klu-app/src/assets/theme/base/card-corporative-component-style-v1.0.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/bs5/dt-1.12.1/af-2.4.0/b-2.2.3/b-html5-2.2.3/b-print-2.2.3/cr-1.5.6/date-1.1.2/fc-4.1.0/fh-3.2.4/kt-2.7.0/r-2.3.0/rg-1.2.0/rr-1.2.8/sc-2.0.7/sb-1.3.4/sp-2.0.2/sl-1.4.0/sr-1.1.1/datatables.min.css" />
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/v/bs5/dt-1.12.1/af-2.4.0/b-2.2.3/b-html5-2.2.3/b-print-2.2.3/cr-1.5.6/date-1.1.2/fc-4.1.0/fh-3.2.4/kt-2.7.0/r-2.3.0/rg-1.2.0/rr-1.2.8/sc-2.0.7/sb-1.3.4/sp-2.0.2/sl-1.4.0/sr-1.1.1/datatables.min.js"></script>
+
+    <title>Tarjetas corporativa</title>
+</head>
+
+<body>
+
+
+    <div class="container corporative-card">
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="corporative-card__title">Tarjetas corporativa</h4>
+            </div>
+            <div class="col-md-6">
+                <div class="text-end">
+                    <button class="corporative-card__return-home btn btn-link" type="submit"><img
+                            src="./assets/klu/img/icons/myaccount/back-arrow.svg" /> Volver a mi cuenta</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <ul class="nav nav-pills mb-3" id="corporative-card-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-corporative-card-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-corporative-card-home" type="button" role="tab"
+                        aria-controls="pills-corporative-card-home" aria-selected="true"><img
+                            src="./assets/klu/img/icons/card.svg" /> Mis tarjetas corporativas</button>
+
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-add-balance-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-add-balance" type="button" role="tab" aria-controls="pills-add-balance"
+                        aria-selected="false"><img src="./assets/klu/img/icons/corporative-card/card-2.svg" /> Agregar saldo</button>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <label class="corporative__card-space">Filtrar por tarjeta</label>
+            <div class="col-md-6">
+
+                <input class="corporative__card-input" placeholder="4423 8899 5683 8776"></input>
+                <button class="corporative__filtro btn btn-secondary"><img src="./assets/klu/img/icons/corporative-card/filter.svg" />
+                    Filtros</button>
+            </div>
+
+            <div class="col-md-6">
+                    <button class="btn btn-secondary corporative__card-button" type="submit">Asignar tarjeta</button>
+            </div>
+
+
+            <div class="tab-content corporative-card__tabs" id="pills-corporative-card">
+                <div class="tab-pane fade show active" id="pills-corporative-card-home" role="tabpanel"
+                    aria-labelledby="pills-corporative-card-tab">
+
+
+                    <div class="row">
+                            <table class="table table-striped  corporative__table"
+                                id="Table__cardCorporative">
+                                <thead class="corporative__table-title">
+                                    <tr>
+                                        <th scope="col">Tarjeta</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Correo</th>
+                                        <th scope="col">Saldo</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="corporative__table-body">
+                                    <tr class="">
+                                        <th scope="row">4423 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">4423 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.comn</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">4423 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">4423 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">4423 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">4423 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">4423 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">4423 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-add-balance" role="tabpanel"
+                    aria-labelledby="pills-add-balance-tab">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-striped corporative__table"
+                                id="Table__cardCorporative">
+                                <thead class="corporative__table-title">
+                                    <tr>
+                                        <th scope="col">Tarjeta</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Correo</th>
+                                        <th scope="col">Saldo</th>
+                                    </tr>
+                                    </thead>
+                                <tbody class="corporative__table-body">
+                                    <tr class="">
+                                        <th scope="row">9999 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">9999 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.comn</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">9999 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">9999 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">9999 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">9999 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">9999 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                    <tr class="">
+                                        <th scope="row">9999 8899 5683 8776</th>
+                                        <td>Manul Pernia Politan</td>
+                                        <td>manuel@gmail.com</td>
+                                        <td>$124,000.00 </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination corporative__card-space">
+                            <li class="page-item">
+                                <a class="page-link page-previus" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">
+                                        <img class="pagination___img--previus"
+                                            src="./assets/klu/img/icons/pagination/previus.png" alt="Previus Icon" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">..</a></li>
+                            <li class="page-item"><a class="page-link" href="#">12</a></li>
+                            <li class="page-item">
+                                <a class="page-link page-next" href="#" aria-label="Next">
+                                    <span aria-hidden="true">
+                                        <img class="pagination___img--next"
+                                            src="./assets/klu/img/icons/pagination/next.png" alt="Next Icon" />
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

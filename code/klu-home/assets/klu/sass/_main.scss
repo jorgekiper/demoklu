@@ -1,0 +1,42 @@
+// Settings
+$imgR: '../img/';
+$fontR: '../fonts/';
+
+$rojo: #E53F28;
+$gris: #3D3D3D;
+$gris2: #F6F6F6;
+$gris3: #464646;
+$azul: #50D4F1;
+$ama: #FACF38;
+$ver: #cef4cb;
+$whats: #00ce5e;
+$verText: #002d18;
+$negro: #212529;
+$black: #000000;
+$white: #ffffff;
+$fontFooter : #7A7A7A;
+$azulCapital : #573DFF;
+$rojoCapital: #FF6B57;
+$backRange: #F2F2F2;
+$grayBgs: #F8F8F8;
+$white: #FFF;
+
+body {
+  -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; padding: 0; margin: 0; //@include fluid-type(12px, 28px, 320px, 1200px);
+}
+
+// Mixin
+@mixin fluid-type($min-font-size: 12px, $max-font-size: 21px, $lower-range: 420px, $upper-range: 900px) {
+  font-size: calc(#{$min-font-size} + #{(($max-font-size / ($max-font-size * 0 + 1)) - ($min-font-size / ($min-font-size * 0 + 1)))} * ( (100vw - #{$lower-range}) / #{(($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))}));
+  @media screen and (max-width: $lower-range) {
+    font-size: $min-font-size;
+  }
+  @media screen and (min-width: $upper-range){
+    font-size: $max-font-size;
+  }
+}
+// Display Flex
+@mixin displayFlex($disp, $direc, $justify, $items, $wrp) {
+  @include display($disp); @include flex-direction($direc); @include justify-content($justify); @include align-items($items); @include flex-wrap($wrp);
+}
+

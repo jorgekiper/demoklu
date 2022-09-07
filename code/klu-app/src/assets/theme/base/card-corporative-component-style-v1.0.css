@@ -1,0 +1,58 @@
+/*****************************************
+Balances component
+*****************************************/
+.corporative-card{}
+
+.corporative-card__title{
+   margin-bottom: 30px;
+}
+
+.corporative-card__return-home{}
+
+.corporative__card-space{
+   margin-top: 20px;
+}
+
+.corporative__card-input{
+   width: 300px;
+   height: 40px;
+}
+
+.corporative__card-button{
+   width: 300px;
+   height: 40px;
+   margin-left:250px;
+}
+
+/*****************************************
+card-corporative tables
+*****************************************/
+
+.corporative__table{
+   margin-top: 40px;
+   color: var(--klu-color-grey);
+   text-align: center;
+}
+
+.corporative__table-title{
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--klu-color-onix);
+}
+
+.corporative__table-body{
+   margin-top: 42px;
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.corporative__table-body tr{
+   height: 60px;
+   vertical-align: middle;
+}
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {
+    
+}

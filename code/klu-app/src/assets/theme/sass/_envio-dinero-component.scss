@@ -1,0 +1,114 @@
+.dropbtn {
+    color: gray;
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+     background: white;
+     width: 200px;
+     border: 1px gray solid;
+     border-radius: 5px;
+   }
+   
+   .dropbtn:hover, .dropbtn:focus {
+     
+   }
+   
+   #myInput {
+     box-sizing: border-box;
+     background-image: url('searchicon.png');
+     background-position: 14px 12px;
+     background-repeat: no-repeat;
+     font-size: 16px;
+     padding: 14px 20px 12px 45px;
+     border: none;
+     border-bottom: 1px solid #ddd;
+   }
+   
+   #myInput:focus {outline: 3px solid #ddd;}
+   
+   .dropdown {
+     position: relative;
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: var(  --klu-color-silver-light-03);
+     min-width: 95%;
+     overflow: auto;
+     border-radius: 5px;
+     z-index: 1;
+     -webkit-box-shadow: 1px 0px 14px -7px rgba(0,0,0,0.4);
+     -moz-box-shadow: 1px 0px 14px -7px rgba(0,0,0,0.4);
+     box-shadow: 1px 0px 14px -7px rgba(0,0,0,0.4);
+     max-width: 95% !important;
+    width: 95%;
+        input{
+            border-radius: 50px;
+            height: 35px;
+            margin: 3% 5%;
+            width: 90%;
+            border: 1px solid var(--klu-color-gray-table) !important;
+            color: var(--klu-color-gray-table) !important;
+            padding-left: 6%;
+            background:  url('../../images/icons/envios/buscar.png')!important;
+            background-repeat: no-repeat !important;
+            background-position-x: 95% !important;
+            background-position-y: 90% !important;
+        }
+   }
+   
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+   }
+   
+   .dropdown a{
+     color: var(--klu-dark-gray-1);
+     font-family: "Montserrat", "sans-serif";
+     @include fluid-type(0.5rem, 16px, 320px, 1200px);
+      &:hover {
+        color: var(--klu-color-yellow);
+        cursor: pointer;
+      }
+    }
+   
+   .show {display: block;}
+
+    .contentTelEnvios{
+      margin: 0% !important;
+      #enviosCodePais{
+        background:  url('../../images/icons/flags/mexico.svg') white ;
+        background-repeat: no-repeat !important;
+        background-position-x: 25% !important;
+        background-position-y: 50% !important;
+        padding-left: 16% !important;
+        color: var(--klu-color-gray-table);
+        width: 40% !important;
+        padding-right: 0%;
+        float: left;
+        display: flex;
+        border-radius: 4px 0 0 4px;
+        border: 1.5px solid var(--klu-color-grey-standart);
+     }
+  
+     .inputTelEnvios{
+        margin: 0% !important;
+        width: 60%;
+        border-radius: 0 4px 4px 0 ;
+        border: 1.5px solid var(--klu-color-grey-standart);
+        border-left: none;
+        background: white !important;
+     }
+
+  }
+
+  #k-pills-envio{
+    input{
+      background-color: white !important;
+    }
+  }

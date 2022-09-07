@@ -1,0 +1,147 @@
+.headerGen {
+  width: 100%; height: auto; position: relative; padding: 20px 0; margin: 0; background-color: #FFF; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15); @include box-sizing(border-box); z-index: 100;
+}
+.brand {
+  width: 100%; height: auto; padding: 0; margin: 0;
+  & img {
+    display: block; width: 100%; height: auto; max-width: 160px; margin: 0 auto 0 0; padding: 0;
+  }
+  & .site-title {
+    font-size: 0; text-indent: -9999px; color: $rojo; opacity: 0; margin: 0; padding: 0;
+  }
+}
+.menumain {
+  width: 100%; height: auto; padding: 0; margin: 0;
+  & nav {
+    width: 100%; height: auto; padding: 0; margin: 0;
+    & ul {
+      width: 100%; height: auto; list-style-type: none; padding: 0; margin: 0; @include display(flex); @include flex-direction(row); @include justify-content(flex-end); @include align-items(center);
+      & li {
+        list-style-type: none; padding: 0; margin: 0 30px 0 0;
+        & a {
+          margin: 0; padding: 0; color: $gris; font-family: 'Gotham-Light'; font-weight: 600; text-decoration: none; @include transition(all 300ms); @include fluid-type(14px, 16px, 320px, 1200px);
+          &:hover {
+            color: $rojo;
+          }
+        }
+        &.mainItem {
+          & a {
+            margin: 0; padding: 5px 15px; color: $rojo; @include transition(all 300ms); @include fluid-type(12px, 13px, 320px, 1200px); background-color: $white; display: inline-block; width: auto; height: auto; border-radius: 12px; border: 1px solid $rojo; font-family: 'Gotham-Light'; font-weight: 800;
+            & i {
+              margin-left: 5px;
+            }
+            &:hover {
+              color: $white; background-color: $rojo;
+            }
+          }
+        }
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+.btnHeader {
+  width: 100%; height: auto; padding: 0; margin: 0; text-align: right; @include displayFlex(flex, row, flex-end, center, wrap);
+  &__link {
+    width: auto; height: 32px; padding: 0 20px; margin: 0; display: inline-block; line-height: 1; background: #E53F28; border-radius: 16px; color: $white; font-family: 'Gotham-Light'; font-weight: 800; text-decoration: none; text-transform: uppercase; text-align: center; border: 0; line-height: 32px; font-size: rem(18px);
+    span {
+      display: none;
+    }
+    &:hover,
+    &:active {
+      color: $white;
+    }
+    @media all and (min-width: 767px) {
+      font-size: rem(13px);
+      span {
+        display: inherit;
+      }
+    }
+  }
+  &__menu {
+    width: 40px; height: 40px; display: block; margin: 0 0 0 10px; padding: 0; position: relative; border: none; @include box-sizing(border-box); background-color: transparent; cursor: pointer;
+    span {
+      width: 15px; height: 2px; @include position(absolute, 50% 8px null null); background-color: $rojo; @include transform(translateY(-50%)); opacity: 1; @include transition(opacity 0.18s ease-in-out);
+    }
+    &:before, &:after {
+      content: ''; width: 25px; height: 2px; @include position(absolute, null null null 7px); background-color: $rojo; @include transition(transform 0.25s ease);
+    }
+    &:before {
+      top: 10px; @include transform(rotate(0deg));
+    }
+    &:after {
+      bottom: 10px; @include transform(rotate(0deg));
+    }
+    &:hover {
+      span { opacity: 0; }
+      &:before {
+        top: 19px; @include transform(rotate(45deg));
+      }
+      &:after {
+        bottom: 19px; @include transform(rotate(-45deg));
+      }
+    }
+    &[data-menu-expand="true"] {
+      span { opacity: 0; background-color: $rojo; }
+      &:before {
+        top: 19px; @include transform(rotate(45deg));background-color: $rojo;
+      }
+      &:after {
+        bottom: 19px; @include transform(rotate(-45deg));background-color: $rojo;
+      }
+    }
+    &[data-menu-expand="false"] {
+      span { opacity: 1; }
+      &:before {
+        top: 10px; @include transform(rotate(0deg));
+      }
+      &:after {
+        bottom: 10px; @include transform(rotate(0deg));
+      }
+    }
+    @media all and (min-width: 992px) {
+      display: none;
+    }
+  }
+}
+
+.menuFijo{
+  position: fixed !important;
+  background-color: white !important;
+  color: black !important;
+  -webkit-box-shadow: -1px 7px 16px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 7px 16px -8px rgba(0,0,0,0.75);
+  box-shadow: -1px 7px 16px -8px rgba(0,0,0,0.75);
+  width: 100%;
+
+  & img.logo_header{
+      content:url("../img/icons/header/logo-azul.svg");
+  }
+  & button.btn-header{
+    color: var(--klu-primary-color);
+    font-weight: 500;
+    &:hover{
+      border-bottom: 2px solid var(--klu-primary-color);
+      color: var(--klu-primary-color);
+      border-radius: 0px;
+    }
+  }
+
+  & button.btn-outline-white{
+    color: var(--klu-secondary-color);
+    border-color: var(--klu-secondary-color);
+    font-weight: 500;
+    &:hover{
+      border: 3px solid var(--klu-primary-color);
+      color: var(--klu-primary-color);
+    }
+  }
+  & button.btn-header--secondary{
+    &:hover{
+      border: 2px solid var(--klu-primary-color);
+      background-color: var(--klu-primary-color);
+    }
+  }
+}

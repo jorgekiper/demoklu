@@ -1,0 +1,175 @@
+:root {
+  --klu-primary-color: #203d5c;
+  --klu-secondary-color: #ffc857;
+  --klu-light-color: #f8f8f8;
+  --klu-dark-color: #e4e8eb;
+  --klu-dark-gray-0: #5A5A5A;
+  --klu-dark-gray-1: #7A7A7A;
+  --klu-white:#fff;
+
+  --klu-color-indigo-dye:#203D5C;
+  --klu-color-indigo-dye-hover:#4d647d;
+  --klu-color-yellow:#FFC857;
+  --klu-color-yellow-hover:#ffd379;
+  --klu-color-cadet-blue:#AFB9C4;
+  --klu-color-onix:#2F2F2F;
+  --klu-color-grey:#5A5A5A;
+  --klu-color-grey-02:#7A7A7A;
+  --klu-color-gray-light:#CECECE;
+  --klu-color-silver:#E1E1E1;
+  --klu-color-silver-light:#FFFFFF;
+  --klu-color-silver-light-02:#F8F8F8;
+  --klu-color-silver-light-03:#FBFBFB;
+  --klu-color-red-error:#EA3546;
+  --klu-color-green-success:#23CE6B;
+  --klu-color-orange-warning:#FC7A57;
+
+  --klu-font-family: "Montserrat", "sans-serif";
+
+  --klu-sizing-300: 300px;
+  --klu-sizing-80: 80px;
+  --klu-sizing-100: 100px;
+}
+
+body {
+    font-family: "Montserrat", "sans-serif";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*****************************************
+    Botones, radiobuttons, checkboxes
+*****************************************/
+button{
+  font-size: 16px !important;
+  font-weight: bold !important;
+  border: none;
+}
+
+.btn-primary {
+  color: var(--klu-white);
+  background-color: var(--klu-primary-color);
+  border-color: var(--klu-primary-color);
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus
+ {
+  color: var(--klu-white);
+  background-color: var(--klu-color-indigo-dye-hover);
+  border-color: var(--klu-color-indigo-dye-hover);
+}
+
+
+.btn-secondary {
+  color: var(--klu-white);
+  background-color: var(--klu-secondary-color);
+  border-color: var(--klu-secondary-color);
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus
+{
+  color: var(--klu-white);
+  background-color: var(--klu-color-yellow-hover);
+  border-color: var(--klu-color-yellow-hover);
+}
+
+
+nav{
+  background-color: var(--klu-color-indigo-dye);
+}
+
+#mass-dispersal {
+  background-color: var(--klu-color-silver-light-02);
+}
+
+#business-profit {
+  background-color: var(--klu-color-indigo-dye);
+}
+
+h1 {
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.btn-warning {
+  background-color: var(--klu-color-yellow);
+  border-color: var(--klu-color-yellow);
+}
+
+.klu-w-240{
+  width: 240px;
+}
+
+.klu-max-w-507{
+  max-width: 507px;
+}
+
+.klu-max-w-458{
+  max-width: 458px
+}
+
+.klu-max-w-540{
+  max-width: 540px
+}
+
+.klu-min-w-160{
+  min-width: 160px;
+}
+
+.klu-min-h-600{
+  min-height: 600px !important;
+}
+
+.box-shadow{
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.04);
+}
+
+
+#navbarSupportedContent button{
+color: white;
+font-size: 18px;
+margin-left: 2em!important;
+}
+
+#the-alternative {
+  background-image: url('../img/icons/bg/rectangulo.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+
+#from-the-app > p{
+  color: var(-klu-color-grey);
+  position: absolute;
+  width: 507px;
+  height: 78px;
+  left: 140px;
+  top: 910px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+#from-the-app button{
+  border: none;
+}
+
+#from-the-app.row{
+  min-height: 450px;
+}
+
+#business-profit > div.container div.row{
+  min-height: 600px !important;
+}
+

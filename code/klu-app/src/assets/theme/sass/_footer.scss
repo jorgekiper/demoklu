@@ -1,0 +1,57 @@
+footer.g-footer{
+  & .copyright_footer{
+      @include fluid-type(12px, 14px, 320px, 1200px);
+      color: $fontFooter;
+    }
+    & img.logo{
+      width: 70%;
+    }
+    & ul.ulFooter{
+      list-style: none;
+      li{
+        display: flex;
+        float: left;
+        padding: 0 2%;
+        height: 20px;
+        a{
+          
+            @include fluid-type(11px, 14px, 320px, 1200px);
+            font-weight: 500;
+        
+        }
+        
+      }
+      li:not(:last-child){
+        border-right: 1px solid $fontFooter;
+      }
+      li:last-child{
+        padding: 0 0 0 4%;
+      }
+    }
+
+    & ul.listSocialFooter{
+      list-style: none;
+      display: flex;
+      justify-content: end;
+      text-align: right;
+      li{
+        display: flex;
+        float: left;
+        margin: 0% 2%;
+        i{
+          color: $azulCapital;
+          font-size: 1em;
+          float: left;
+          display: flex;
+        }
+      }
+    }
+
+    & p.termi{
+      @include fluid-type(12px, 14px, 320px, 1200px);
+      color: $fontFooter;
+      
+    }
+
+    
+}

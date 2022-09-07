@@ -1,0 +1,191 @@
+/*****************************************
+Login component
+*****************************************/
+.login__container {
+    min-height: 100vh;
+}
+
+.login__container--bg {
+    background-color: var(--klu-color-indigo-dye);
+}
+
+.login__btngroup {
+    margin-top: 50px;
+    margin-left: 92px;
+}
+
+.login__rpform,
+.logintf__form,
+.login__form {
+    height: 400px;
+}
+
+.logintf__form form,
+.login__form {
+    width: 400px;
+}
+
+.login__rpform form{
+    margin-top: 52px;
+}
+
+.login__container--rp {
+    margin-top: 48px;
+}
+
+.logintf__form form,
+.login__form form {
+    margin-top: 34px;
+}
+
+.login__rpform form input,
+.logintf__form form input,
+.login__form form input{
+    height: 40px;
+}
+
+
+
+.login__logo {
+    width: 100px;
+}
+
+.login__title {
+    font-size: 32px;
+    font-weight: 700;
+}
+.login__title.forgot{
+    color: var(--klu-dark-grau-2);
+    line-height: 48px;
+}
+
+.logintf__titlegroup,
+.login__titlegroup {
+    padding-top: 40px;
+}
+
+.logintf__form,
+.logintf__titlegroup{
+    width: 540px;
+}
+
+.login__subtitle {
+    margin-top: 8px;
+    color: #7A7A7A;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+.login__subtitle--forgot {
+    color: #7A7A7A;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.login__button {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-family: var(--klu-font-family) !important;
+}
+
+.login__button--login {
+    margin-top: 24px;
+}
+
+.login__button--registry {
+    margin-top: 16px;
+}
+
+.login__button--login {
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 22px;
+    font-family: var(--klu-font-family) !important;
+}
+.login__button--forget {
+    font-weight: 600;
+    font-size: 14px !important;
+    line-height: 22px;
+    font-family: var(--klu-font-family) !important;
+}
+.return-forget{
+    font-size: 15px !important;
+    color: var(--klu-secondary-color);
+}
+
+.login__button--return {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: var(--klu-font-family) !important;
+}
+
+.login__message-error {
+    color: var(--klu-color-red-error);
+}
+
+input.login__message-error {
+    color: var(--klu-color-red-error);
+    border: 1.5px solid var(--klu-color-red-error);
+}
+
+label.login__message-error {
+    color: var(--klu-color-red-error);
+}
+
+input.form-control.login__message-error,
+input.login__message-error:focus,
+input.login__message-error:active,
+input.login__message-error::placeholder {
+    color: var(--klu-color-red-error);
+    border: 1.5px solid var(--klu-color-red-error);
+}
+
+span.login__message-error {
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+span.login__leyend{
+    color: var(--klu-primary-color);
+    font-family: var(--klu-font-family) !important;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+
+input{
+    background: none !important;
+}
+
+#togglePassword{
+    margin-left: 90%;
+    margin-top: -17%;
+    &:hover{
+        cursor: pointer;
+    }
+}
+#togglePassword2{
+    margin-left: 90%;
+    margin-top: -31%;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.eye-close{
+    color: var(--klu-color-silver) !important;
+}
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {
+    .login__container--bg {
+        display: none;
+    }
+}

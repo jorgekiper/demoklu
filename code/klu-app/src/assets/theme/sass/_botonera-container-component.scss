@@ -1,0 +1,140 @@
+/*****************************************
+Botonera Container
+*****************************************/
+
+.botonera {
+    margin-top: 40px;
+}
+
+
+.botonera__tabcontent{
+    background-color: var(--klu-color-silver-light-03);
+    height: 588px;
+}
+
+.botonera__btngroup {
+    width: 100%;
+}
+
+.botonera__btngroup button {
+    /* height: 60px; */
+
+}
+
+.botonera__btnitem {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.botonera__btnitem.nav-link {
+    border-radius: 6px;
+    height: 60px;
+    margin-bottom: 5px;
+    color: var(--klu-color-onix);
+}
+
+.botonera__iconcash,
+.botonera__iconcard,
+.botonera__iconpaymentservices,
+.botonera__iconword,
+.botonera__icondispersion,
+.botonera__iconaccounts,
+.botonera__iconestadocuenta{
+    width: 24px;
+    height: 24px;
+}
+
+.botonera__iconos {
+    margin-left: 4px;
+    margin-right: 8px;
+
+}
+
+.botonera__titlegroup {
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.aling--right{
+    margin-left: 0% !important;
+}
+
+h4.botonera__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--klu-color-onix);
+
+}
+
+span.botonera__subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.botonera__tabpane {
+    margin-left: 80px;
+}
+
+.botonera__tabpane--infobank,
+.botonera__tabpane--sendmoney {
+
+    width: 690px;
+}
+
+.botonera__tabpane--messagesuccess {
+    margin-top: 108px;
+    margin-left: 260px;
+}
+
+.botonera__inputs{
+    width: 300px;
+    height: 40px;
+}
+
+.botonera__botongroup{
+    background-color: var(--klu-color-silver-light);
+    font-size: 13px;
+    color: var(--klu-color-gray-light);
+}
+
+.botonera__btncentro{
+    margin-top: 30px;
+    margin-left: -47%;
+}
+
+.botonera__resultado--exito{
+    font-size: 20px;
+    margin-left: 84px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.botonera__resultado--parrafo{
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: -305px;
+    color: var(--klu-dark-gray-1);
+    margin-bottom: -6px;
+    text-align: center;
+}
+
+.botonera__movimientos{
+    width: 80%;
+    margin-left: 80px;
+    margin-top: 55px;
+    color: var(--klu-color-grey);
+ }
+
+ .botonera__label--anterior{
+    margin-left: 337px;
+    margin-top: 40px;
+    font-size: 16px;
+    margin-right: 17px;
+}
+
+
+
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {}

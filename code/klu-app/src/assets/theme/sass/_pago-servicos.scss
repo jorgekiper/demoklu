@@ -1,0 +1,125 @@
+/*****************************************
+Pago Servicio Container
+*****************************************/
+
+.botonera__servicios--generales{
+    width: 300px;
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 60px;
+    border: 1px solid #F2F2F2;
+    box-shadow: 0px 0px 4px #F2F2F2;
+    
+}
+  
+  .botonera__servicios--otros{
+    width: 300px;
+    height: 180px;
+    margin-top: 10px;
+    border: 1px solid #F2F2F2;
+    box-shadow: 0px 0px 4px #F2F2F2;
+  }
+
+  // estilos custom
+  .icon-telefonia {
+    position: relative;
+    & .chekCus {
+      position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;
+      // & ~ .botonera__servicios--generales,
+      // & ~ .botonera__servicios--otros {
+      //   background-color: #ccc;
+      // }
+      & ~ .botonera__servicios--generales,
+      & ~ .botonera__servicios--otros {
+        position: relative; cursor: pointer;
+      }
+      &:checked ~ .botonera__servicios--generales,
+      &:checked ~ .botonera__servicios--otros {
+        cursor: pointer; border: solid 2px var( --klu-secondary-color); -webkit-box-shadow: 3px 5px 19px 4px rgba(217,217,217,1); -moz-box-shadow: 3px 5px 19px 4px rgba(217,217,217,1); box-shadow: 3px 5px 19px 4px rgba(217,217,217,1);
+        svg path{
+            fill: var( --klu-secondary-color);
+        }
+      }
+    }
+  }
+
+  .botonera__servicios--generales, .botonera__servicios--otros{
+    &:hover{
+      cursor: pointer;
+      border: solid 2px var( --klu-secondary-color);
+      -webkit-box-shadow: 3px 5px 19px 4px rgba(217,217,217,1);
+      -moz-box-shadow: 3px 5px 19px 4px rgba(217,217,217,1);
+      box-shadow: 3px 5px 19px 4px rgba(217,217,217,1);
+      svg path{
+          fill: var( --klu-secondary-color);
+        
+      }
+    }
+  }
+
+  .content-serv{
+    max-width: 50% !important;
+    width: 50% !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-btn-serv{
+    display: flex;justify-content: flex-end;
+    div.col-md-4{
+      text-align: center;padding-left: 6%;
+    }
+  }
+
+.stepSec {
+  width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box;
+  &__box {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+}
+.subTitle-Serv {
+  font-family: 'Montserrat'; font-style: normal; font-weight: 600; font-size: 16px; color: #7A7A7A; margin: 0; padding: 0; text-align: left;
+}
+.boxSelServ {
+  width: 100%; max-width: 700px; height: auto; padding: 0; margin: 40px auto 0; position: relative; display: flex; justify-content: flex-start; align-items: flex-start; flex-wrap: wrap; box-sizing: border-box;
+  &__box {
+    margin: 0 40px 40px 0; padding: 0; position: relative;
+    & .inpRad {
+      position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;
+      & ~ label {
+        box-sizing: border-box; width: 100px; height: 100px; display: block; background: #FFFFFF; border: 1px solid #F2F2F2; box-shadow: 0px 0px 4px #F2F2F2; border-radius: 6px; line-height: 98px; text-align: center; position: relative; cursor: pointer; transition: all 300ms ease-in-out;
+        & img {
+          display: inline-block; width: auto; padding: 0; border: 0; padding: 0; margin:  0;
+        }
+      }
+      &:hover ~ label {
+        border-color: var(--klu-secondary-color); box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+      }
+      &:focus ~ label {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.17); border-color: var(--klu-secondary-color);
+      }
+      &:checked ~ label {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.17); border-color: var(--klu-secondary-color);
+      }
+    }
+    &:nth-child(3n + 5) {
+      margin: 0 0 40px 0;
+    }
+  }
+}
+.titlGroupCt {
+  width: 100%; max-width: 700px; height: auto; padding: 0; margin: 40px auto 0; position: relative; box-sizing: border-box;
+  &__title {
+    font-weight: 600; color: var(--klu-color-onix);
+  }
+}
+  
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {
+    
+}

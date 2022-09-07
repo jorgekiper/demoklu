@@ -1,0 +1,352 @@
+/*Container de información*/
+.klu-info-container {
+  background-color: var(--klu-light-color);
+  width: 931px;
+  height: 588px;
+  left: 480px;
+  top: 703px;
+  border-radius: 6px;
+  margin-left: 35px;
+}
+
+/* bordes-fuentes y botones*/
+.dashboard input {
+  border-radius: 4px;
+  border: 1.5px solid #f2f2f2;
+  padding: 1px;
+}
+
+.klu-font {
+  font-family: var(--klu-font-family);
+  color: #2f2f2f;
+  font-size: 13px;
+}
+.klu-transferir {
+  position: absolute;
+  top: 1070px;
+  left: 999px;
+  border-radius: 6px;
+  width: 300px;
+  height: 40px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 22px;
+}
+.klu-continuar {
+  position: absolute;
+  top: 1068px;
+  left: 812px;
+  border-radius: 6px;
+  width: 300px;
+  height: 40px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* información bancaria*/
+.klu-font-content {
+  position: absolute;
+  width: 243px;
+  height: 26px;
+  margin-left: 75px;
+  margin-top: 68px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.klu-font-beneficiario {
+  position: absolute;
+  width: 210px;
+  margin-left: 79px;
+  margin-top: 149px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+.klu-font-bancoR {
+  position: absolute;
+  margin-top: 134px;
+  margin-left: 393px;
+  color: #7a7a7a;
+}
+.klu-font-clabe {
+  position: absolute;
+  margin-left: 32px;
+  margin-top: 162px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+.klu-font-referencia {
+  position: absolute;
+  margin-left: 394px;
+  margin-top: 101px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+/*inputs información bancaria y imagenes*/
+
+.klu-input {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  top: 775px;
+  margin-left: 76px;
+  color: #7a7a7a;
+}
+
+.klu-input-img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-top: 182px;
+  margin-left: 387px;
+}
+
+.klu-inputBR {
+  position: absolute;
+  margin-top: 157px;
+  width: 300px;
+  height: 40px;
+  margin-left: 392px;
+  color: #7a7a7a;
+}
+
+.klu-input-Img {
+  position: absolute;
+  margin-top: 166px;
+  margin-left: 702px;
+}
+
+.klu-input-clabe {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  margin-left: 28px;
+  margin-top: 181px;
+  color: #7a7a7a;
+}
+
+.klu-img {
+  position: absolute;
+  margin-top: 189px;
+  margin-left: 339px;
+}
+.klu-input-referencia {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  margin-top: 118px;
+  margin-left: 394px;
+  color: #7a7a7a;
+}
+
+.klu-IMG {
+  position: absolute;
+  margin-left: 702px;
+  margin-top: 126px;
+}
+
+/* Sección envio*/
+
+.klu-envio {
+  position: absolute;
+  width: 243px;
+  height: 26px;
+  margin-left: 75px;
+  margin-top: -77px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.klu-font-Ntarjeta {
+  position: absolute;
+  margin-top: -77px;
+  margin-left: 393px;
+  color: #7a7a7a;
+}
+
+.klu-font-bank {
+  position: absolute;
+  margin-top: -42px;
+  margin-left: 75px;
+  color: #7a7a7a;
+}
+
+.klu-font-ref {
+  position: absolute;
+  margin-left: 394px;
+  margin-top: -73px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+.klu-font-alias {
+  position: absolute;
+  margin-left: 28px;
+  top: 915px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+.klu-font-beneficiarioDos {
+  position: absolute;
+  top: 917px;
+  margin-left: 394px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+.klu-font-Ref-Num {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: -106px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+.klu-font-Mont {
+  position: absolute;
+  margin-left: 395px;
+  margin-top: -170px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+/*inputs envio*/
+
+.klu-selected {
+  width: 300px;
+  height: 40px;
+  margin-top: 150px;
+  margin-left: 74px;
+  color: #7a7a7a;
+}
+
+.klu-font-contacto {
+  position: absolute;
+  width: 210px;
+  margin-left: 77px;
+  margin-top: -22px;
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+.klu-input-Ntarjeta {
+  position: absolute;
+  margin-top: -57px;
+  width: 300px;
+  height: 40px;
+  margin-left: 395px;
+  color: #7a7a7a;
+}
+.klu-SelectD {
+  width: 300px;
+  height: 40px;
+  margin-top: -22px;
+  margin-left: 71px;
+  color: #7a7a7a;
+}
+.klu-input-ref {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  margin-top: -56px;
+  margin-left: 394px;
+}
+.klu-input-alias {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  top: 934px;
+  margin-left: 24px;
+  color: #7a7a7a;
+}
+.klu-input-BeDos {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  margin-left: 394px;
+  top: 935px;
+  color: #7a7a7a;
+}
+.klu-input-Ref-Num {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  margin-top: -87px;
+  margin-left: 25px;
+  color: #7a7a7a;
+}
+
+.klu-input-Mont {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  margin-top: -150px;
+  margin-left: 392px;
+  color: #7a7a7a;
+}
+
+/*envio dinero- cuenta nueva*/
+.klu-span-mexico {
+  width: 75px;
+  height: 40px;
+  margin-left: -2px;
+  margin-top: 4px;
+  background-color: white;
+  border: 0px;
+  color: #7a7a7a;
+  font-size: 13px;
+}
+.klu-input-g {
+  height: 24px;
+  top: -90px;
+  left: 25px;
+  margin-top: 1px;
+}
+.klu-Group {
+  margin-right: 536px;
+  margin-top: 4px;
+  height: 40px;
+} /* mensaje exitoso enviar dinero*/
+.h2-klu {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin-left: 370px;
+  margin-top: -38px;
+}
+.p-klu {
+  color: #7a7a7a;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 310px;
+  margin-bottom: 0px;
+}
+.sp-klu {
+  color: #7a7a7a;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 360px;
+}
+
+.klu-img-position {
+  padding: 50px;
+  margin-top: 100px;
+  margin-left: 240px;
+  float: center;
+}

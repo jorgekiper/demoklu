@@ -1,0 +1,112 @@
+/*****************************************
+ Ticket-Modals
+*****************************************/
+
+.ticket__modal-body {
+    width: 840px;
+    height: 637px;
+}
+
+.ticket__table {
+    border-collapse: separate;
+    border-spacing: 1px 20px;
+    width: 59%;
+}
+
+.ticket__modal--auth {
+    width: 637px;
+    height: 420px;
+    margin-left: -56px;
+    margin-top: 98px;
+}
+
+/*****************************************
+ Ticket-buttons
+*****************************************/
+.ticket__button {
+    width: 240px;
+    height: 40px;
+}
+
+.ticket__button--Auth {
+    margin-bottom: 6%;
+    margin-right: 6%;
+    font-weight: 600;
+}
+
+.ticket__label {
+    font-size: 16px;
+    margin-right: 25px;
+}
+
+.ticket__label--codigo {
+    font-size: 13px;
+    margin-left: 48px;
+}
+
+.ticket__codigo {
+    width: 517px;
+    height: 40px;
+    border: 1.5px solid #F2F2F2;
+    border-radius: 4px;
+    margin-left: 48px;
+    margin-bottom: 19px;
+}
+
+
+/*****************************************
+ Ticket-Texts
+*****************************************/
+
+h5.ticket__title {
+    font-size: 24px;
+    color: var(--klu-color-onix);
+    margin-left: 20%;
+}
+
+h4.ticket__title {
+    font-size: 24px;
+    color: var(--klu-color-onix);
+    margin-left: 23%;
+    margin-top: 7%;
+    margin-bottom: -11px;
+}
+
+.ticket__text-right {
+    font-size: 14px;
+    color: var(--klu-dark-gray-1);
+}
+
+.ticket__text-left {
+    text-align: right;
+    color: var(--klu-dark-gray-0);
+    font-weight: 600;
+}
+
+.ticket__text-success {
+    text-align: right;
+    color: var(--klu-color-green-success);
+    font-weight: 600;
+}
+
+.ticket__text-danger {
+    text-align: right;
+    color: var(--klu-color-red-error);
+    font-weight: 600;
+}
+
+p.ticket__informacion{
+    text-align: center;
+    font-size: 14px;
+    color: var(--klu-dark-gray-1);
+    margin-top: -8px;
+}
+span.ticket__resaltado{
+    font-weight: 700;
+    color: var(--klu-primary-color);
+}
+
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {}

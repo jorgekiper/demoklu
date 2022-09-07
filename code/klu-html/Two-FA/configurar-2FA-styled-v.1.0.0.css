@@ -1,0 +1,58 @@
+/*****************************************
+ Configuarar-2FA texts
+*****************************************/
+
+h5.configurar__titulo{
+   text-align:initial;
+   font-size: 26px;
+   font-weight: 600;
+   margin-bottom: 5%;
+}
+
+h5.configurar__subtitulo{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h4.configurar__pautas{
+ font-size: 16px;
+ color: var(--klu-dark-gray-1);
+ margin-top: 29px;
+}
+
+.configurar__label{
+    margin-top: -27px;
+}
+
+/*****************************************
+ Configuarar-2FA inputs-buttons-image
+*****************************************/
+.configurar__QR{
+    width: 199px;
+    height: 201px;
+    margin: 14px 14px 14px 3px;
+}
+
+.configurar__verify{
+ width: 280px;
+ height: 40px;
+}
+
+.configurar__input{
+    width: 540px;
+    height: 40px;
+}
+
+.configurar__rectangle {
+    margin-left: 69%;
+    margin-top: -166px;
+    width: 227px;
+    height: 229px;
+    background-color: var(--klu-color-grey-standart);
+    border-radius: 10px;
+}
+
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {}

@@ -1,0 +1,163 @@
+/*****************************************
+    KLU-HOME 
+*****************************************/
+
+h1 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.text-gray {
+    color: var(--klu-color-grey);
+}
+
+.btn-outline-light,
+.btn-primary,
+.btn-secondary{
+    width: 240px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-outline-light{
+    color: var(--klu-color-yellow);
+    border-color:var(--klu-color-yellow);
+}
+
+.btn-outline-white{
+    color: white;
+    border-color:white;
+    width: 160px;
+    height: 40px;
+}
+
+.btn__img{
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+}
+
+.btn__img--img{
+    border-radius: 6px;
+}
+
+
+
+.home__header{
+    background-color: var(--klu-primary-color);
+}
+
+.alternative {
+  background-image: url('../img/icons/bg/rectangulo.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  height: 690px;
+}
+
+.alternative__btn--secondary{
+margin-left: 60px;
+}
+
+.alternative__parrafo,
+.app_parrafo,
+.beneficios__parrafo,
+.business__card__parrafo,
+.dispersion__parrafo,
+.account__parrafo{
+    margin-top: 24px;
+}
+
+.alternative__groups-btn{
+    margin-top: 54px;
+}
+
+.home__seccion-whiteBox{
+    height: 600px;
+}
+
+.beneficios{
+   
+    background-color: var(--klu-primary-color);
+    height: 600px;
+}
+
+.dispersion{   
+    background-color: var(--klu-color-silver-light-02);
+    height: 600px;
+}
+
+.home__seccion-space{
+    margin-top: 8%
+}
+
+.btn-header{
+    font-size: 18px;
+    margin-left: 38px;
+    color: var(--klu-color-silver-light);
+}
+
+.btn-header--secondary{
+    width: 160px;
+    margin-left: 40px;
+    margin-right: 24px;
+}
+
+.home__paragraph{
+    font-size: 16px;
+    color: var(--klu-color-grey);
+}
+
+.app__group-btn,
+.beneficios__group-btn,
+.business__card__group-btn,
+.dispersion__group-btn,
+.account__group-btn{
+    margin-top: 40px;
+}
+
+.business__img{
+    width: 540px;
+    height: 360px;
+}
+
+.business__text-container{
+    margin-left: 111px;
+}
+
+.box-shadow{
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.04);
+}
+
+.footer__group-links{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--klu-color-grey-02);
+}
+
+.footer__derechos{
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--klu-color-grey-02);
+}
+
+.footer__parrafo{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--klu-color-grey-02);
+    text-align: center;
+}
+
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {
+    
+}

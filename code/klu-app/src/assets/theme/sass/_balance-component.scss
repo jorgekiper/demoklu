@@ -1,0 +1,118 @@
+/*****************************************
+Balances component
+*****************************************/
+.balance{
+    margin-top: 84px;
+}
+.balance__card {
+    background-color: var(--klu-color-silver-light-02);
+    width: 100%;
+    text-align: center;
+    height: 311px;
+    border-radius: 6px;
+}
+
+.balance__img {
+    width: 154px;
+    height: 243px;
+    margin: 19px 73px 49px 73px;
+}
+
+.balance__button--card {
+    margin-top: 24px;
+    width: 100%;
+    font-weight: 600;
+    height: 40px;
+}
+.balance__container--left {
+    /* margin: 0px 0px 0px 0px; */
+    align-content: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.balance__container--right{
+    /* margin: 0px 0px 0px 45px; */
+    margin-left: 45px;
+}
+.col-md-3.balance__container--left{
+    margin-right: 45px;
+}
+
+.balance__img---warning{
+    width: 20px;
+    height: 20px;
+    margin-left: 18px;
+}
+
+h5.balance__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+h4.balance__title {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.balance__container--progress,
+.balance__container--fondeo{
+    margin-top: 40px;
+}
+
+.balance__bar {
+    width: 820px;
+}
+
+.balance__progress {
+    width: 50%;
+}
+
+.balance__line{
+    height: 60px;
+}
+
+.balance__info{
+    background-color: var(--klu-color-indigo-dye);
+    margin: 54px 0px 0px 0px;
+    border-radius: 6px;
+    height: 80px;
+    align-items: center;
+}
+
+.balance__info--text{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    width: 528px;
+    text-align: justify;
+    margin: 18px 32px 18px 40px;
+}
+
+.balance__info--text em{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.balance__button--upload{
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 18px 40px 18px 0px;
+}
+
+
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {
+    .balance__container {
+        width: 200px;
+        overflow: auto;
+    }
+}

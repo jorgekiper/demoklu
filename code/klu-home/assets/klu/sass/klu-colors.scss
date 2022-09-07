@@ -1,0 +1,309 @@
+/*****************************************
+http://getbem.com/naming/
+https://nekocalc.com/es/rem-a-px-conversor
+https://www.youtube.com/watch?v=YaAkV--25fg
+*****************************************/
+:root {
+  --klu-primary-color: #203d5c;
+  --klu-secondary-color: #ffc857;
+  --klu-light-color: #f8f8f8;
+  --klu-dark-color: #e4e8eb;
+  --klu-dark-gray-0: #5A5A5A;
+  --klu-dark-gray-1: #7A7A7A;
+  --klu-white: #fff;
+
+  --klu-color-indigo-dye: #203D5C;
+  --klu-color-indigo-dye-hover: #4d647d;
+  --klu-color-yellow: #FFC857;
+  --klu-color-yellow-hover: #ffd379;
+  --klu-color-cadet-blue: #AFB9C4;
+  --klu-color-onix: #2F2F2F;
+  --klu-color-grey: #5A5A5A;
+  --klu-color-grey-02: #7A7A7A;
+  --klu-color-gray-light: #cecece;
+  --klu-color-silver: #E1E1E1;
+  --klu-color-silver-light: #FFFFFF;
+  --klu-color-silver-light-02: #F8F8F8;
+  --klu-color-silver-light-03: #FBFBFB;
+  --klu-color-red-error: #EA3546;
+  --klu-color-green-success: #23CE6B;
+  --klu-color-orange-warning: #FC7A57;
+
+  --klu-color-grey-standart: #f2f2f2;
+
+
+  --klu-font-family: "Montserrat", "sans-serif";
+}
+
+/*****************************************
+Fuentes Tipograficas
+*****************************************/
+html,body {
+  font-family: "Montserrat", "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-muted{
+  color: var(--klu-color-grey-02);
+}
+
+/*****************************************
+Contenedores
+https://getbootstrap.com/docs/5.1/layout/containers/
+*****************************************/
+.container, 
+.container-lg, 
+.container-md, 
+.container-sm, 
+.container-xl, 
+.container-xxl {
+  max-width: 1160px;
+}
+
+/*****************************************
+Botones, radiobuttons, checkboxes
+*****************************************/
+/* button {
+  font-size: 16px;
+  border: none;
+} */
+
+button.btn-primary {
+  color: var(--klu-white);
+  background-color: var(--klu-primary-color);
+  border-color: var(--klu-primary-color);
+}
+
+button.btn-primary:hover,
+button.btn-primary:active,
+button.btn-primary:focus{
+  color: var(--klu-white);
+  background-color: var(--klu-color-indigo-dye-hover);
+  border-color: var(--klu-color-indigo-dye-hover);
+  box-shadow: none !important;
+}
+
+
+button.btn-secondary {
+  color: var(--klu-white);
+  background-color: var(--klu-secondary-color);
+  border-color: var(--klu-secondary-color);
+  box-shadow: none !important;
+}
+
+button.btn-secondary:hover,
+button.btn-secondary:active,
+button.btn-secondary:focus {
+  color: var(--klu-white);
+  background-color: var(--klu-color-yellow-hover);
+  border-color: var(--klu-color-yellow-hover);
+  box-shadow: none ;
+}
+
+button.btn-light {
+  color: var(--klu-color-indigo-dye);
+  background-color: var(--klu-color-silver-light);
+  border-color: var(--klu-color-silver-light) ;
+}
+
+button.btn-light.active {
+  color: var(--klu-color-indigo-dye);
+  background-color: var(--klu-dark-color) ;
+  border-color: var(--klu-dark-color) ;
+}
+
+button.btn.btn-link {
+  color: var(--klu-color-yellow);
+}
+
+button.btn.btn-link:hover,
+button.btn.btn-link:active,
+button.btn.btn-link:focus {
+  box-shadow: none ;
+  color: var(--klu-color-yellow-hover);
+}
+
+.btn-outline-secondary {
+  color: #000;
+  background: white;
+  border-color: white;
+}
+
+.btn-outline-secondary {
+  background-color: #203d5c;
+  opacity: 0.12;
+}
+
+.nav-link {
+  color: var(--klu-color-indigo-dye);
+  background-color: var(--klu-color-silver-light);
+}
+
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
+  color: var(--klu-color-indigo-dye);
+  background-color: var(--klu-dark-color);
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: var(--klu-color-indigo-dye);
+  background-color: var(--klu-dark-color);
+}
+
+/*****************************************
+Inputs y Labels
+*****************************************/
+
+label {
+  color: var(--klu-color-grey-02);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+label:focus-within {
+  color: var(--klu-color-indigo-dye);
+}
+
+input{
+  color: var(--klu-color-gray-light);
+  font-size: 13px;
+  font-weight: bold ;
+  border: 1.5px solid var(--klu-color-grey-standart) ;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: var(--klu-color-gray-light);
+  font-weight: 600;
+  font-size: 13px;
+  
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--klu-color-gray-light);
+}
+
+input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--klu-color-gray-light);
+}
+
+
+input:focus {
+  color: var(--klu-color-indigo-dye);
+  /* font-size: 13px;
+  font-weight: bold ;
+  border: 1.5px solid var(--klu-color-indigo-dye) ;
+  border-radius: 4px; */
+  box-shadow: none;
+}
+
+.form-control:focus {
+  color: var(--klu-color-indigo-dye);
+  background-color: #fff;
+  border: 1.5px solid var(--klu-color-indigo-dye) ;
+  box-shadow: none;
+}
+
+.form-control.is-error{
+  color: var(--klu-color-red-error);
+  background-color: #fff;
+  border: 1.5px solid var(--klu-color-red-error) ;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: var(--klu-color-gray-light);
+  opacity: 0.8;
+}
+
+/*****************************************
+Modals
+*****************************************/
+.modal-content {
+  border-radius: 20px;
+  border: none;
+}
+
+.modal-footer,
+.modal-header {
+  border: none;
+}
+
+/*****************************************
+Bar Progress
+*****************************************/
+.progress{
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: var(--klu-light-color);
+  border-radius: 0.25rem;
+}
+
+.progress-bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: var(--klu-secondary-color);
+  transition: width 0.6s ease;
+}
+
+
+/*****************************************
+Tablas
+*****************************************/
+.table-striped > tbody > tr:nth-of-type(2n+1) > * {
+  color: var(--klu-color-grey);
+}
+
+.table > :not(:first-child) {
+  border-top: none;
+  border: 1px #e1e1e1;
+}
+
+th{
+  font-weight: 500;
+}
+
+/*****************************************
+Pagination
+*****************************************/
+.pagination{
+
+}
+
+.page-link{
+  color: var(--klu-color-silver-light);
+  background-color: var(--klu-color-indigo-dye);
+  font-size: 18px;
+  font-weight: 700;
+  border-color: var(--klu-color-indigo-dye);
+}
+
+.pagination___img--previus,
+.pagination___img--next{
+  background-color: var(--klu-color-yellow);
+border-radius: 16px;
+}
+
+.page-previus{
+  padding-left: 40px;
+}
+
+.page-next{
+  padding-right: 40px;
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+

@@ -1,0 +1,164 @@
+/*****************************************
+Botonera Container
+*****************************************/
+.bank-stocks{
+    
+}
+
+.botonera__container-dimension{
+ 
+    height: 588px;
+    margin-left: 44px;
+    margin-top: -7px;
+}
+
+.botonera__titulos{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: -2px;
+}
+
+
+.botonera__textoInput--general{
+    margin-top: 30px;
+    margin-left: 50px;
+    
+}
+
+.botonera__textoInput--especifico{
+    margin-top: 30px;
+}
+
+.botonera__container-tabla{
+   width: 710px;
+   margin-left: 50px;
+   margin-top: 40px;
+   color: var(--klu-color-grey);
+   text-align: center;
+}
+.botonera__container-table-title{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--klu-color-onix);
+ }
+
+.botonera__container-tabla-body{
+    margin-top: 42px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.botonera__container-tabla-body-tr{
+    height: 60px;
+    vertical-align: middle;
+ }
+
+
+ .botonera__fuente{
+    font-size: 14px;
+    font-weight: 600px;
+ }
+
+ .botonera__fuente-grande{
+    font-size: 16px;
+    font-weight: 600px;
+ }
+
+/*****************************************
+Botonera Inputs-labels-buttons
+*****************************************/
+
+.botonera__inputs--general{
+    width: 300px;
+    height: 40px;
+    margin-left: 50px;
+    margin-right: 4px;
+    padding-left: 21px;
+    padding-top: 5px;
+}
+
+.botonera__inputs--espeficico{
+    width: 300px;
+    height: 40px;
+    margin-right: 4px;
+    padding-left: 21px;
+    padding-top: 5px;
+}
+
+.botonera__container-transferir{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+.botonera__botonServicios{
+    width: 240px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.botonera__label{
+    margin-top: 30px;
+    margin-left: 96%;
+    font-size: 16px;
+}
+
+.botonera__botonCategoria{
+    width: 300px;
+    height: 60px;
+    margin-top: -7px;
+}
+
+.botonera__botongroup{
+    background-color: var(--klu-color-silver-light);
+    font-size: 13px;
+    color: var(--klu-color-gray-light);
+}
+
+.botonera__imagen--exito{
+    margin-left: 36%;
+    margin-top: 10%;
+}
+
+.botonera__resultado--exito{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.botonera__resultado--parrafo{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--klu-dark-gray-1);
+    margin-bottom: -6px;
+}
+
+.botonera__confirmación{
+    width: 300px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: -40%;
+}
+
+.botonera__imagen--boton{
+    background-color: var(--klu-color-silver-light-03);
+}
+
+.botonera__iconos--centrados{
+    margin-top: -7px;
+} 
+.botonera__linea{
+ 
+    width: 300px;
+    margin: 18px 0px -7px 270px;
+    border: 1.0px solid #F2F2F2;
+}
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {
+    
+}

@@ -1,0 +1,30 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="33.7584" y="31.1898" width="34.4361" height="22.4574" rx="1.25" transform="rotate(-22 33.7584 31.1898)" fill="#AFB9C4" stroke="#203D5C" stroke-width="1.5"/>
+<rect x="35.2759" y="34.9455" width="34.4361" height="3.76608" transform="rotate(-22 35.2759 34.9455)" fill="#FFC857" stroke="#203D5C" stroke-width="1.5"/>
+<mask id="path-3-inside-1_223_225" fill="white">
+<rect x="42.0652" y="45.7579" width="8.38508" height="2.99467" rx="1" transform="rotate(-22 42.0652 45.7579)"/>
+</mask>
+<rect x="42.0652" y="45.7579" width="8.38508" height="2.99467" rx="1" transform="rotate(-22 42.0652 45.7579)" fill="#FFC857" stroke="#FFC857" stroke-width="2.99467" mask="url(#path-3-inside-1_223_225)"/>
+<mask id="path-4-inside-2_223_225" fill="white">
+<rect x="50.3702" y="42.3307" width="5.72315" height="2.99467" rx="1" transform="rotate(-22 50.3702 42.3307)"/>
+</mask>
+<rect x="50.3702" y="42.3307" width="5.72315" height="2.99467" rx="1" transform="rotate(-22 50.3702 42.3307)" fill="#FFC857" stroke="#203D5C" stroke-width="2.99467" mask="url(#path-4-inside-2_223_225)"/>
+<mask id="path-5-inside-3_223_225" fill="white">
+<rect x="40.4947" y="41.8706" width="13.1766" height="2.99467" rx="1" transform="rotate(-22 40.4947 41.8706)"/>
+</mask>
+<rect x="40.4947" y="41.8706" width="13.1766" height="2.99467" rx="1" transform="rotate(-22 40.4947 41.8706)" fill="#FFC857" stroke="#203D5C" stroke-width="2.99467" mask="url(#path-5-inside-3_223_225)"/>
+<circle cx="65.0579" cy="37.1142" r="1.64574" transform="rotate(-22 65.0579 37.1142)" fill="#FFC857" stroke="#FFC857" stroke-width="1.5"/>
+<circle cx="67.0929" cy="36.3953" r="1.64574" transform="rotate(-22 67.0929 36.3953)" fill="#203D5C" stroke="#203D5C" stroke-width="1.5"/>
+<mask id="path-8-inside-4_223_225" fill="white">
+<rect x="15.907" y="40.5719" width="17.3026" height="5.32386" rx="1" transform="rotate(-22 15.907 40.5719)"/>
+</mask>
+<rect x="15.907" y="40.5719" width="17.3026" height="5.32386" rx="1" transform="rotate(-22 15.907 40.5719)" fill="#FFC857" stroke="#203D5C" stroke-width="3" mask="url(#path-8-inside-4_223_225)"/>
+<mask id="path-9-inside-5_223_225" fill="white">
+<rect x="8.52753" y="50.7309" width="27.9503" height="5.32386" rx="1" transform="rotate(-22 8.52753 50.7309)"/>
+</mask>
+<rect x="8.52753" y="50.7309" width="27.9503" height="5.32386" rx="1" transform="rotate(-22 8.52753 50.7309)" fill="#FFC857" stroke="#203D5C" stroke-width="3" mask="url(#path-9-inside-5_223_225)"/>
+<mask id="path-10-inside-6_223_225" fill="white">
+<rect x="22" y="52.4817" width="17.3026" height="5.32386" rx="1" transform="rotate(-22 22 52.4817)"/>
+</mask>
+<rect x="22" y="52.4817" width="17.3026" height="5.32386" rx="1" transform="rotate(-22 22 52.4817)" fill="#FFC857" stroke="#203D5C" stroke-width="3" mask="url(#path-10-inside-6_223_225)"/>
+</svg>

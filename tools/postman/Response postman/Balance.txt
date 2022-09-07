@@ -1,0 +1,1 @@
+{"code":"200","data":{"accountBalance":5236460.52,"totalPedingBalance":0.00,"monthlyFundingLimit":6000000.00,"remainingLimit":6000000.00,"accumulatedMonthlyFunding":0.00,"lastCardDigits":"","cardURL":"https://klu.mx/assets/img/tarjetas/Card.png","AccountLevel":4},"session":{"sessionId":"e6217ebf-7e2e-433b-9fcd-fa6bb4824009b6c5f","newLastUpdate":"2022-07-20 15:05:44.5442049"}}

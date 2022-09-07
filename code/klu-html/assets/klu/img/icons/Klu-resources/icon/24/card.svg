@@ -1,0 +1,15 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_76_119" fill="white">
+<rect x="0.950611" y="5.26508" width="20" height="12" rx="1" transform="rotate(-5.73414 0.950611 5.26508)"/>
+</mask>
+<rect x="0.950611" y="5.26508" width="20" height="12" rx="1" transform="rotate(-5.73414 0.950611 5.26508)" fill="white" stroke="#2F2F2F" stroke-width="3" mask="url(#path-1-inside-1_76_119)"/>
+<mask id="path-2-inside-2_76_119" fill="white">
+<rect x="2" y="8" width="20" height="12" rx="1"/>
+</mask>
+<rect x="2" y="8" width="20" height="12" rx="1" fill="white" stroke="#2F2F2F" stroke-width="3" mask="url(#path-2-inside-2_76_119)"/>
+<path d="M3 12H21" stroke="#2F2F2F" stroke-width="1.5"/>
+<circle cx="17.5" cy="16.5" r="0.75" fill="white" stroke="#2F2F2F" stroke-width="1.5"/>
+<circle cx="18.5" cy="16.5" r="0.75" fill="white" stroke="#2F2F2F" stroke-width="1.5"/>
+<path d="M5 14C5 14 6.21895 14 7 14" stroke="#2F2F2F" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M5 15C5 15 7.4379 15 9 15" stroke="#2F2F2F" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

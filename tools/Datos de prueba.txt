@@ -1,0 +1,36 @@
+-- usuarios/passwords de QA
+
+muestramoral@yopmail.com
+0525Jmg
+	
+moralmexicana@yopmail.com
+Luna1601*
+	
+moraltest@yopmail.com
+0525Jmg!
+
+
+
+-- JSON de sesion en react
+[
+  {
+    "name": "Reducer",
+    "value": {
+      "logged": true,
+      "userLogged": {
+        "userId": "6f312f65-dd05-4328-81e6-84bcfe668afe",
+        "name": "Testing QA",
+        "email": "moraltest@yopmail.com",
+        "sessionId": "ecd68f3f-ebe2-4422-853d-e191b6fa31ea68afe",
+        "date": "8/18/2022 10:48:17"
+      }
+    },
+    "subHooks": [],
+    "hookSource": {
+      "lineNumber": 54,
+      "functionName": "AuthProvider",
+      "fileName": "http://127.0.0.1:5173/src/auth/context/AuthProvider.jsx",
+      "columnNumber": 43
+    }
+  }
+]

@@ -1,0 +1,146 @@
+/*****************************************
+Últimos movimientos component
+*****************************************/
+.last-movements{
+    margin-top: 40px;
+}
+
+table.table.last-movements__table{
+    margin-bottom: 0px;
+}
+
+.last-movements__title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: -13px;
+}
+
+.last-movements__filters{}
+
+.last-movements__download{
+font-size: 16px;
+font-weight: 600;
+width: 360px;
+height: 40px;
+}
+
+.last-movements__img-download{
+    width: 18px;
+    margin-right: 5px;
+    margin-top: -5px;
+    /* margin-left: 46px; */
+}
+
+.last-movements__table{
+    margin-top: 40px;
+    color: var(--klu-color-grey);
+    text-align: center;
+}
+
+.last-movements__table-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--klu-color-onix);
+
+    th{
+        font-weight: 700 !important;
+    }
+}
+
+.last-movements__table-body{
+    margin-top: 42px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.last-movements__table-body tr{
+    height: 60px;
+    vertical-align: middle;
+}
+
+.last-movements__status{}
+
+.last-movements__status--refused{
+    color: var(--klu-color-red-error) !important;
+}
+
+.last-movements__status--earring{
+    color: var(--klu-color-orange-warning) !important;
+}
+
+.last-movements__status--accepted{
+    color: var(--klu-color-green-success) !important;
+}
+
+.last-movements__ticket{
+    background-color: none;
+}
+.last-movements__ticket:hover{
+    /* content: url('../../../../../klu-html/assets/klu/img/icons/movimientos/ticket.svg'); */
+    content: url('../../images/icons/movements/ticket.svg');
+}
+
+.last-movements__pagination{
+    margin-top: 42px;
+}
+
+.last-movements__calendar{
+    width: 240px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: -89px;
+    font-size: 13px;
+    color: var(--klu-dark-gray-1);
+    padding-right: 5px;
+}
+.last-movements__calendar--icon{
+    margin-left: 124px;
+    margin-top: -2px;
+}
+
+
+
+.movements__nav a.active{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* STYLE DATEPICKER */
+
+#datepicker, .datepicker{
+    background:  url('../../images/icons/movements/calendar-gray.svg') var( --klu-light-color) !important; 
+    background-size: auto !important;
+    background-repeat: no-repeat !important;
+    background-position-x: 95% !important;
+    background-position-y: center !important;
+    float: left;
+    display: flex;
+    border: none;
+}
+
+.daterangepicker td.in-range{
+    &:not(:last-child){
+        background-color: rgba(255, 200, 87, 0.1);
+    }
+    
+}
+
+.daterangepicker td.active, .end-date, .daterangepicker td.active:hover {
+    background-color: var(--klu-secondary-color) !important;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2%;
+    font-weight: 500 !important;
+}
+
+
+/* END STYLE DATEPICKER */
+
+
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {
+    
+}

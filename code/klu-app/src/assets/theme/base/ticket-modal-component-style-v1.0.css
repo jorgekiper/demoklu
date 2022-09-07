@@ -1,0 +1,68 @@
+/*****************************************
+ Ticket-Modals
+*****************************************/
+
+.ticket__modal-body{
+    width: 840px;
+    height: 637px;
+}
+
+.ticket__table{
+    border-collapse: separate;
+    border-spacing: 1px 20px;
+    width: 59%;
+}
+
+/*****************************************
+ Ticket-buttons
+*****************************************/
+.ticket__button{
+    width: 240px;
+    height: 40px;
+}
+
+.ticket__label{
+    font-size: 16px;
+    margin-right: 25px;
+}
+
+/*****************************************
+ Ticket-Texts
+*****************************************/
+
+.ticket__text-title{
+    font-size: 24px;
+    color: var(--klu-color-onix);
+    margin-left: 20%;
+}
+
+.ticket__text-right{
+    font-size: 14px;
+    color: var(--klu-dark-gray-1);
+}
+
+.ticket__text-left{
+    text-align: right;
+    color: var(--klu-dark-gray-0);
+    font-weight: 600;
+}
+
+.ticket__text-success{
+    text-align: right;
+    color: var(--klu-color-green-success);
+    font-weight: 600;
+}
+
+.ticket__text-danger{
+    text-align: right;
+    color: var(--klu-color-red-error);
+    font-weight: 600;
+}
+
+
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {
+    
+}

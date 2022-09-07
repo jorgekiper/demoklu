@@ -1,0 +1,282 @@
+/*****************************************
+Botonera Component
+*****************************************/
+
+.botonera {
+    margin-top: 40px;
+}
+
+
+.botonera__tabcontent{
+    background-color: var(--klu-color-silver-light-03);
+    height: 540px;
+}
+
+.botonera__btngroup {
+    width: 100%;
+}
+
+.botonera__btngroup button {
+    /* height: 60px; */
+
+}
+
+.botonera__btnitem {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.botonera__btnitem.nav-link {
+    border-radius: 6px;
+    height: 60px;
+    margin-bottom: 5px;
+    color: var(--klu-color-onix);
+}
+
+.botonera__iconcash,
+.botonera__iconcard,
+.botonera__iconpaymentservices,
+.botonera__iconword,
+.botonera__icondispersion,
+.botonera__iconaccounts,
+.botonera__iconestadocuenta{
+    width: 24px;
+    height: 24px;
+}
+
+.botonera__iconos {
+    margin-left: 4px;
+    margin-right: 8px;
+
+}
+
+.botonera__titlegroup {
+    /* margin-top: 40px; */
+    /* margin-left: 80px; */
+}
+
+h4.botonera__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--klu-color-onix);
+
+}
+
+span.botonera__subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.botonera__tabpane {
+    margin-left: 80px;
+}
+
+.botonera__tabpane--messagesuccess {
+    margin-top: 108px;
+    margin-left: 260px;
+}
+
+.botonera__inputs{
+    width: 300px;
+    height: 40px;
+}
+
+.botonera__botongroup{
+    background-color: var(--klu-color-silver-light);
+    font-size: 13px;
+    color: var(--klu-color-gray-light);
+}
+
+.botonera__btncentro{
+    margin-top: 30px;
+    margin-left: -47%;
+}
+
+.botonera__resultado--exito{
+    font-size: 20px;
+    margin-left: 84px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.botonera__resultado--parrafo{
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: -305px;
+    color: var(--klu-dark-gray-1);
+    margin-bottom: -6px;
+    text-align: center;
+}
+
+.botonera__movimientos{
+    width: 80%;
+    margin-left: 80px;
+    margin-top: 55px;
+    color: var(--klu-color-grey);
+ }
+
+/* Dispersion */
+.dispersion__image--position {
+    margin-left: 48%;
+    margin-top: 60px;
+}
+
+
+
+.dispersion__image--csv{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Info Bank */
+.botonera__iconcopy{
+    margin-left: 16px;
+}
+
+
+/* Contactos */
+.botonera__tabcontainer{
+    margin-top: 40px;
+    width: 660px;
+    height: 469px;
+}
+
+.botonera__infocontainer{
+    margin-top: 29px;
+    width: 100%;
+    height: 334px;
+    align-content: start;
+}
+.botonera__footergroup{
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+}
+
+#tableContacts.botonera__tablecontacts {
+    /* margin-top: 29px; */
+    width: 100%;
+}
+
+#tableContacts.botonera__tablecontacts tbody {
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    color: #7A7A7A;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* height: 334px; */
+    align-content: start;
+}
+
+#tableContacts.botonera__tablecontacts tbody tr,
+#tableContacts.botonera__tablecontacts tbody th,
+#tableContacts.botonera__tablecontacts tbody td {
+    border-style: none;
+}
+
+
+button.botonera__contactsitem {
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+/* Pago de servicios */
+.botonera__servicecontainer{
+    height: 523px;
+    width: 660px;
+}
+
+.botonera__servicecontainer--view{
+    height: 400px;
+    width: 100%;
+}
+
+.card.botonera__servicios {
+    width: 300px;
+    height: 180px;
+  }
+
+  .card.botonera__servicio{   
+    height: 100px;
+    width: 100px;
+    margin-right: 36px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 40px;
+  }
+
+.card.botonera__servicio button img{
+    height: 100%;
+width: 100%;
+  }
+
+
+span.input__flag{
+    background-color: white;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+color: #CECECE;
+border: 1.5px solid #F2F2F2;
+}
+
+
+/* Configuarar-2FA texts */
+h5.configurar__titulo{
+    text-align:initial;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 5%;
+ }
+ 
+ h5.configurar__subtitulo{
+     font-size: 20px;
+     font-weight: 600;
+ }
+ 
+ h4.configurar__pautas{
+  font-size: 16px;
+  color: var(--klu-dark-gray-1);
+  margin-top: 29px;
+ }
+ 
+ .configurar__label{
+     margin-top: -27px;
+ }
+
+
+ .configurar__QR{
+    width: 199px;
+    height: 201px;
+    margin: 14px 14px 14px 3px;
+}
+
+.configurar__verify{
+ width: 280px;
+ height: 40px;
+}
+
+.configurar__input{
+    width: 540px;
+    height: 40px;
+}
+
+.configurar__rectangle {
+    margin-left: 69%;
+    margin-top: -166px;
+    width: 227px;
+    height: 229px;
+    background-color: var(--klu-color-grey-standart);
+    border-radius: 10px;
+}
+
+
+
+/*****************************************
+Media queries
+*****************************************/
+@media (max-width: 767.98px) {}

@@ -606,15 +606,15 @@
                         <div class="d-flex justify-content-center">
                             <div class="botonera__tabcontainer">
                                 <div class="stepSec">
-                                  
-                                  <div class="stepSec__box stepSec__box--active" data-id="pago-servicios">
+                                  <form id="frmPagoServicios" action="">
+                                  <div class="stepSec__box stepSec__box--active" data-idx="pago-servicios">
                                     <div class="botonera__titlegroup">
                                         <h4 class="botonera__title">Pago de servicios</h4>
                                     </div>
                                     <div class="row justify-content-between">
                                         <div class="col-md-6 content-serv">
                                             <div class="icon-telefonia">
-                                              <input type="radio" name="servicioPay" id="telefonia" class="chekCus">
+                                              <input type="radio" name="servicioPay" id="telefonia" class="chekCus" value="pago-telefonia">
                                                 <label for="telefonia" class="card botonera__servicios--generales">
                                                     <div class="card-body text-center ">
                                                         <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -629,7 +629,7 @@
             
                                         <div class="col-md-6 content-serv">
                                             <div class="icon-telefonia">
-                                              <input type="radio" name="servicioPay" id="internetTel" class="chekCus">
+                                              <input type="radio" name="servicioPay" id="internetTel" class="chekCus" value="">
                                                 <label for="internetTel" class="card botonera__servicios--otros">
                                                     <div class="card-body text-center">
                                                         <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -645,7 +645,7 @@
                                     <div class="row justify-content-between mt-3">
                                         <div class="col-md-6 content-serv">
                                             <div class="icon-telefonia">
-                                              <input type="radio" name="servicioPay" id="genralesSer" class="chekCus">
+                                              <input type="radio" name="servicioPay" id="genralesSer" class="chekCus" value="">
                                                 <label for="genralesSer" class=" card botonera__servicios--generales">
                                                     <div class="card-body text-center">
                                                         <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -660,7 +660,7 @@
             
                                         <div class="col-md-6 content-serv">
                                             <div class="icon-telefonia">
-                                              <input type="radio" name="servicioPay" id="transporte" class="chekCus">
+                                              <input type="radio" name="servicioPay" id="transporte" class="chekCus" value="">
                                                 <label for="transporte" class="card botonera__servicios--otros">
                                                     <div class="card-body text-center">
                                                         <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -675,66 +675,66 @@
                                     </div>
                                     <div  class="row justify-content-end mt-3 content-btn-serv">
                                       <div class="col-md-3">
-                                        <button class="btn botonera__inputs" type="submit">Anterior</button>
+                                        <button class="btn botonera__inputs" type="button">Anterior</button>
                                       </div>
                                       <div class="col-md-4">
-                                        <button class="btn btn-secondary botonera__inputs" type="submit" style="max-width: 150px;">Siguiente</button>
+                                        <button class="btn btn-secondary botonera__inputs" id="contServicio" type="button" style="max-width: 150px;">Siguiente</button>
                                       </div>
                                     </div><!-- end.botón -->
                                   </div><!-- end.step__box -->
-                                  <div class="stepSec__box" data-id="pago-telefonia">
+                                  <div class="stepSec__box" data-idx="pago-telefonia">
                                     <div class="titlGroupCt">
                                         <h4 class="titlGroupCt__title">Pago de servicios - Internet/Telefonía</h4>
                                         <p class="subTitle-Serv">Seleciona tu servicio</p>
                                     </div>
                                     <div class="boxSelServ">
                                       <div class="boxSelServ__box">
-                                        <input type="radio" id="telmex" name="servMarca" class="inpRad">
+                                        <input type="radio" id="telmex" name="servMarca" class="inpRad" value="telmex">
                                         <label for="telmex">
                                           <img src="./assets/klu/img/icons/telefonia/telmex_icon.svg" alt="Telmex">
                                         </label>
                                       </div><!-- end,.boxSelServ__box -->
                                       <div class="boxSelServ__box">
-                                        <input type="radio" id="dish" name="servMarca" class="inpRad">
+                                        <input type="radio" id="dish" name="servMarca" class="inpRad" value="dish">
                                         <label for="dish">
                                           <img src="./assets/klu/img/icons/telefonia/dish_icon.svg" alt="Dish">
                                         </label>
                                       </div><!-- end,.boxSelServ__box -->
                                       <div class="boxSelServ__box">
-                                        <input type="radio" id="sky" name="servMarca" class="inpRad">
+                                        <input type="radio" id="sky" name="servMarca" class="inpRad" value="sky">
                                         <label for="sky">
                                           <img src="./assets/klu/img/icons/telefonia/sky_icon.svg" alt="Sky">
                                         </label>
                                       </div><!-- end,.boxSelServ__box -->
                                       <div class="boxSelServ__box">
-                                        <input type="radio" id="megacable" name="servMarca" class="inpRad">
+                                        <input type="radio" id="megacable" name="servMarca" class="inpRad" value="megacable">
                                         <label for="megacable">
                                           <img src="./assets/klu/img/icons/telefonia/megacable_icon.svg" alt="Megacable">
                                         </label>
                                       </div><!-- end,.boxSelServ__box -->
                                       <div class="boxSelServ__box">
-                                        <input type="radio" id="totalplay" name="servMarca" class="inpRad">
+                                        <input type="radio" id="totalplay" name="servMarca" class="inpRad" value="totalplay">
                                         <label for="totalplay">
                                           <img src="./assets/klu/img/icons/telefonia/totalplay_icon.svg" alt="Totalplay">
                                         </label>
                                       </div><!-- end,.boxSelServ__box -->
                                       <div class="boxSelServ__box">
-                                        <input type="radio" id="izzi" name="servMarca" class="inpRad">
+                                        <input type="radio" id="izzi" name="servMarca" class="inpRad" value="izzi">
                                         <label for="izzi">
                                           <img src="./assets/klu/img/icons/telefonia/izzi_icon.svg" alt="IZZI">
                                         </label>
                                       </div><!-- end,.boxSelServ__box -->
                                     </div><!-- end.boxSelServ -->
                                     <div  class="row justify-content-end mt-3 content-btn-serv">
-                                      <div class="col-md-3">
+                                      <!-- <div class="col-md-3">
                                         <button class="btn botonera__inputs" type="submit">Anterior</button>
-                                      </div>
+                                      </div> -->
                                       <div class="col-md-4">
-                                        <button class="btn btn-secondary botonera__inputs" type="submit" style="max-width: 150px;">Siguiente</button>
+                                        <button data-return="pago-servicios" class="btn btn-secondary botonera__inputs" type="button" style="max-width: 150px;">Regresar</button>
                                       </div>
                                     </div><!-- end.botón -->
                                   </div><!-- end.step__box -->
-                                  <div class="stepSec__box" data-id="pago-telmex">
+                                  <div class="stepSec__box" data-idx="pago-telmex">
                                     <div class="titlGroupCt">
                                       <h4 class="titlGroupCt__title">Pago de servicios  - Internet/Telefono - Telmex</h4>
                                       <p class="subTitle-Serv">Ingresa tu número de teléfono.</p>
@@ -781,14 +781,14 @@
                                     </div><!-- end.frmInps -->
                                     <div  class="row justify-content-end mt-3 content-btn-serv">
                                       <div class="col-md-3">
-                                        <button class="btn botonera__inputs" type="submit">Anterior</button>
+                                        <button class="btn botonera__inputs" data-return="pago-telefonia" type="button">Anterior</button>
                                       </div>
                                       <div class="col-md-4">
-                                        <button class="btn btn-secondary botonera__inputs" type="submit" style="max-width: 150px;">Siguiente</button>
+                                        <button class="btn btn-secondary botonera__inputs" id="conPago" type="button" style="max-width: 230px;">Pagar | $1,464.00 MXN</button>
                                       </div>
                                     </div><!-- end.botón -->
                                   </div><!-- end.stepSec__box -->
-                                  <div class="stepSec__box" data-id="pago-gracias">
+                                  <div class="stepSec__box" data-idx="pago-gracias">
                                     <div class="titlGroupCt">
                                       <h4 class="titlGroupCt__title">Pago de servicios  - Internet/Telefono - Telmex</h4>
                                     </div><!-- end.titlGroupCt -->
@@ -797,13 +797,12 @@
                                       <div class="thankCt__desc">
                                         <h3>¡Exito!</h3>
                                         <p>Tu pago se ha realizado<br>correctamente</p>
-                                        <a href="#" class="btn btn-secondary botonera__inputs" type="submit" style="max-width: 200px;">Continuar</a>
+                                        <button class="btn btn-secondary botonera__inputs" type="reset" id="btnReturnInit" style="max-width: 200px;">Continuar</button>
                                       </div><!-- end.thankCt__desc -->
                                     </div><!-- end.thankCt -->
                                   </div><!-- end.stepSec__box -->
-
+                                </form>
                                 </div><!-- end.stepSec -->
-                                
                             </div>
                         </div>
                      
@@ -1368,6 +1367,43 @@
                 textbox.text(filesCount + ' files selected');
                 }
             });
+
+            // Script Step #1
+            $('#contServicio').click(function(e){
+              e.preventDefault();
+              var valorPago = $("input[name='servicioPay']:checked").val();
+              // console.log(valorPago);
+
+              $('[data-idx="'+valorPago+'"]').addClass('stepSec__box--active');
+              $('[data-idx="'+valorPago+'"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
+            });
+            // Script Step #2
+            $('input[name="servMarca"]').on('change', function() {
+              var valorMarca = $(this).val();
+              console.log(valorMarca);
+              $('[data-idx="pago-'+valorMarca+'"]').addClass('stepSec__box--active');
+              $('[data-idx="pago-'+valorMarca+'"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
+            });
+            // Script Step #3
+            $('#conPago').click(function(e){
+              e.preventDefault();
+              $('[data-idx="pago-gracias"]').addClass('stepSec__box--active');
+              $('[data-idx="pago-gracias"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
+            });
+            // Script Step #4
+            $('#btnReturnInit').click(function(e){
+              e.preventDefault();
+              $('[data-idx="pago-servicios"]').addClass('stepSec__box--active');
+              $('[data-idx="pago-servicios"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
+            });
+            $('[data-return]').click(function(e) {
+              var valorDato = $(this).data('return');
+              // console.log(valorDato);
+              $('[data-idx="'+valorDato+'"]').addClass('stepSec__box--active');
+              $('[data-idx="'+valorDato+'"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
+            });
+            var triggerEl = document.querySelector('button[data-nav-idx="#k-pills-pago-servicios"]')
+            bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
         });
 
 

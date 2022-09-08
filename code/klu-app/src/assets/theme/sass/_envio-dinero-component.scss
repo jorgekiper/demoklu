@@ -81,19 +81,22 @@
 
     .contentTelEnvios{
       margin: 0% !important;
-      #enviosCodePais{
+      #enviosCodePais {
         background:  url('../../images/icons/flags/mexico.svg') white ;
         background-repeat: no-repeat !important;
-        background-position-x: 25% !important;
+        background-position-x: 10px !important;
         background-position-y: 50% !important;
-        padding-left: 16% !important;
+        padding-left: 38px !important;
         color: var(--klu-color-gray-table);
-        width: 40% !important;
+        width: 78px!important;
         padding-right: 0%;
         float: left;
         display: flex;
         border-radius: 4px 0 0 4px;
         border: 1.5px solid var(--klu-color-grey-standart);
+        &:focus {
+          border-color: var(--klu-color-onix); outline: 0; box-shadow: none!important;
+        }
      }
   
      .inputTelEnvios{

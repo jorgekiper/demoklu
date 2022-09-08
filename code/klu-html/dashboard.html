@@ -749,18 +749,30 @@
                                           <div class="frmInps__phone">
                                             <label for="numberPhone" class="form-label">Número de teléfono</label>
                                             <div class="input-group mb-3">
-                                              <span class="input-group-text" id="flagContry"><img src="./assets//klu/img/icons/flags/mexico.svg" alt="México"> +52</span>
-                                              <input type="text" class="form-control" id="numberPhone" placeholder="Número de teléfono" aria-label="Número de teléfono" aria-describedby="numberPhone">
-                                            </div><!-- end.input-group -->
+                                              <select class="form-select input-group-text flagOpc" id="flagContry">
+                                                <option value="mexico">+52</option>
+                                                <option value="argentina">+54</option>
+                                                <option value="usa">+1</option>
+                                              </select>
+                                              <input type="text" class="form-control" id="numberPhone" placeholder="Número de teléfono" aria-label="Número de teléfono" aria-describedby="numberPhone"
+                                              maxlength="10"
+                                              minlength="10">
+                                            </div> <!-- end.input-group -->
                                           </div><!-- end.frmInps__phone -->
                                         </div><!-- end.col-* -->
                                         <div class="col-12 col-md-6">
                                           <div class="frmInps__phone">
                                             <label for="numberPhoneConfi" class="form-label">Confirmar número de teléfono</label>
                                             <div class="input-group mb-3">
-                                              <span class="input-group-text" id="flagContryConfi"><img src="./assets//klu/img/icons/flags/mexico.svg" alt="México"> +52</span>
-                                              <input type="text" class="form-control" id="numberPhoneConfi" placeholder="Confirmar número de teléfono" aria-label="Confirmar número de teléfono" aria-describedby="numberPhoneConfi">
-                                            </div><!-- end.input-group -->
+                                              <select class="form-select input-group-text flagOpc" id="flagContryConfi">
+                                                <option value="mexico">+52</option>
+                                                <option value="argentina">+54</option>
+                                                <option value="usa">+1</option>
+                                              </select>
+                                              <input type="text" class="form-control" id="numberPhoneConfi" placeholder="Confirmar número de teléfono" aria-label="Confirmar número de teléfono" aria-describedby="numberPhoneConfi"
+                                              maxlength="10"
+                                              minlength="10">
+                                            </div> <!-- end.input-group -->
                                           </div><!-- end.frmInps__phone -->
                                         </div><!-- end.col-* -->
                                         <div class="col-12 col-md-6">
@@ -1482,6 +1494,15 @@
         var for_item = $(this).val();
         console.log(for_item);
         $("#enviosCodePais").css('background-image', 'url("./assets/klu/img/icons/flags/'+for_item+'.svg")');
+    });
+    $('select.flagOpc').each(function(i) {
+      var selId = $(this).attr('id');
+      // console.log(selId);
+      $("#"+selId).change(function(){
+          var for_itemFlag = $(this).val();
+          // console.log(for_itemFlag);
+          $("#"+selId).css('background-image', 'url("./assets/klu/img/icons/flags/'+for_itemFlag+'.svg")');
+      });
     });
     </script>
 

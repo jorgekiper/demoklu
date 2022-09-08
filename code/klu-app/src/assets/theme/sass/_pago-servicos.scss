@@ -124,7 +124,25 @@ Pago Servicio Container
       color: var(--klu-color-gray-light); background-color: var(--klu-white); border: 1px solid var(--klu-color-grey-standart); border-radius: 4px; padding: 0.657rem 0.75rem;
     }
     & input.form-control {
-      background: var(--klu-white)!important; padding: 0.657rem 0.75rem;
+      background: var(--klu-white)!important; padding: 0.657rem 0.75rem; flex: 1 1 auto;
+    }
+    .flagOpc {
+      background:  url('../../images/icons/flags/mexico.svg') white;
+      background-repeat: no-repeat !important;
+      background-position-x: 10px !important;
+      background-position-y: 50% !important;
+      padding-left: 38px !important;
+      color: var(--klu-color-gray-table);
+      width: 78px!important;
+      padding-right: 0%;
+      float: left;
+      display: flex;
+      border-radius: 4px 0 0 4px;
+      border: 1.5px solid var(--klu-color-grey-standart);
+      flex: 0 1 auto;
+      &:focus {
+        border-color: var(--klu-color-onix); outline: 0; box-shadow: none!important;
+      }
     }
   }
   &__saldo {

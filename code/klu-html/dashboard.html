@@ -351,17 +351,13 @@
                                         </div>
                                         <div class="row mt-3 inp-opcNewContac" style="display: none;">
                                             <div class="col-6">
-                                              <div class="checkGen">
-                                                <input type="checkbox" class="checkGen__inp" name="" id="inpSaveContact" value="1">
-                                                <label for="inpSaveContact">Guardar como contacto</label>
-                                              </div><!-- end.checkGen -->
-                                                <!-- <input type="checkbox" checked="checked" class="form-control" id="inpSaveContact">
+                                                <input type="checkbox" checked="checked" class="form-control" id="inpSaveContact">
                                                 <label class="container" for="inpSaveContact">
                                                     
                                                     <span class="checkmark" for="inpSaveContact"></span>
                                                     Guardar como contacto
                                                   </label>
-                                                  <input type="checkbox" checked="checked" class="myinput large" /></td> -->
+                                                  <input type="checkbox" checked="checked" class="myinput large" /></td>
                                             </div>
                                             
                                         </div>
@@ -943,30 +939,31 @@
                         <div class="row d-flex justify-content-center">
                             <div class="col-10">
                                 <div class="file-drop-area">
-                                    <img src="./assets/klu/img/icons/new-split-white.svg" />
+                                    <img class="new-split-white" src="./assets/klu/img/icons/new-split-white.svg" />
                                     <span class="choose-file-button">Seleccione un archivo CVS para cargar</span>
                                     <span class="file-message">o arrastrarlo y sueltalo aquí</span>
-                                    <input class="file-input" type="file" multiple>
+                                    <input class="file-input" id="fileDispersion" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" >
                                 </div>
-                                <p class="dispersion__parrafo">*Para ingresar el número de tarjeta o cuenta clabe se debe
-                                    colocar al inicio un apóstrofe</p>
-                                <p class="dispersion__parrafo--dos">(Ejemplo: '123XXX)</p>
+                                <div class="row mt-1">
+                                    <p class="dispersion__parrafo">*Para ingresar el número de tarjeta o cuenta clabe se debe
+                                        colocar al inicio un apóstrofe</p>
+                                    <p class="dispersion__parrafo--dos">(Ejemplo: '123XXX)</p>
+                                </div>
 
-                                <div class="row mt-5">
-                                    <table class="table dispersion__table" id="table-ticket">
+                                <div class="row mt-1">
+                                    <table class="table table__download">
                                         <tbody>
                                             <tr>
-                                                <td class="ticket__text-right">Descargar lista de bancos </img></td>
-                                                <td><img src="./assets/klu/img/icons/download-yellow.svg"></td>
+                                                <td class="ticket__text-right"><a href="#">Descargar lista de bancos </a></td>
+                                                <td><a href="#"><img src="./assets/klu/img/icons/download-yellow.svg" /></a></td>
                                             </tr>
                                             <tr>
-                                                <td class="ticket__text-right">Descargar plantillas para SPEI</td>
-                                                <td><img src="./assets/klu/img/icons/download-yellow.svg"></img></td>
+                                                <td class="ticket__text-right"><a  href="#">Descargar plantillas para SPEI</a></td>
+                                                <td><a href="#"><img src="./assets/klu/img/icons/download-yellow.svg" /></a></td>
                                             </tr>
                                             <tr>
-                                                <td class="ticket__text-right">Descargar plantillas para tarjetas
-                                                    corporativas</td>
-                                                <td><img src="./assets/klu/img/icons/download-yellow.svg"></img></td>
+                                                <td class="ticket__text-right"><a  href="#">Descargar plantillas para tarjetas corporativas</a></td>
+                                                <td><a href="#"><img src="./assets/klu/img/icons/download-yellow.svg"/></a></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1418,6 +1415,8 @@
               $('[data-idx="'+valorDato+'"]').addClass('stepSec__box--active');
               $('[data-idx="'+valorDato+'"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
             });
+            var triggerEl = document.querySelector('button[data-nav-idx="#k-pills-pago-servicios"]')
+            bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
         });
 
 
@@ -1495,6 +1494,7 @@
         console.log(for_item);
         $("#enviosCodePais").css('background-image', 'url("./assets/klu/img/icons/flags/'+for_item+'.svg")');
     });
+<<<<<<< HEAD
     $('select.flagOpc').each(function(i) {
       var selId = $(this).attr('id');
       // console.log(selId);
@@ -1503,6 +1503,14 @@
           // console.log(for_itemFlag);
           $("#"+selId).css('background-image', 'url("./assets/klu/img/icons/flags/'+for_itemFlag+'.svg")');
       });
+=======
+
+    $("#fileDispersion").change(function(){
+        if(this.files.length > 0){
+            $(".file-drop-area").addClass("selectedFile");
+        }
+
+>>>>>>> 50aa94efd17a800b6949661ad2885869874886c2
     });
     </script>
 

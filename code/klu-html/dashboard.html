@@ -1415,8 +1415,6 @@
               $('[data-idx="'+valorDato+'"]').addClass('stepSec__box--active');
               $('[data-idx="'+valorDato+'"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
             });
-            var triggerEl = document.querySelector('button[data-nav-idx="#k-pills-pago-servicios"]')
-            bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
         });
 
 
@@ -1494,7 +1492,6 @@
         console.log(for_item);
         $("#enviosCodePais").css('background-image', 'url("./assets/klu/img/icons/flags/'+for_item+'.svg")');
     });
-<<<<<<< HEAD
     $('select.flagOpc').each(function(i) {
       var selId = $(this).attr('id');
       // console.log(selId);
@@ -1503,15 +1500,14 @@
           // console.log(for_itemFlag);
           $("#"+selId).css('background-image', 'url("./assets/klu/img/icons/flags/'+for_itemFlag+'.svg")');
       });
-=======
 
     $("#fileDispersion").change(function(){
         if(this.files.length > 0){
             $(".file-drop-area").addClass("selectedFile");
         }
 
->>>>>>> 50aa94efd17a800b6949661ad2885869874886c2
     });
+  });
     </script>
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -927,30 +927,31 @@
                         <div class="row d-flex justify-content-center">
                             <div class="col-10">
                                 <div class="file-drop-area">
-                                    <img src="./assets/klu/img/icons/new-split-white.svg" />
+                                    <img class="new-split-white" src="./assets/klu/img/icons/new-split-white.svg" />
                                     <span class="choose-file-button">Seleccione un archivo CVS para cargar</span>
                                     <span class="file-message">o arrastrarlo y sueltalo aquí</span>
-                                    <input class="file-input" type="file" multiple>
+                                    <input class="file-input" id="fileDispersion" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" >
                                 </div>
-                                <p class="dispersion__parrafo">*Para ingresar el número de tarjeta o cuenta clabe se debe
-                                    colocar al inicio un apóstrofe</p>
-                                <p class="dispersion__parrafo--dos">(Ejemplo: '123XXX)</p>
+                                <div class="row mt-1">
+                                    <p class="dispersion__parrafo">*Para ingresar el número de tarjeta o cuenta clabe se debe
+                                        colocar al inicio un apóstrofe</p>
+                                    <p class="dispersion__parrafo--dos">(Ejemplo: '123XXX)</p>
+                                </div>
 
-                                <div class="row mt-5">
-                                    <table class="table dispersion__table" id="table-ticket">
+                                <div class="row mt-1">
+                                    <table class="table table__download">
                                         <tbody>
                                             <tr>
-                                                <td class="ticket__text-right">Descargar lista de bancos </img></td>
-                                                <td><img src="./assets/klu/img/icons/download-yellow.svg"></td>
+                                                <td class="ticket__text-right"><a href="#">Descargar lista de bancos </a></td>
+                                                <td><a href="#"><img src="./assets/klu/img/icons/download-yellow.svg" /></a></td>
                                             </tr>
                                             <tr>
-                                                <td class="ticket__text-right">Descargar plantillas para SPEI</td>
-                                                <td><img src="./assets/klu/img/icons/download-yellow.svg"></img></td>
+                                                <td class="ticket__text-right"><a  href="#">Descargar plantillas para SPEI</a></td>
+                                                <td><a href="#"><img src="./assets/klu/img/icons/download-yellow.svg" /></a></td>
                                             </tr>
                                             <tr>
-                                                <td class="ticket__text-right">Descargar plantillas para tarjetas
-                                                    corporativas</td>
-                                                <td><img src="./assets/klu/img/icons/download-yellow.svg"></img></td>
+                                                <td class="ticket__text-right"><a  href="#">Descargar plantillas para tarjetas corporativas</a></td>
+                                                <td><a href="#"><img src="./assets/klu/img/icons/download-yellow.svg"/></a></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1480,6 +1481,13 @@
         var for_item = $(this).val();
         console.log(for_item);
         $("#enviosCodePais").css('background-image', 'url("./assets/klu/img/icons/flags/'+for_item+'.svg")');
+    });
+
+    $("#fileDispersion").change(function(){
+        if(this.files.length > 0){
+            $(".file-drop-area").addClass("selectedFile");
+        }
+
     });
     </script>
 

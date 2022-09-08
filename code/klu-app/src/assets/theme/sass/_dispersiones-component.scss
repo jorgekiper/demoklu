@@ -99,13 +99,31 @@
     }
    
   }
+
+
+ .file-drop-area.selectedFile{
+     background-image: none !important;
+     background-color: var(--klu-color-grey-standart);
+     border: none !important;
+     img.new-split-white{
+         display: none;
+     }
+     i.iconFile{
+         display: block;
+     }
+ }
   .dispersion__parrafo, .dispersion__parrafo--dos{
     color: var(--klu-dark-gray-1);
     font-size: 0.85em;
     margin-bottom: 0%;
-
-
+    margin-top: 20px ;
+    margin-left: 0px !important;
   }
+
+  .dispersion__parrafo--dos{
+      margin-top: 5px !important;
+  }
+
   
   .file-input {
     position: absolute;
@@ -176,6 +194,21 @@
             justify-content: end;
         }
         
+    }
+}
+
+
+.table__download{
+    margin-top: 3%;
+    td{
+        border-bottom: 2px solid var(--klu-color-silver) ;
+        a{
+            text-decoration: none;
+            color: var(--klu-color-onix);
+            font-weight: 500;
+            @include fluid-type(0.5rem, 14px, 320px, 1200px);
+
+        }
     }
 }
 

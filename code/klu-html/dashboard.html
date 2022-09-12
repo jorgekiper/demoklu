@@ -484,7 +484,7 @@
                             <div class="botonera__tabcontainer">
                               <div class="stepSec">
                                 <form name="frmContacts" id="frmContacts" action="" method="POST">
-                                  <div class="stepSec__box" data-idx="datos-contactos">
+                                  <div class="stepSec__box stepSec__box--active" data-idx="datos-contactos">
                                     <div class="titleGeneric">
                                       <h4 class="titleGeneric__title">Mis Contactos</h4>
                                     </div><!-- end.botonera__titlegroup -->
@@ -619,15 +619,15 @@
                                       </div>
                                     </div><!-- end.row -->
                                   </div><!-- end.stepSec__box -->
-                                  <div class="stepSec__box stepSec__box--active" data-idx="datos-nuevos-contacto">
+                                  <div class="stepSec__box" data-idx="datos-nuevos-contacto">
                                     <div class="titleGeneric">
                                       <h4 class="titleGeneric__title">Nuevo Contacto</h4>
                                     </div><!-- end.botonera__titlegroup -->
                                     <div class="dataNew">
                                       <div class="row">
-                                        <div class="col-12">
+                                        <div class="col-12 mb-4">
                                           <label for="tipoCiuenta" class="form-label">Tipo de cuenta</label>
-                                          <select class="form-select botonera__inputs" id="tipoCiuenta">
+                                          <select class="form-select dataNew__select  btnInfoBanc" id="tipoCiuenta">
                                             <option  selected>Selecciona una opción...</option>
                                             <option value="Klu">Klu</option>
                                             <option value="Banco Azteca">Banco Azteca</option>
@@ -635,8 +635,8 @@
                                           </select>
                                         </div><!-- end.col-* -->
                                         <div class="col-6">
-                                          <label for="methodSend" class="form-label ">Método de evío</label>
-                                          <select class="form-select botonera__inputs" id="methodSend">
+                                          <label for="methodSend" class="form-label ">Método de envío</label>
+                                          <select class="form-select dataNew__select btnInfoBanc" id="methodSend">
                                             <option  selected>Selecciona una opción...</option>
                                             <option value="Correo">Correo</option>
                                             <option value="Telefono" >Teléfono</option>
@@ -644,22 +644,63 @@
                                           </select>
                                         </div><!-- end.col-* -->
                                         <div class="col-6">
-                                          <div id="Telefono">
-                                            <label for="numberContact" class="form-label">Confirmar número de teléfono</label>
-                                            <div class="input-group mb-3">
-                                              <select class="form-select input-group-text flagOpc" id="flagContactCountry">
-                                                <option value="mexico">+52</option>
-                                                <option value="argentina">+54</option>
-                                                <option value="usa">+1</option>
-                                              </select>
-                                              <input type="text" class="form-control" id="numberContact" placeholder="Confirmar número de teléfono" aria-label="Confirmar número de teléfono" aria-describedby="numberContact"
-                                              maxlength="10"
-                                              minlength="10">
-                                            </div> <!-- end.input-group -->
-                                          </div>
+                                          <div class="inptCustom inptCustom--active" id="Telefono">
+                                            <div class="frmInps__phone">
+                                              <label for="numberContact" class="form-label">Número de teléfono</label>
+                                              <div class="input-group mb-3">
+                                                <select class="form-select input-group-text flagOpc" id="flagContactCountry">
+                                                  <option value="mexico">+52</option>
+                                                  <option value="argentina">+54</option>
+                                                  <option value="usa">+1</option>
+                                                </select>
+                                                <input type="text" class="form-control" id="numberContact" placeholder="Número de teléfono" aria-label="Número de teléfono" aria-describedby="numberContact"
+                                                maxlength="10"
+                                                minlength="10">
+                                              </div> <!-- end.input-group -->
+                                            </div><!-- end.frmInps__phone -->
+                                          </div><!-- end.inptCustom -->
+                                          <div class="inptCustom" id="Correo">
+                                            <div class="frmInps__phone">
+                                              <label for="emailContact" class="form-label">Correo electrónico</label>
+                                              <input type="email" class="form-control" id="emailContact"  aria-describedby="emailContact">
+                                            </div><!-- end.frmInps__phone -->
+                                          </div><!-- end.inptCustom -->
+                                          <div class="inptCustom" id="Referencia">
+                                            <div class="frmInps__phone">
+                                              <label for="numRefContact" class="form-label">Referencia</label>
+                                              <input type="text" class="form-control" id="numRefContact"  aria-describedby="numRefContact">
+                                            </div><!-- end.frmInps__phone -->
+                                          </div><!-- end.inptCustom -->
+                                        </div><!-- end.col-* -->
+                                        <div class="col-12">
+                                          <div class="frmInps__phone">
+                                            <label for="aliasContact" class="form-label">Alias:</label>
+                                            <input type="text" class="form-control" id="aliasContact"  aria-describedby="aliasContact">
+                                          </div><!-- end.frmInps__phone -->
                                         </div><!-- end.col-* -->
                                       </div><!-- end.row -->
                                     </div><!-- end.dataNew -->
+                                    <div class="row justify-content-end mt-3 content-btn-serv">
+                                      <div class="col-md-3">
+                                        <button class="btn buttonsCusmCon" id="returnInicio" type="button">Anterior</button>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <button class="btn btn-secondary buttonsCusmCon" id="createContact" type="button">Crear contacto</button>
+                                      </div>
+                                    </div><!-- end.botón -->
+                                  </div><!-- end.stepSec__box -->
+                                  <div class="stepSec__box" data-idx="datos-gracias">
+                                    <div class="titlGroupCt">
+                                      <h4 class="titlGroupCt__title">Contacto agregado</h4>
+                                    </div><!-- end.titlGroupCt -->
+                                    <div class="thankCt">
+                                      <img src="./assets//klu/img/icons/thanks.svg" alt="Gracias">
+                                      <div class="thankCt__desc">
+                                        <h3>¡Exito!</h3>
+                                        <p>Tu contacto se creo<br>correctamente</p>
+                                        <button class="btn btn-secondary botonera__inputs" type="reset" id="btnRetunrDatos" style="max-width: 200px;">Continuar</button>
+                                      </div><!-- end.thankCt__desc -->
+                                    </div><!-- end.thankCt -->
                                   </div><!-- end.stepSec__box -->
                                 </form><!-- end.form -->
                               </div><!-- end.stepSec -->
@@ -1480,6 +1521,29 @@
               // console.log(valorDato);
               $('[data-idx="'+valorDato+'"]').addClass('stepSec__box--active');
               $('[data-idx="'+valorDato+'"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
+            });
+            //Step Agregar contacto
+            $('#addNewContact').click(function(e){
+              e.preventDefault();
+              $('[data-idx="datos-nuevos-contacto"]').addClass('stepSec__box--active');
+              $('[data-idx="datos-nuevos-contacto"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
+            });
+            $('#returnInicio').click(function(e){
+              e.preventDefault();
+              $('[data-idx="datos-contactos"]').addClass('stepSec__box--active');
+              $('[data-idx="datos-contactos"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
+            });
+            // Step #3
+            $('#createContact').click(function(e){
+              e.preventDefault();
+              $('[data-idx="datos-gracias"]').addClass('stepSec__box--active');
+              $('[data-idx="datos-gracias"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
+            });
+            // Step final reset
+            $('#btnRetunrDatos').click(function(){
+              $('#frmContacts')[0].reset();
+              $('[data-idx="datos-contactos"]').addClass('stepSec__box--active');
+              $('[data-idx="datos-contactos"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
             });
         });
 

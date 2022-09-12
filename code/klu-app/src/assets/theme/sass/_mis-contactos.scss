@@ -92,5 +92,20 @@
   }
 }
 .dataNew {
-  width: 100%; min-width: 700px; height: auto; padding: 0; margin: 0 auto 25px; position: relative; box-sizing: border-box;
+  width: 100%; max-width: 700px; height: auto; padding: 0; margin: 0 auto 25px; position: relative; box-sizing: border-box;
+  &__select {
+    width: 100%; height: auto; padding: 0.657rem 0.75rem; border: 1.5px solid var(--klu-color-grey-standart); border-radius: 4px; font-family: 'Montserrat'; font-style: normal; font-weight: 600; font-size: 13px; color: var(--klu-color-gray-light);
+    &:focus {
+      border-color: var(--klu-color-onix); box-shadow: none!important;
+    }
+  }
+}
+.inptCustom {
+  width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box; opacity: 0; visibility: hidden; z-index: -1; transition: opacity 300ms ease-in-out, visibility 0s, z-index 0s; position: absolute; left: 0; top: 0;
+  &--active {
+    opacity: 1; visibility: visible; z-index: 1; position: relative;
+  }
+}
+.buttonsCusmCon {
+  width: 100%;
 }

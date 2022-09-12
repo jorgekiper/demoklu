@@ -1513,6 +1513,7 @@
             // Script Step #4
             $('#btnReturnInit').click(function(e){
               e.preventDefault();
+              $('#frmPagoServicios')[0].reset();
               $('[data-idx="pago-servicios"]').addClass('stepSec__box--active');
               $('[data-idx="pago-servicios"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
             });

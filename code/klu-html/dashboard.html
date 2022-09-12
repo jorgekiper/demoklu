@@ -479,126 +479,146 @@
                             </div>
                         </div>
     
-                        <div class="tab-pane fade " id="k-pills-contactos" role="tabpanel"
-                            aria-labelledby="k-pills-contactos-tab">
-                            <div class="d-flex justify-content-center">
-                                <div class="botonera__tabcontainer">
-
-                                    <div class="botonera__titlegroup">
-                                        <h4 class="botonera__title">Mis contactos </h4>
-                                    </div>
-
-                                    <table class="table table-striped text-center" id="myTable">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Banco</th>
-                                                <th scope="col">Clabe</th>
-                                                <th scope="col">Alias</th>
-                                                <th scope="col">Beneficiario</th>
-                                                <th scope="col">Ultima modificación</th>
-                                                <th scope="col">Acciones</th>
-        
-                                            </tr>
-                                        </thead>
-                                        <tbody class="">
-                                            <tr class="">
-                                                <th scope="row">BBVA</th>
-                                                <td>9948... </td>
-                                                <td>Manu...</td>
-                                                <td>Manuel Pernia</td>
-                                                <td>17/03/1998 - 08:35 pm</td>
-                                                <td>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
-                                                    </a>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr class="">
-                                                <th scope="row">BBVA</th>
-                                                <td>9948... </td>
-                                                <td>Manu...</td>
-                                                <td>Manuel Pernia</td>
-                                                <td>17/03/1998 - 08:35 pm</td>
-                                                <td>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
-                                                    </a>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr class="">
-                                                <th scope="row">BBVA</th>
-                                                <td>9948... </td>
-                                                <td>Manu...</td>
-                                                <td>Manuel Pernia</td>
-                                                <td>17/03/1998 - 08:35 pm</td>
-                                                <td>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
-                                                    </a>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr class="">
-                                                <th scope="row">BBVA</th>
-                                                <td>9948... </td>
-                                                <td>Manu...</td>
-                                                <td>Manuel Pernia</td>
-                                                <td>17/03/1998 - 08:35 pm</td>
-                                                <td>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
-                                                    </a>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr class="">
-                                                <th scope="row">BBVA</th>
-                                                <td>9948... </td>
-                                                <td>Manu...</td>
-                                                <td>Manuel Pernia</td>
-                                                <td>17/03/1998 - 08:35 pm</td>
-                                                <td>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
-                                                    </a>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr class="">
-                                                <th scope="row">BBVA</th>
-                                                <td>9948... </td>
-                                                <td>Manu...</td>
-                                                <td>Manuel Pernia</td>
-                                                <td>17/03/1998 - 08:35 pm</td>
-                                                <td>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
-                                                    </a>
-                                                    <a>
-                                                        <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="row sn-style d-flex justify-content-end">
-                                        <button class="btn btn-secondary botonera__inputs" type="submit">Agregar
-                                            contacto</button>
-                                    </div>
-                                </div>
+                        <div class="tab-pane fade " id="k-pills-contactos" role="tabpanel" aria-labelledby="k-pills-contactos-tab">
+                          <div class="d-flex justify-content-center">
+                            <div class="botonera__tabcontainer">
+                              <div class="titleGeneric">
+                                <h4 class="titleGeneric__title">Mis Contactos</h4>
+                              </div><!-- end.botonera__titlegroup -->
+                              <form name="frmContacts" id="frmContacts" action="" method="POST">
+                                <div class="tableContacts">
+                                  <table class="table table-striped text-center" id="myTable">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Banco</th>
+                                          <th scope="col">Clabe/Referencia</th>
+                                          <th scope="col">Alias</th>
+                                          <!-- <th scope="col">Beneficiario</th> -->
+                                          <!-- <th scope="col">Ultima modificación</th> -->
+                                          <th scope="col">Acciones</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody class="">
+                                          <tr class="">
+                                              <th scope="row">BBVA</th>
+                                              <td>9948... </td>
+                                              <td>Manu...</td>
+                                              <!-- <td>Manuel Pernia</td> -->
+                                              <!-- <td>17/03/1998 - 08:35 pm</td> -->
+                                              <td class="accBtns">
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
+                                                  </a>
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
+                                                  </a>
+                                              </td>
+                                          </tr>
+                                          <tr class="">
+                                              <th scope="row">BBVA</th>
+                                              <td>9948... </td>
+                                              <td>Manu...</td>
+                                              <!-- <td>Manuel Pernia</td> -->
+                                              <!-- <td>17/03/1998 - 08:35 pm</td> -->
+                                              <td class="accBtns">
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
+                                                  </a>
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
+                                                  </a>
+                                              </td>
+                                          </tr>
+                                          <tr class="">
+                                              <th scope="row">BBVA</th>
+                                              <td>9948... </td>
+                                              <td>Manu...</td>
+                                              <!-- <td>Manuel Pernia</td> -->
+                                              <!-- <td>17/03/1998 - 08:35 pm</td> -->
+                                              <td class="accBtns">
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
+                                                  </a>
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
+                                                  </a>
+                                              </td>
+                                          </tr>
+                                          <tr class="">
+                                              <th scope="row">BBVA</th>
+                                              <td>9948... </td>
+                                              <td>Manu...</td>
+                                              <!-- <td>Manuel Pernia</td> -->
+                                              <!-- <td>17/03/1998 - 08:35 pm</td> -->
+                                              <td class="accBtns">
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
+                                                  </a>
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
+                                                  </a>
+                                              </td>
+                                          </tr>
+                                          <tr class="">
+                                              <th scope="row">BBVA</th>
+                                              <td>9948... </td>
+                                              <td>Manu...</td>
+                                              <!-- <td>Manuel Pernia</td> -->
+                                              <!-- <td>17/03/1998 - 08:35 pm</td> -->
+                                              <td class="accBtns">
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
+                                                  </a>
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
+                                                  </a>
+                                              </td>
+                                          </tr>
+                                          <tr class="">
+                                              <th scope="row">BBVA</th>
+                                              <td>9948... </td>
+                                              <td>Manu...</td>
+                                              <!-- <td>Manuel Pernia</td> -->
+                                              <!-- <td>17/03/1998 - 08:35 pm</td> -->
+                                              <td class="accBtns">
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/edit.svg" alt="ticket">
+                                                  </a>
+                                                  <a>
+                                                      <img src="./assets/klu/img/icons/trash.svg" alt="ticket">
+                                                  </a>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                </div><!-- end.tableContacts -->
+                                <div class="row sn-style d-flex justify-content-end align-items-center">
+                                  <div class="col-md-7">
+                                    <div class="pagCus">
+                                      <nav aria-label="Page navigation table">
+                                        <ul class="pagination justify-content-center">
+                                          <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><img src="./assets/klu/img/icons/arrow-left-pag.svg" alt="Left Arrow"></a>
+                                          </li>
+                                          <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item"><span class="page-link">...</span></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item">
+                                            <a class="page-link" href="#"><img src="./assets/klu/img/icons/arrow-right-pag.svg" alt="Left Arrow"></a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                    </div><!-- end.pagination -->
+                                  </div>
+                                  <div class="col-md-5">
+                                    <button class="btn btn-secondary botonera__inputs" type="button" style="width:100%;">Agregar contacto</button>
+                                  </div>
+                                </div><!-- end.row -->
+                              </form>
                             </div>
+                          </div>
                         </div>
     
                         <div class="tab-pane fade " id="k-pills-pago-servicios" role="tabpanel" aria-labelledby="k-pills-pago-servicios-tab">
@@ -606,7 +626,7 @@
                         <div class="d-flex justify-content-center">
                             <div class="botonera__tabcontainer">
                                 <div class="stepSec">
-                                  <form id="frmPagoServicios" action="">
+                                  <form id="frmPagoServicios" name="frmPagoServicios" action="" method="POST">
                                   <div class="stepSec__box stepSec__box--active" data-idx="pago-servicios">
                                     <div class="botonera__titlegroup">
                                         <h4 class="botonera__title">Pago de servicios</h4>

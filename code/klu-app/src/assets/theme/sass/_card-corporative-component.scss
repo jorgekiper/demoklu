@@ -1,7 +1,9 @@
 /*****************************************
 Balances component
 *****************************************/
-.corporative-card{}
+.corporative-card {
+   width: 100%; height: auto; padding: 67px 0; margin: 0; position: relative; box-sizing: border-box;
+}
 
 .corporative-card__title{
    margin-bottom: 30px;

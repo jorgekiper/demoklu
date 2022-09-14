@@ -122,7 +122,7 @@
                       </tr>
                     </thead>
                     <tbody class="corporative__table-body">
-                      <tr class="tData tData--active">
+                      <tr class="tData">
                         <th scope="row">4423 8899 5683 8776</th>
                         <td>Manul Pernia Politan</td>
                         <td>manuel@gmail.com</td>
@@ -134,8 +134,8 @@
                               <span></span>
                             </label>
                           </div><!-- end.switchCus -->
-                          <button id="deleteCol" class="trashBtn" type="button"><img src="./assets/klu/img/icons/corporative-card/trash.svg" alt=""></button><!-- end#deleteCol -->
-                          <button id="open-edit-1" class="btnOpenInfo" type="button"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></button><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
+                          <button id="deleteCol" class="trashBtn" type="button" data-bs-toggle="modal" data-bs-target="#twoVerificationModal"><img src="./assets/klu/img/icons/corporative-card/trash.svg" alt=""></button><!-- end#deleteCol -->
+                          <a href="javascript:void(0);" id="open-edit-1" class="btnOpenInfo"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></a><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
                         </td>
                       </tr>
                       <tr id="info-open-edit-1" class="ctInfoTar"><!-- agrega clase (.ctInfoTar--open) elNumeroEsElImportante -->
@@ -200,7 +200,7 @@
                             </label>
                           </div><!-- end.switchCus -->
                           <button id="deleteCol-2" class="trashBtn" type="button"><img src="./assets/klu/img/icons/corporative-card/trash.svg" alt=""></button><!-- end#deleteCol -->
-                          <button id="open-edit-2" class="btnOpenInfo" type="button"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></button><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
+                          <a href="javascript:void(0);" id="open-edit-2" class="btnOpenInfo"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></a><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
                         </td>
                       </tr>
                       <tr id="info-open-edit-2" class="ctInfoTar"><!-- elNumeroEsElImportante -->
@@ -265,7 +265,7 @@
                             </label>
                           </div><!-- end.switchCus -->
                           <button id="deleteCol-3" class="trashBtn" type="button"><img src="./assets/klu/img/icons/corporative-card/trash.svg" alt=""></button><!-- end#deleteCol -->
-                          <button id="open-edit-3" class="btnOpenInfo" type="button"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></button><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
+                          <a href="javascript:void(0);" id="open-edit-3" class="btnOpenInfo"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></a><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
                         </td>
                       </tr>
                       <tr id="info-open-edit-3" class="ctInfoTar"><!-- elNumeroEsElImportante -->
@@ -330,7 +330,7 @@
                             </label>
                           </div><!-- end.switchCus -->
                           <button id="deleteCol-4" class="trashBtn" type="button"><img src="./assets/klu/img/icons/corporative-card/trash.svg" alt=""></button><!-- end#deleteCol -->
-                          <button id="open-edit-4" class="btnOpenInfo" type="button"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></button><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
+                          <a href="javascript:void(0);" id="open-edit-4" class="btnOpenInfo"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></a><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
                         </td>
                       </tr>
                       <tr id="info-open-edit-4" class="ctInfoTar"><!-- elNumeroEsElImportante -->
@@ -386,72 +386,123 @@
                   </table><!-- end.table -->
                 </div><!-- end.tableCorp -->
               </div><!-- end.col-12 -->
+              <div class="col-12 d-flex justify-content-center">
+                <nav aria-label="Page navigation example ">
+                  <ul class="pagination corporative__card-space">
+                    <li class="page-item">
+                      <a class="page-link page-previus" href="#" aria-label="Previous">
+                        <span aria-hidden="true">
+                          <img class="pagination___img--previus" src="./assets/klu/img/icons/pagination/previus.png" alt="Previus Icon" />
+                        </span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">..</a></li>
+                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                    <li class="page-item">
+                      <a class="page-link page-next" href="#" aria-label="Next">
+                        <span aria-hidden="true">
+                          <img class="pagination___img--next" src="./assets/klu/img/icons/pagination/next.png" alt="Next Icon" />
+                        </span>
+                      </a>
+                    </li>
+                  </ul><!-- end.ul.pagination -->
+                </nav><!-- end.nav -->
+              </div><!-- end.col-* -->
             </div><!-- end.row -->
           </div><!-- end#pills-corporative-card-home -->
           <div class="tab-pane fade" id="pills-add-balance" role="tabpanel" aria-labelledby="pills-add-balance-tab">
             <div class="row">
-              <div class="col-md-12">
-                <table class="table table-striped corporative__table" id="Table__cardCorporative">
-                  <thead class="corporative__table-title">
-                    <tr>
-                      <th scope="col">Tarjeta</th>
-                      <th scope="col">Nombre</th>
-                      <th scope="col">Correo</th>
-                      <th scope="col">Saldo</th>
-                    </tr>
-                  </thead>
-                  <tbody class="corporative__table-body">
-                    <tr class="">
-                      <th scope="row">9999 8899 5683 8776</th>
-                      <td>Manul Pernia Politan</td>
-                      <td>manuel@gmail.com</td>
-                      <td>$124,000.00 </td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">9999 8899 5683 8776</th>
-                      <td>Manul Pernia Politan</td>
-                      <td>manuel@gmail.comn</td>
-                      <td>$124,000.00 </td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">9999 8899 5683 8776</th>
-                      <td>Manul Pernia Politan</td>
-                      <td>manuel@gmail.com</td>
-                      <td>$124,000.00 </td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">9999 8899 5683 8776</th>
-                      <td>Manul Pernia Politan</td>
-                      <td>manuel@gmail.com</td>
-                      <td>$124,000.00 </td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">9999 8899 5683 8776</th>
-                      <td>Manul Pernia Politan</td>
-                      <td>manuel@gmail.com</td>
-                      <td>$124,000.00 </td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">9999 8899 5683 8776</th>
-                      <td>Manul Pernia Politan</td>
-                      <td>manuel@gmail.com</td>
-                      <td>$124,000.00 </td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">9999 8899 5683 8776</th>
-                      <td>Manul Pernia Politan</td>
-                      <td>manuel@gmail.com</td>
-                      <td>$124,000.00 </td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">9999 8899 5683 8776</th>
-                      <td>Manul Pernia Politan</td>
-                      <td>manuel@gmail.com</td>
-                      <td>$124,000.00 </td>
-                    </tr>
-                  </tbody>
-                </table><!-- end.table -->
+              <div class="col-12">
+                
               </div><!-- end.col-* -->
+              <div class="col-12">
+                <div class="tableCorp">
+                  <table class="table table-striped  corporative__table" id="Table__cardCorporative">
+                    <thead class="corporative__table-title">
+                      <tr>
+                        <th scope="col">Solicitud</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Número de tarjetas</th>
+                        <th scope="col">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody class="corporative__table-body">
+                      <tr class="tData">
+                        <th scope="row">#02987</th>
+                        <td>Manul Pernia Politan</td>
+                        <td>manuel@gmail.com</td>
+                        <td>200</td>
+                        <td class="accBtns">
+                          <a href="javascript:void(0);" id="open-soli-1" class="btnOpenInfo"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></a><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
+                        </td>
+                      </tr>
+                      <tr id="info-open-soli-1" class="ctInfoTar"><!-- agrega clase (.ctInfoTar--open) elNumeroEsElImportante -->
+                        <td colspan="5">
+                          <div class="row">
+                            <div class="col-12">
+                              
+                            </div><!-- end.col-* -->
+                            <div class="col-12">
+
+                            </div><!-- end.col-* -->
+                          </div><!-- end.row -->
+                        </td><!-- end.td -->
+                      </tr><!-- end.ctInfoTar -->
+
+                      <tr class="tData">
+                        <th scope="row">#02987</th>
+                        <td>Manul Pernia Politan</td>
+                        <td>manuel@gmail.com</td>
+                        <td>200</td>
+                        <td class="accBtns">
+                          <a href="javascript:void(0);" id="open-soli-2" class="btnOpenInfo"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></a><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
+                        </td>
+                      </tr>
+                      <tr id="info-open-soli-2" class="ctInfoTar"><!-- elNumeroEsElImportante -->
+                        <td colspan="5">
+                          <div class="row">
+                            <div class="col-12">
+
+                            </div><!-- end.col-* -->
+                            <div class="col-12">
+
+                            </div><!-- end.col-* -->
+                          </div><!-- end.row -->
+                        </td><!-- end.td -->
+                      </tr><!-- end.ctInfoTar -->
+
+                      <tr class="tData">
+                        <th scope="row">#02987</th>
+                        <td>Manul Pernia Politan</td>
+                        <td>manuel@gmail.com</td>
+                        <td>200</td>
+                        <td class="accBtns">
+                          <a href="javascript:void(0);" id="open-soli-3" class="btnOpenInfo"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></a><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
+                        </td>
+                      </tr>
+                      <tr id="info-open-soli-3" class="ctInfoTar"><!-- elNumeroEsElImportante -->
+                        <td colspan="5">
+                          <div class="row">
+                            <div class="col-12">
+
+                            </div><!-- end.col-* -->
+                            <div class="col-12">
+
+                            </div><!-- end.col-* -->
+                          </div><!-- end.row -->
+                        </td><!-- end.td -->
+                      </tr><!-- end.ctInfoTar -->
+
+                    </tbody><!-- end-tbody -->
+                  </table><!-- end.table -->
+                </div><!-- end.tableCorp -->
+              </div><!-- end.col-12 -->
             </div><!-- end.row> -->
           </div><!-- end#pills-add-balance -->
           <div class="tab-pane fade" id="pills-estado-cuenta" role="tabpanel" aria-labelledby="pills-estado-cuenta-tab">
@@ -463,37 +514,7 @@
           </div><!-- end#pills-estado-cuenta -->
         </div><!-- end#pills-corporative-card" -->
       </div><!-- end.row -->
-      <div class="row">
-          <div class="col d-flex justify-content-center">
-              <nav aria-label="Page navigation example ">
-                  <ul class="pagination corporative__card-space">
-                      <li class="page-item">
-                          <a class="page-link page-previus" href="#" aria-label="Previous">
-                              <span aria-hidden="true">
-                                  <img class="pagination___img--previus"
-                                      src="./assets/klu/img/icons/pagination/previus.png" alt="Previus Icon" />
-                              </span>
-                          </a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#">5</a></li>
-                      <li class="page-item"><a class="page-link" href="#">..</a></li>
-                      <li class="page-item"><a class="page-link" href="#">12</a></li>
-                      <li class="page-item">
-                          <a class="page-link page-next" href="#" aria-label="Next">
-                              <span aria-hidden="true">
-                                  <img class="pagination___img--next"
-                                      src="./assets/klu/img/icons/pagination/next.png" alt="Next Icon" />
-                              </span>
-                          </a>
-                      </li>
-                  </ul>
-              </nav>
-          </div>
-      </div>
+      
     </div><!-- end.container -->
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -548,17 +569,61 @@
       </div>
   </footer>
 
+  <!-- Modal -->
+  <div class="modal fade" id="twoVerificationModal" tabindex="-1" aria-labelledby="modalTwoVerification" aria-hidden="true">
+    <div class="modalGeneric modal-dialog">
+      <div class="modal-content">
+        <div class="modalHeader">
+          <h5 class="modalGeneric__title" id="modalTwoVerification">Two-Factor Authentication</h5>
+          <p class="modalGeneric__desc">Éste movimiento está protegido con una aplicación de autenticación.</p>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+          <div class="modalGeneric__box">
+            <label for="SenCodeVeri" class="form-label">Código</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" id="SenCodeVeri" name="SenCodeVeri">
+            </div><!-- end.input-group -->
+            <p>¿No tienes habilitada la aplicación de autenticación? Puedes configurarla <a href="">aquí</a>.</p>
+          </div><!-- end.modalGeneric__box -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modalGeneric__btn btn cancelBtn" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="modalGeneric__btn btn codeBtn">Verificar Código</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
     <script>
       jQuery(document).ready(function($){
-        $('.btnOpenInfo').click(function(e) {
+        tableTarjetas();
+      });
+      function tableTarjetas() {
+        $(document).on('click', '.btnOpenInfo', function(e) {
+          e.preventDefault();
           var valorDato = $(this).attr('id');
-          // console.log(valorDato);
+          var elle = $(this);
+          // Activar <tr>
+          elle.parent().parent().addClass('tData--active');
+          elle.parent().parent().siblings().removeClass('tData--active');
+          // Agergar class active botón
+          $(this).addClass('btnOpenInfo--open');
+          $(this).closest('div').find('a.btnOpenInfo').not(this).removeClass('btnOpenInfo--open');
+          // Abre cuepro de campos
           $('#info-'+valorDato).addClass('ctInfoTar--open');
           $('#info-'+valorDato).siblings('.ctInfoTar').removeClass('ctInfoTar--open');
         });
-      });
+        $(document).on('click', '.btnOpenInfo--open', function(e){
+          e.preventDefault();
+          var idClose = $(this).attr('id');
+          $(this).parent().parent().removeClass('tData--active');
+          $('#info-'+idClose).removeClass('ctInfoTar--open');
+          $(this).removeClass('btnOpenInfo--open');
+        });
+      }
     </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->

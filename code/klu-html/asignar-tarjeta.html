@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./assets/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <link href="../klu-app/src/assets/theme/css/style.css" rel="stylesheet">
+
+    <link href="../klu-app/src/assets/theme/base/klu-colors-v1.0.0.css" rel="stylesheet">
+    <link href="../klu-app/src/assets/theme/base/navbar-component-style-v1.0.css" rel="stylesheet">
+    <link href="../klu-app/src/assets/theme/base/card-corporative-component-style-v1.0.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/bs5/dt-1.12.1/af-2.4.0/b-2.2.3/b-html5-2.2.3/b-print-2.2.3/cr-1.5.6/date-1.1.2/fc-4.1.0/fh-3.2.4/kt-2.7.0/r-2.3.0/rg-1.2.0/rr-1.2.8/sc-2.0.7/sb-1.3.4/sp-2.0.2/sl-1.4.0/sr-1.1.1/datatables.min.css" />
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/v/bs5/dt-1.12.1/af-2.4.0/b-2.2.3/b-html5-2.2.3/b-print-2.2.3/cr-1.5.6/date-1.1.2/fc-4.1.0/fh-3.2.4/kt-2.7.0/r-2.3.0/rg-1.2.0/rr-1.2.8/sc-2.0.7/sb-1.3.4/sp-2.0.2/sl-1.4.0/sr-1.1.1/datatables.min.js"></script>
+
+    <title>Asignar Tarjeta</title>
+</head>
+
+<body>
+
+    <!-- nav bar init -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container nav-container">
+          <a class="navbar-brand" href="https://klu.mx/">
+          <img src="./assets/klu/img/icons/general-logo-full.svg" alt="Klu" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+              </div>
+              <div class="d-flex">
+                  <a class="pe-2" href="#">
+                  <img src="./assets/klu/img/icons/notify-active.svg" alt="bell" />
+                  </a>
+                  <a href="#">
+                  <img src="./assets/klu/img/icons/avatar.svg" alt="avatar" />
+                  </a>
+              </div>
+          </div>
+      </div>
+    </nav> <!-- nav bar end -->
+
+    <div class="container corporative-card">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="corporative-card__title">Asignar Tarjeta</h4>
+        </div>
+        <div class="col-md-6">
+          <div class="text-end">
+            <button class="corporative-card__return-home btn btn-link" type="submit">
+              <img src="./assets/klu/img/icons/myaccount/back-arrow.svg" /> Volver a mi cuenta
+            </button>
+          </div>
+        </div>
+      </div><!-- end.row -->
+
+      <div class="row">
+        <div class="col-12">
+          <div class="solictudTable">
+            <div class="row">
+              <div class="col-6 mb-3">
+                <div class="solictudTable__phone">
+                  <label for="numTarjetaSoli" class="form-label">Ingresa los 16 dígitos</label>
+                  <input type="number" class="form-control" id="numTarjetaSoli" aria-describedby="numTarjetaSoli" placeholder="100">
+                </div><!-- end.solictudTable__phone -->
+              </div><!-- end.col-* -->
+              <div class="col-6 mb-3">
+                <div class="solictudTable__phone">
+                  <label for="numTarjetaSoli-conf" class="form-label">Confirma los 16 digitos</label>
+                  <input type="number" class="form-control" id="numTarjetaSoli-conf" aria-describedby="numTarjetaSoli-conf" placeholder="100">
+                </div><!-- end.solictudTable__phone -->
+              </div><!-- end.col-* -->
+              <div class="col-6 mb-3">
+                <div class="solictudTable__phone">
+                  <label for="aliasInpt" class="form-label">Alias</label>
+                  <input type="text" class="form-control" id="aliasInpt" aria-describedby="aliasInpt" placeholder="Nombre completo">
+                </div><!-- end.solictudTable__phone -->
+              </div><!-- end.col-* -->
+              <div class="col-6 mb-3">
+                <div class="solictudTable__phone">
+                  <label for="emailContact" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="emailContact"  aria-describedby="emailContact" placeholder="admin@admin.com">
+                </div><!-- end.solictudTable__phone -->
+              </div><!-- end.col-* -->
+              <div class="col-6 mb-3">
+                <div class="solictudTable__pass">
+                  <label for="passInpt" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control pass" id="passInpt" aria-describedby="passInpt" placeholder="********">
+                  <div class="togglePass" data-pass="passInpt">
+                    <span class="passEye"></span>
+                  </div>
+                </div><!-- end.solictudTable__phone -->
+              </div><!-- end.col-* -->
+              <div class="col-6 mb-3">
+                <div class="solictudTable__pass">
+                  <label for="passInpt-conf" class="form-label">Confirmar contraseña</label>
+                  <input type="password" class="form-control pass" id="passInpt-conf" aria-describedby="passInpt-conf" placeholder="********">
+                  <div class="togglePass" data-pass="passInpt-conf">
+                    <span class="passEye"></span>
+                  </div>
+                </div><!-- end.solictudTable__phone -->
+              </div><!-- end.col-* -->
+              <div class="col-6">
+                <div class="solictudTable__phone">
+                  <label for="tagsinput" class="form-label">Tag</label>
+                  <input type="text" class="form-control" id="tagsinput" name="tagsinput" data-role="tagsinput">
+                </div><!-- end.solictudTable__phone -->
+              </div><!-- end.col-* -->
+            </div><!-- end.row -->
+          </div><!-- end.dataNew -->
+          <div class="row justify-content-end mt-3 content-btn-serv">
+            <div class="col-md-4">
+              <button class="btn btn-secondary buttonsCusmCon" id="solicitarTar" type="button">Solicitar tarjeta</button>
+            </div>
+          </div><!-- end.botón -->
+          <div class="row">
+            <div class="col-12">
+              <hr class="dividerTarjeta">
+            </div><!-- end.col-* -->
+          </div><!-- end.row -->
+        </div><!-- end.col-* -->
+      </div><!-- end.row -->
+      
+    </div><!-- end.container -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <footer id="klu-footer" class="container-fluid box-shadow footer">
+      <div class="container footer_container">
+          <div class="row">
+              <div class="col-md-3">
+                  <div>
+                      <a class="navbar-brand" href="#">
+                          <img src="./assets/klu/img/icons/general-logo-full.svg" alt="Klu">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-md-9 text-end">
+                  <div>
+                      <p class="footer__group-links">
+                          Aviso de privacidad | Términos y condiciones | Comisiones | Políticas de Cookies | FAQ'S
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="row pt-3">
+              <div class="col">
+                  <p class="footer__derechos">
+                      Klu® 2022. Todos los derechos reservados.
+                  </p>
+              </div>
+              <div class="col">
+                  <div class="text-end">
+                      <a class="navbar-brand" href="https://www.facebook.com/klumexico/">
+                          <img src="./assets/klu/img/icons/facebook.svg" alt="facebook">
+                      </a>
+                      <a class="navbar-brand" href="https://twitter.com/klu_mex">
+                          <img src="./assets/klu/img/icons/twitter.svg" alt="twitter">
+                      </a>
+                      <a class="navbar-brand" href="https://www.instagram.com/klu.mx/">
+                          <img src="./assets/klu/img/icons/instagram.svg" alt="instagram">
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="row pt-3 text-center">
+              <p class="footer__parrafo">
+                  “En términos de la disposición octava transitoria de la Ley para Regular las Instituciones de Tecnología
+                  Financiera publicada en el Diario Oficial de la Federación el 9 de marzo de 2018, la autorización para
+                  llevar a cabo operaciones a través de nuestra plataforma se encuentra en trámite ante la Comisión
+                  Nacional Bancaria y de Valores por lo que no es una actividad supervisada por las autoridades
+                  mexicanas”.
+              </p>
+          </div>
+      </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="twoVerificationModal" tabindex="-1" aria-labelledby="modalTwoVerification" aria-hidden="true">
+    <div class="modalGeneric modal-dialog">
+      <div class="modal-content">
+        <div class="modalHeader">
+          <h5 class="modalGeneric__title" id="modalTwoVerification">Two-Factor Authentication</h5>
+          <p class="modalGeneric__desc">Éste movimiento está protegido con una aplicación de autenticación.</p>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+          <div class="modalGeneric__box">
+            <label for="SenCodeVeri" class="form-label">Código</label>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" id="SenCodeVeri" name="SenCodeVeri">
+            </div><!-- end.input-group -->
+            <p>¿No tienes habilitada la aplicación de autenticación? Puedes configurarla <a href="">aquí</a>.</p>
+          </div><!-- end.modalGeneric__box -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="modalGeneric__btn btn cancelBtn" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="modalGeneric__btn btn codeBtn">Verificar Código</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+    <script>
+      jQuery(document).ready(function($){
+        $('[data-pass]').click(function(){
+          let dataVal = $(this).data('pass');
+          let input = $(this).prev();
+          // console.log(input + dataVal);
+          $('[data-pass="'+dataVal+'"]').children().toggleClass('passEye passEye--off-outline');
+          input.attr('type', input.attr('type') === 'password' ? 'text' : 'password');
+        });
+      });
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

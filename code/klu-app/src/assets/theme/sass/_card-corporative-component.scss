@@ -21,9 +21,10 @@ Balances component
 }
 
 .corporative__card-button{
-   width: 300px;
-   height: 40px;
-   margin-left:250px;
+   width: 300px; height: 40px; margin-left:250px; background-color: var(--klu-secondary-color); border-color: var(--klu-secondary-color);
+   &:hover {
+    background-color: var(--klu-color-yellow-hover); border-color: var(--klu-color-yellow-hover);
+   }
 }
 
 /*****************************************
@@ -263,7 +264,100 @@ card-corporative tables
   & .modal-body {
     padding: 0 1rem 0; margin: 0 0 1rem; box-sizing: border-box;
   }
-  & .modal-footer {
+}
+.solictudTable {
+  width: 100%; height: auto; padding: 0; margin: 0 auto 25px; position: relative; box-sizing: border-box;
+  &__select {
+    width: 100%; height: auto; padding: 0.657rem 0.75rem; border: 1.5px solid var(--klu-color-grey-standart); border-radius: 4px; font-family: 'Montserrat'; font-style: normal; font-weight: 600; font-size: 13px; color: var(--klu-color-gray-light);
+    &:focus {
+      border-color: var(--klu-color-onix); box-shadow: none!important;
+    }
+  }
+  &__phone {
+    width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box;
+    & .input-group-text {
+      color: var(--klu-color-gray-light); background-color: var(--klu-white); border: 1px solid var(--klu-color-grey-standart); border-radius: 4px; padding: 0.657rem 0.75rem;
+    }
+    & input.form-control {
+      background: var(--klu-white)!important; padding: 15px 0.75rem; flex: 1 1 auto;
+    }
+    .flagOpc {
+      background:  url('../../images/icons/flags/mexico.svg') white;
+      background-repeat: no-repeat !important;
+      background-position-x: 10px !important;
+      background-position-y: 50% !important;
+      padding-left: 38px !important;
+      color: var(--klu-color-gray-table);
+      width: 78px!important;
+      padding-right: 0%;
+      float: left;
+      display: flex;
+      border-radius: 4px 0 0 4px;
+      border: 1.5px solid var(--klu-color-grey-standart);
+      flex: 0 1 auto;
+      &:focus {
+        border-color: var(--klu-color-onix); outline: 0; box-shadow: none!important;
+      }
+    }
+  }
+  &__pass {
+    width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box;
+    & .input-group-text {
+      color: var(--klu-color-gray-light); background-color: var(--klu-white); border: 1px solid var(--klu-color-grey-standart); border-radius: 4px; padding: 0.657rem 0.75rem;
+    }
+    & input.form-control {
+      background: var(--klu-white)!important; padding: 15px 0.75rem; flex: 1 1 auto;
+    }
+    & .togglePass {
+      width: auto; height: auto; display: block; cursor: pointer; background-color: transparent; border: 0; margin: 0; padding: 0; position: absolute; bottom: 13px; right: 10px; z-index: 1; text-align: center;
+      & .passEye {
+        background-image: url('../../../../../klu-html/assets/klu/img/icons/asignar/eye.svg'); background-position: center; background-repeat: no-repeat; background-size: 24px 24px; width: 24px; height: 24px; display: block;
+        &--off-outline {
+          background-image: url('../../../../../klu-html/assets/klu/img/icons/asignar/eye-close.svg'); background-position: center; background-repeat: no-repeat; background-size: 24px 24px; width: 24px; height: 24px; display: block;
+        }
+      }
+    }
+  }
+}
+hr.dividerTarjeta {
+  margin: 50px 0 0; background-color: var(--klu-color-silver); height: 1.5px;
+}
+.statusSend {
+  width: 100%; height: auto; padding: 0; margin: 0 0 30px; position: relative; box-sizing: border-box;
+  &__list {
+    display: flex; align-items: flex-start; justify-content: center; margin: 0; padding: 0; list-style-type: none;
+  }
+  &__items {
+    list-style-type: none; margin: 0; padding: 0 50px 0 0; position: relative; width: 160px; height: auto; box-sizing: border-box;
+    &:after {
+      content: ''; width: 100%; height: 14px; position: absolute; top: 40px; right: -50px; z-index: 1; background-color: var(--klu-color-grey-02);
+    }
+    &:last-child {
+      padding: 0 50px 0 0;
+      &:after {
+        display: none;
+      }
+    }
+    &.complete {
+      & .statusSend__img {
+        filter: grayscale(0);
+      }
+      &:after {
+        background-color: var(--klu-secondary-color);
+      }
+    }
+  }
+  &__img {
+    display: block; width: 100%; max-width: 140px; height: auto; padding: 0; margin: 0 auto 35px; border: 0; z-index: 2; position: relative; filter: grayscale(1); transition: all 250ms ease-in;
+  }
+  &__desc {
+    display: block; width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box; z-index: 2; position: relative;
+    & h3 {
+      margin: 0 0 10px; padding: 0; font-family: 'Montserrat'; font-weight: 700; font-size: 17px; text-align: center; color: #2F2F2F;
+    }
+    & p {
+      margin: 0; padding: 0; font-family: 'Montserrat'; font-weight: 600; font-size: 10px; text-align: center; color: #2F2F2F;
+    }
   }
 }
 

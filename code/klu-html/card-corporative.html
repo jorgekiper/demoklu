@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
     <link href="../klu-app/src/assets/theme/css/style.css" rel="stylesheet">
-    
+
     <link href="../klu-app/src/assets/theme/base/klu-colors-v1.0.0.css" rel="stylesheet">
     <link href="../klu-app/src/assets/theme/base/navbar-component-style-v1.0.css" rel="stylesheet">
     <link href="../klu-app/src/assets/theme/base/card-corporative-component-style-v1.0.css" rel="stylesheet">
@@ -57,226 +57,444 @@
     </nav> <!-- nav bar end -->
 
     <div class="container corporative-card">
-        <div class="row">
-            <div class="col-md-6">
-                <h4 class="corporative-card__title">Tarjetas corporativa</h4>
-            </div>
-            <div class="col-md-6">
-                <div class="text-end">
-                    <button class="corporative-card__return-home btn btn-link" type="submit"><img
-                            src="./assets/klu/img/icons/myaccount/back-arrow.svg" /> Volver a mi cuenta</button>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-md-6">
+              <h4 class="corporative-card__title">Tarjetas corporativa</h4>
         </div>
-
-        <div class="row">
-            <ul class="nav nav-pills mb-3" id="corporative-card-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-corporative-card-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-corporative-card-home" type="button" role="tab"
-                        aria-controls="pills-corporative-card-home" aria-selected="true"><img
-                            src="./assets/klu/img/icons/card.svg" /> Mis tarjetas corporativas</button>
-
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-add-balance-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-add-balance" type="button" role="tab" aria-controls="pills-add-balance"
-                        aria-selected="false"><img src="./assets/klu/img/icons/corporative-card/card-2.svg" /> Agregar saldo</button>
-                </li>
-            </ul>
+        <div class="col-md-6">
+          <div class="text-end">
+            <button class="corporative-card__return-home btn btn-link" type="submit">
+              <img src="./assets/klu/img/icons/myaccount/back-arrow.svg" /> Volver a mi cuenta
+            </button>
+          </div>
         </div>
-        <div class="row">
-            <label class="corporative__card-space">Filtrar por tarjeta</label>
-            <div class="col-md-6">
+      </div><!-- end.row -->
 
-                <input class="corporative__card-input" placeholder="4423 8899 5683 8776"></input>
-                <button class="corporative__filtro btn btn-secondary"><img src="./assets/klu/img/icons/corporative-card/filter.svg" />
-                    Filtros</button>
-            </div>
-
-            <div class="col-md-6">
-                    <button class="btn btn-secondary corporative__card-button" type="submit">Asignar tarjeta</button>
-            </div>
-
-
-            <div class="tab-content corporative-card__tabs" id="pills-corporative-card">
-                <div class="tab-pane fade show active" id="pills-corporative-card-home" role="tabpanel"
-                    aria-labelledby="pills-corporative-card-tab">
-
-
-                    <div class="row">
-                            <table class="table table-striped  corporative__table"
-                                id="Table__cardCorporative">
-                                <thead class="corporative__table-title">
-                                    <tr>
-                                        <th scope="col">Tarjeta</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Correo</th>
-                                        <th scope="col">Saldo</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="corporative__table-body">
-                                    <tr class="">
-                                        <th scope="row">4423 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">4423 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.comn</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">4423 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">4423 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">4423 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">4423 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">4423 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">4423 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                    </div>
-
-                </div>
-                <div class="tab-pane fade" id="pills-add-balance" role="tabpanel"
-                    aria-labelledby="pills-add-balance-tab">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <table class="table table-striped corporative__table"
-                                id="Table__cardCorporative">
-                                <thead class="corporative__table-title">
-                                    <tr>
-                                        <th scope="col">Tarjeta</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Correo</th>
-                                        <th scope="col">Saldo</th>
-                                    </tr>
-                                    </thead>
-                                <tbody class="corporative__table-body">
-                                    <tr class="">
-                                        <th scope="row">9999 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">9999 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.comn</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">9999 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">9999 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">9999 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">9999 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">9999 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                    <tr class="">
-                                        <th scope="row">9999 8899 5683 8776</th>
-                                        <td>Manul Pernia Politan</td>
-                                        <td>manuel@gmail.com</td>
-                                        <td>$124,000.00 </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
+      <div class="row">
+        <div class="col-12">
+          <div class="tabControls">
+            <ul class="tabControls__nav nav nav-pills mb-3" id="corporative-card-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-corporative-card-tab" data-bs-toggle="pill" data-bs-target="#pills-corporative-card-home" type="button" role="tab" aria-controls="pills-corporative-card-home" aria-selected="true">
+                  <img src="./assets/klu/img/icons/card.svg" /> Mis tarjetas corporativas
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-add-balance-tab" data-bs-toggle="pill" data-bs-target="#pills-add-balance" type="button" role="tab" aria-controls="pills-add-balance" aria-selected="false">
+                  <img src="./assets/klu/img/icons/corporative-card/card-2.svg" /> Solicitar tarjeta
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-estado-cuenta-tab" data-bs-toggle="pill" data-bs-target="#pills-estado-cuenta" type="button" role="tab" aria-controls="pills-estado-cuenta" aria-selected="false">
+                  <img src="./assets/klu/img/icons/corporative-card/comprobante.svg" /> Estado de cuenta
+                </button>
+              </li>
+            </ul><!-- end.tabControls__nav -->
+          </div><!-- end.tabControls -->
+        </div><!-- end.col-* -->
+      </div><!-- end.row -->
+      <div class="row">
+        <div class="col-12">
+          <label class="corporative__card-space">Filtrar por tarjeta</label>
+        </div><!-- end.col-* -->
+        <div class="col-md-6">
+          <input class="corporative__card-input" placeholder="4423 8899 5683 8776">
+          <button class="corporative__filtro btn btn-secondary">
+            <img src="./assets/klu/img/icons/corporative-card/filter.svg" />Filtros
+          </button>
+        </div><!-- end.col-6 -->
+        <div class="col-md-6">
+          <button class="btn btn-secondary corporative__card-button" type="submit">Asignar tarjeta</button>
+        </div><!-- end.col-6 -->
+        <div class="tab-content corporative-card__tabs" id="pills-corporative-card">
+          <div class="tab-pane fade show active" id="pills-corporative-card-home" role="tabpanel" aria-labelledby="pills-corporative-card-tab">
             <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <nav aria-label="Page navigation example ">
-                        <ul class="pagination corporative__card-space">
-                            <li class="page-item">
-                                <a class="page-link page-previus" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">
-                                        <img class="pagination___img--previus"
-                                            src="./assets/klu/img/icons/pagination/previus.png" alt="Previus Icon" />
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link" href="#">..</a></li>
-                            <li class="page-item"><a class="page-link" href="#">12</a></li>
-                            <li class="page-item">
-                                <a class="page-link page-next" href="#" aria-label="Next">
-                                    <span aria-hidden="true">
-                                        <img class="pagination___img--next"
-                                            src="./assets/klu/img/icons/pagination/next.png" alt="Next Icon" />
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+              <div class="col-12">
+                <div class="tableCorp">
+                  <table class="table table-striped  corporative__table" id="Table__cardCorporative">
+                    <thead class="corporative__table-title">
+                      <tr>
+                        <th scope="col">Tarjeta</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Saldo</th>
+                        <th scope="col">Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody class="corporative__table-body">
+                      <tr class="tData tData--active">
+                        <th scope="row">4423 8899 5683 8776</th>
+                        <td>Manul Pernia Politan</td>
+                        <td>manuel@gmail.com</td>
+                        <td>$124,000.00 </td>
+                        <td class="accBtns">
+                          <div class="switchCus">
+                            <input type="checkbox" id="1"><!-- elNumeroEsElImportante -->
+                            <label for="1"><!-- elNumeroEsElImportante -->
+                              <span></span>
+                            </label>
+                          </div><!-- end.switchCus -->
+                          <button id="deleteCol" class="trashBtn" type="button"><img src="./assets/klu/img/icons/corporative-card/trash.svg" alt=""></button><!-- end#deleteCol -->
+                          <button id="open-edit-1" class="btnOpenInfo" type="button"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></button><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
+                        </td>
+                      </tr>
+                      <tr id="info-open-edit-1" class="ctInfoTar"><!-- agrega clase (.ctInfoTar--open) elNumeroEsElImportante -->
+                        <td colspan="5">
+                          <div class="row">
+                            <div class="col-12">
+                              <h3 class="ctInfoTar__title">Saldos</h3>
+                            </div><!-- end.col-* -->
+                            <div class="col-6 ctInfoTar__divider">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="asignarSaldo-1" class="form-label">Asignar Saldo</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="asignarSaldo-1" name="asignarSaldo-1" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-asignarSaldo-1">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                            <div class="col-6">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="quitarSaldo-1" class="form-label">Quitar Saldo</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="quitarSaldo-1" name="quitarSaldo-1" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-quitarSaldo-1">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+
+                            <div class="col-12">
+                              <h3 class="ctInfoTar__title">Reemplazar tarjeta</h3>
+                            </div><!-- end.col-* -->
+                            <div class="col-6 ctInfoTar__divider">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="newTarjeta-1" class="form-label">Nueva tarjeta</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="newTarjeta-1" name="newTarjeta-1" placeholder="$0.00 MXN">
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                            <div class="col-6">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="saldoPend" class="form-label">Confirmar tarjeta</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="confiTarjeta-1" name="confiTarjeta-1" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-confiTarjeta-1">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                          </div><!-- end.row -->
+                        </td><!-- end.td -->
+                      </tr><!-- end.ctInfoTar -->
+
+                      <tr class="tData">
+                        <th scope="row">4423 8899 5683 8776</th>
+                        <td>Manul Pernia Politan</td>
+                        <td>manuel@gmail.com</td>
+                        <td>$124,000.00 </td>
+                        <td class="accBtns">
+                          <div class="switchCus">
+                            <input type="checkbox" id="2"><!-- elNumeroEsElImportante -->
+                            <label for="2"><!-- elNumeroEsElImportante -->
+                              <span></span>
+                            </label>
+                          </div><!-- end.switchCus -->
+                          <button id="deleteCol-2" class="trashBtn" type="button"><img src="./assets/klu/img/icons/corporative-card/trash.svg" alt=""></button><!-- end#deleteCol -->
+                          <button id="open-edit-2" class="btnOpenInfo" type="button"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></button><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
+                        </td>
+                      </tr>
+                      <tr id="info-open-edit-2" class="ctInfoTar"><!-- elNumeroEsElImportante -->
+                        <td colspan="5">
+                          <div class="row">
+                            <div class="col-12">
+                              <h3 class="ctInfoTar__title">Saldos</h3>
+                            </div><!-- end.col-* -->
+                            <div class="col-6 ctInfoTar__divider">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="asignarSaldo-2" class="form-label">Asignar Saldo</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="asignarSaldo-2" name="asignarSaldo-2" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-asignarSaldo-2">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                            <div class="col-6">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="quitarSaldo-2" class="form-label">Quitar Saldo</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="quitarSaldo-2" name="quitarSaldo-2" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-quitarSaldo-2">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+
+                            <div class="col-12">
+                              <h3 class="ctInfoTar__title">Reemplazar tarjeta</h3>
+                            </div><!-- end.col-* -->
+                            <div class="col-6 ctInfoTar__divider">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="newTarjeta-2" class="form-label">Nueva tarjeta</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="newTarjeta-2" name="newTarjeta-2" placeholder="$0.00 MXN">
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                            <div class="col-6">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="confiTarjeta-2" class="form-label">Confirmar tarjeta</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="confiTarjeta-2" name="confiTarjeta-2" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-confiTarjeta-2">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                          </div><!-- end.row -->
+                        </td><!-- end.td -->
+                      </tr><!-- end.ctInfoTar -->
+
+                      <tr class="tData">
+                        <th scope="row">4423 8899 5683 8776</th>
+                        <td>Manul Pernia Politan</td>
+                        <td>manuel@gmail.com</td>
+                        <td>$124,000.00 </td>
+                        <td class="accBtns">
+                          <div class="switchCus">
+                            <input type="checkbox" id="3"><!-- elNumeroEsElImportante -->
+                            <label for="3"><!-- elNumeroEsElImportante -->
+                              <span></span>
+                            </label>
+                          </div><!-- end.switchCus -->
+                          <button id="deleteCol-3" class="trashBtn" type="button"><img src="./assets/klu/img/icons/corporative-card/trash.svg" alt=""></button><!-- end#deleteCol -->
+                          <button id="open-edit-3" class="btnOpenInfo" type="button"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></button><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
+                        </td>
+                      </tr>
+                      <tr id="info-open-edit-3" class="ctInfoTar"><!-- elNumeroEsElImportante -->
+                        <td colspan="5">
+                          <div class="row">
+                            <div class="col-12">
+                              <h3 class="ctInfoTar__title">Saldos</h3>
+                            </div><!-- end.col-* -->
+                            <div class="col-6 ctInfoTar__divider">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="asignarSaldo-3" class="form-label">Asignar Saldo</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="asignarSaldo-3" name="asignarSaldo-3" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-asignarSaldo-3">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                            <div class="col-6">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="quitarSaldo-3" class="form-label">Quitar Saldo</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="quitarSaldo-3" name="quitarSaldo-3" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-quitarSaldo-3">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+
+                            <div class="col-12">
+                              <h3 class="ctInfoTar__title">Reemplazar tarjeta</h3>
+                            </div><!-- end.col-* -->
+                            <div class="col-6 ctInfoTar__divider">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="newTarjeta-3" class="form-label">Nueva tarjeta</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="newTarjeta-3" name="newTarjeta-3" placeholder="$0.00 MXN">
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                            <div class="col-6">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="confiTarjeta-3" class="form-label">Confirmar tarjeta</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="confiTarjeta-3" name="confiTarjeta-3" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-confiTarjeta-3">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                          </div><!-- end.row -->
+                        </td><!-- end.td -->
+                      </tr><!-- end.ctInfoTar -->
+
+                      <tr class="tData">
+                        <th scope="row">4423 8899 5683 8776</th>
+                        <td>Manul Pernia Politan</td>
+                        <td>manuel@gmail.com</td>
+                        <td>$124,000.00 </td>
+                        <td class="accBtns">
+                          <div class="switchCus">
+                            <input type="checkbox" id="4"><!-- elNumeroEsElImportante -->
+                            <label for="4"><!-- elNumeroEsElImportante -->
+                              <span></span>
+                            </label>
+                          </div><!-- end.switchCus -->
+                          <button id="deleteCol-4" class="trashBtn" type="button"><img src="./assets/klu/img/icons/corporative-card/trash.svg" alt=""></button><!-- end#deleteCol -->
+                          <button id="open-edit-4" class="btnOpenInfo" type="button"><img src="./assets/klu/img/icons/corporative-card/down.svg" alt=""></button><!-- end.btnOpenInfo (elNumeroEsElImportante) -->
+                        </td>
+                      </tr>
+                      <tr id="info-open-edit-4" class="ctInfoTar"><!-- elNumeroEsElImportante -->
+                        <td colspan="5">
+                          <div class="row">
+                            <div class="col-12">
+                              <h3 class="ctInfoTar__title">Saldos</h3>
+                            </div><!-- end.col-* -->
+                            <div class="col-6 ctInfoTar__divider">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="asignarSaldo-4" class="form-label">Asignar Saldo</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="asignarSaldo-4" name="asignarSaldo-4" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-asignarSaldo-4">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                            <div class="col-6">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="quitarSaldo-4" class="form-label">Quitar Saldo</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="quitarSaldo-4" name="quitarSaldo-4" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-quitarSaldo-4">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+
+                            <div class="col-12">
+                              <h3 class="ctInfoTar__title">Reemplazar tarjeta</h3>
+                            </div><!-- end.col-* -->
+                            <div class="col-6 ctInfoTar__divider">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="newTarjeta-4" class="form-label">Nueva tarjeta</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="newTarjeta-4" name="newTarjeta-4" placeholder="$0.00 MXN">
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                            <div class="col-6">
+                              <div class="ctInfoTar__inpBox">
+                                <label for="confiTarjeta-4" class="form-label">Confirmar tarjeta</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="confiTarjeta-4" name="confiTarjeta-4" placeholder="$0.00 MXN">
+                                  <button class="ctInfoTar__button btn" type="button" id="button-confiTarjeta-4">Confirmar</button>
+                                </div><!-- end.input-group -->
+                              </div><!-- end.ctInfoTar__inpBox -->
+                            </div><!-- end.col-* -->
+                          </div><!-- end.row -->
+                        </td><!-- end.td -->
+                      </tr><!-- end.ctInfoTar -->
+
+                    </tbody><!-- end-tbody -->
+                  </table><!-- end.table -->
+                </div><!-- end.tableCorp -->
+              </div><!-- end.col-12 -->
+            </div><!-- end.row -->
+          </div><!-- end#pills-corporative-card-home -->
+          <div class="tab-pane fade" id="pills-add-balance" role="tabpanel" aria-labelledby="pills-add-balance-tab">
+            <div class="row">
+              <div class="col-md-12">
+                <table class="table table-striped corporative__table" id="Table__cardCorporative">
+                  <thead class="corporative__table-title">
+                    <tr>
+                      <th scope="col">Tarjeta</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Correo</th>
+                      <th scope="col">Saldo</th>
+                    </tr>
+                  </thead>
+                  <tbody class="corporative__table-body">
+                    <tr class="">
+                      <th scope="row">9999 8899 5683 8776</th>
+                      <td>Manul Pernia Politan</td>
+                      <td>manuel@gmail.com</td>
+                      <td>$124,000.00 </td>
+                    </tr>
+                    <tr class="">
+                      <th scope="row">9999 8899 5683 8776</th>
+                      <td>Manul Pernia Politan</td>
+                      <td>manuel@gmail.comn</td>
+                      <td>$124,000.00 </td>
+                    </tr>
+                    <tr class="">
+                      <th scope="row">9999 8899 5683 8776</th>
+                      <td>Manul Pernia Politan</td>
+                      <td>manuel@gmail.com</td>
+                      <td>$124,000.00 </td>
+                    </tr>
+                    <tr class="">
+                      <th scope="row">9999 8899 5683 8776</th>
+                      <td>Manul Pernia Politan</td>
+                      <td>manuel@gmail.com</td>
+                      <td>$124,000.00 </td>
+                    </tr>
+                    <tr class="">
+                      <th scope="row">9999 8899 5683 8776</th>
+                      <td>Manul Pernia Politan</td>
+                      <td>manuel@gmail.com</td>
+                      <td>$124,000.00 </td>
+                    </tr>
+                    <tr class="">
+                      <th scope="row">9999 8899 5683 8776</th>
+                      <td>Manul Pernia Politan</td>
+                      <td>manuel@gmail.com</td>
+                      <td>$124,000.00 </td>
+                    </tr>
+                    <tr class="">
+                      <th scope="row">9999 8899 5683 8776</th>
+                      <td>Manul Pernia Politan</td>
+                      <td>manuel@gmail.com</td>
+                      <td>$124,000.00 </td>
+                    </tr>
+                    <tr class="">
+                      <th scope="row">9999 8899 5683 8776</th>
+                      <td>Manul Pernia Politan</td>
+                      <td>manuel@gmail.com</td>
+                      <td>$124,000.00 </td>
+                    </tr>
+                  </tbody>
+                </table><!-- end.table -->
+              </div><!-- end.col-* -->
+            </div><!-- end.row> -->
+          </div><!-- end#pills-add-balance -->
+          <div class="tab-pane fade" id="pills-estado-cuenta" role="tabpanel" aria-labelledby="pills-estado-cuenta-tab">
+            <div class="row">
+              <div class="col-12">
+                estao de cuenta
+              </div>
             </div>
-
-
-
-        </div>
-
-    </div>
+          </div><!-- end#pills-estado-cuenta -->
+        </div><!-- end#pills-corporative-card" -->
+      </div><!-- end.row -->
+      <div class="row">
+          <div class="col d-flex justify-content-center">
+              <nav aria-label="Page navigation example ">
+                  <ul class="pagination corporative__card-space">
+                      <li class="page-item">
+                          <a class="page-link page-previus" href="#" aria-label="Previous">
+                              <span aria-hidden="true">
+                                  <img class="pagination___img--previus"
+                                      src="./assets/klu/img/icons/pagination/previus.png" alt="Previus Icon" />
+                              </span>
+                          </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item"><a class="page-link" href="#">..</a></li>
+                      <li class="page-item"><a class="page-link" href="#">12</a></li>
+                      <li class="page-item">
+                          <a class="page-link page-next" href="#" aria-label="Next">
+                              <span aria-hidden="true">
+                                  <img class="pagination___img--next"
+                                      src="./assets/klu/img/icons/pagination/next.png" alt="Next Icon" />
+                              </span>
+                          </a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+    </div><!-- end.container -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <footer id="klu-footer" class="container-fluid box-shadow footer">
@@ -332,6 +550,16 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="./assets/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script>
+      jQuery(document).ready(function($){
+        $('.btnOpenInfo').click(function(e) {
+          var valorDato = $(this).attr('id');
+          // console.log(valorDato);
+          $('#info-'+valorDato).addClass('ctInfoTar--open');
+          $('#info-'+valorDato).siblings('.ctInfoTar').removeClass('ctInfoTar--open');
+        });
+      });
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

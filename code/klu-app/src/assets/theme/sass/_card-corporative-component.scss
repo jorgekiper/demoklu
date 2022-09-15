@@ -299,6 +299,15 @@ card-corporative tables
         border-color: var(--klu-color-onix); outline: 0; box-shadow: none!important;
       }
     }
+    & .bootstrap-tagsinput {
+      background-color: var(--klu-white); border: 1.5px solid var(--klu-color-grey-standart); box-shadow: none; display: inline-block; padding: 13px 0.75rem; color: var(--klu-color-gray-light); vertical-align: middle; border-radius: 4px; max-width: 100%; line-height: 22px; cursor: text; width: 100%;
+      & .tag {
+        margin-right: 2px; background: var(--klu-color-grey-standart); border: 1px solid var(--klu-color-gray-light); border-radius: 4px; color: var(--klu-color-gray-light); font-weight: 600; font-size: 11px; padding: 3px 8px;
+      }
+      &:focus, &:visited, &:active, &:hover  {
+        border-color: var(--klu-color-onix); outline: 0; box-shadow: none!important;
+      }
+    }
   }
   &__pass {
     width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box;

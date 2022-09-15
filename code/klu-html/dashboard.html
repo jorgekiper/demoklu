@@ -1201,15 +1201,42 @@
                               <div class="stepSec">
                                 <form name="frnEstadoCuenta" id="frnEstadoCuenta" action="" method="POST">
                                   <div class="stepSec__box stepSec__box--active" data-idx="estado-cuenta">
-                                    <div class="titleGeneric">
-                                      <h4 class="titleGeneric__title">Estado de Cuenta</h4>
-                                    </div><!-- end.botonera__titlegroup -->
+                                    <div class="cuentaBox">
+                                      <div class="cuentaBox__box">
+                                        <h4 class="titleGeneric__title">Estado de Cuenta</h4>
+                                      </div><!-- end.cuentaBox__box -->
+                                      <div class="cuentaBox__box">
+                                        <div class="ctControls">
+                                          <div class="controlFilter">
+                                            <div class="filterCtList">
+                                              <input type="hidden" name="inptYear" id="inptYear" value="">
+                                              <a class="filterCtList__link" href="javascript:void(0);" data-filtro="yearList">Año</a>
+                                              <div id="yearList" class="filterCtList__opc">
+                                                <a href="javascript:void(0);" data-valor-year="2022">2022</a>
+                                                <a href="javascript:void(0);" data-valor-year="2021">2021</a>
+                                                <a href="javascript:void(0);" data-valor-year="2020">2020</a>
+                                              </div><!-- end.filterCtList__opc -->
+                                            </div><!-- end.filterCtList -->
+                                            <div class="filterCtList">
+                                              <input type="hidden" name="inptMonth" id="inptMonth" value="">
+                                              <a class="filterCtList__link" href="javascript:void(0);" data-filtro="monthList">Mes</a>
+                                              <div id="monthList" class="filterCtList__opc">
+                                                <a href="javascript:void(0);" data-valor-month="06-09-22">06 - Septiembre</a>
+                                                <a href="javascript:void(0);" data-valor-month="06-08-22">06 - Agosto</a>
+                                                <a href="javascript:void(0);" data-valor-month="06-07-22">06 - Julio</a>
+                                              </div><!-- end.filterCtList__opc -->
+                                            </div><!-- end.filterCtList -->
+                                          </div><!-- end.controlFilter -->
+                                          <button class="btn btn-secondary ctControls__inputs" type="button" id="apliFilter">Aplicar</button>
+                                        </div><!-- end.ctControls -->
+                                      </div><!-- end.cuentaBox__box -->
+                                    </div><!-- end.cuentaBox -->
                                     <div class="tableContacts">
                                       <table class="table table-striped text-center" id="myTable">
                                           <thead>
                                             <tr>
                                               <th scope="col">Fecha</th>
-                                              <th scope="col">Concpeto de la operación</th>
+                                              <th scope="col">Concepto de la operación</th>
                                               <th scope="col">Depósito</th>
                                               <th scope="col">Retiro</th>
                                               <!-- <th scope="col">Ultima modificación</th> -->
@@ -1643,6 +1670,22 @@
               $('#frmContacts')[0].reset();
               $('[data-idx="datos-contactos"]').addClass('stepSec__box--active');
               $('[data-idx="datos-contactos"]').siblings('.stepSec__box').removeClass('stepSec__box--active');
+            });
+            // Filtro Valor Estado de cuenta
+            $(document).on('click', '.filterCtList__link', function(e){
+              e.preventDefault();
+              let valorData = $(this).data('filtro');
+              $(this).addClass('filterCtList__link--open');
+              $(this).closest('div').find('a.filterCtList__link').not(this).removeClass('filterCtList__link--open');
+              // Abre cuepro de campos
+              $('#'+valorData).addClass('filterCtList__opc--active');
+              $('#'+valorData).siblings('.filterCtList__opc').removeClass('filterCtList__opc--active');
+            });
+            $(document).on('click', '.filterCtList__link--open', function(e){
+              e.preventDefault();
+              var idClose = $(this).data('filtro');
+              $('#'+idClose).removeClass('filterCtList__opc--active');
+              $(this).removeClass('filterCtList__link--open');
             });
         });
 

@@ -685,9 +685,116 @@
           <div class="tab-pane fade" id="pills-estado-cuenta" role="tabpanel" aria-labelledby="pills-estado-cuenta-tab">
             <div class="row">
               <div class="col-12">
-                estao de cuenta
-              </div>
-            </div>
+                <label class="corporative__card-space">Filtrar por tarjeta</label>
+              </div><!-- end.col-* -->
+              <div class="col-md-6 posRel">
+                <input class="corporative__card-input" placeholder="4423 8899 5683 8776">
+                <button class="corporative__filtro btn btn-secondary">
+                  <img src="./assets/klu/img/icons/corporative-card/filter.svg">Filtros
+                </button>
+              </div><!-- end.col-6 -->
+              <div class="col-md-6">
+                <a class="btn btn-secondary corporative__card-button" href="asignar-tarjeta.html">Asignar tarjeta</a>
+              </div><!-- end.col-6 -->
+              <div class="col-12">
+                <div class="tableCorp">
+                  <table class="table table-striped  corporative__table" id="Table__cardCorporative">
+                    <thead class="corporative__table-title">
+                      <tr>
+                        <th scope="col" class="selMulti">
+                          <div class="checkGenArrow">
+                            <input type="checkbox" class="checkGenArrow__inp" name="select-all-fila" id="selectAllFila">
+                            <label for="selectAllFila"><img src="../klu-html/assets/klu/img/icons/corporative-card/down.svg" alt=""></label>
+                          </div>
+                        </th>
+                        <th scope="col">Tarjeta</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Saldo</th>
+                      </tr>
+                    </thead>
+                    <tbody class="corporative__table-body">
+                      <tr class="tData">
+                        <th scope="row">
+                          <div class="checkGenArrow noMarg">
+                            <input type="checkbox" class="checkGenArrow__inp" name="select-fila" id="selectAllFila-1">
+                            <label for="selectAllFila-1"></label>
+                          </div>
+                        </th>
+                        <td>4423 8899 5683 8776</td>
+                        <td>Manul Pernia Politan</td>
+                        <td>manuel@gmail.com</td>
+                        <td><strong>$124,000.00 </strong></td>
+                      </tr>
+                      <tr class="tData">
+                        <th scope="row" class="accBtns">
+                          <div class="checkGenArrow noMarg">
+                            <input type="checkbox" class="checkGenArrow__inp" name="select-fila" id="selectAllFila-2">
+                            <label for="selectAllFila-2"></label>
+                          </div>
+                        </th>
+                        <td>4423 8899 5683 8776</td>
+                        <td>Manul Pernia Politan</td>
+                        <td>manuel@gmail.com</td>
+                        <td><strong>$124,000.00 </strong></td>
+                      </tr>
+                      <tr class="tData">
+                        <th scope="row" class="accBtns">
+                          <div class="checkGenArrow noMarg">
+                            <input type="checkbox" class="checkGenArrow__inp" name="select-fila" id="selectAllFila-3">
+                            <label for="selectAllFila-3"></label>
+                          </div>
+                        </th>
+                        <td>4423 8899 5683 8776</td>
+                        <td>Manul Pernia Politan</td>
+                        <td>manuel@gmail.com</td>
+                        <td><strong>$124,000.00 </strong></td>
+                      </tr>
+                      <tr class="tData">
+                        <th scope="row" class="accBtns">
+                          <div class="checkGenArrow noMarg">
+                            <input type="checkbox" class="checkGenArrow__inp" name="select-fila" id="selectAllFila-4">
+                            <label for="selectAllFila-4"></label>
+                          </div>
+                        </th>
+                        <td>4423 8899 5683 8776</td>
+                        <td>Manul Pernia Politan</td>
+                        <td>manuel@gmail.com</td>
+                        <td><strong>$124,000.00 </strong></td>
+                      </tr>
+
+                    </tbody><!-- end-tbody -->
+                  </table><!-- end.table -->
+                </div><!-- end.tableCorp -->
+              </div><!-- end.col-12 -->
+              <div class="col-12 d-flex justify-content-center">
+                <nav aria-label="Page navigation example ">
+                  <ul class="pagination corporative__card-space">
+                    <li class="page-item">
+                      <a class="page-link page-previus" href="#" aria-label="Previous">
+                        <span aria-hidden="true">
+                          <img class="pagination___img--previus" src="./assets/klu/img/icons/pagination/previus.png" alt="Previus Icon" />
+                        </span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">..</a></li>
+                    <li class="page-item"><a class="page-link" href="#">12</a></li>
+                    <li class="page-item">
+                      <a class="page-link page-next" href="#" aria-label="Next">
+                        <span aria-hidden="true">
+                          <img class="pagination___img--next" src="./assets/klu/img/icons/pagination/next.png" alt="Next Icon" />
+                        </span>
+                      </a>
+                    </li>
+                  </ul><!-- end.ul.pagination -->
+                </nav><!-- end.nav -->
+              </div><!-- end.col-* -->
+            </div><!-- end.row -->
           </div><!-- end#pills-estado-cuenta -->
         </div><!-- end#pills-corporative-card" -->
       </div><!-- end.row -->
@@ -786,6 +893,9 @@
           });
         });
         tableTarjetas();
+        $("#selectAllFila").click(function () {
+            $('input[name="select-fila"]').not(this).prop('checked', this.checked);
+        });
       });
       function tableTarjetas() {
         $(document).on('click', '.btnOpenInfo', function(e) {

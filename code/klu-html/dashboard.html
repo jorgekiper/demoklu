@@ -1210,7 +1210,7 @@
                                           <div class="controlFilter">
                                             <div class="filterCtList">
                                               <input type="hidden" name="inptYear" id="inptYear" value="">
-                                              <a class="filterCtList__link" href="javascript:void(0);" data-filtro="yearList">Año</a>
+                                              <a class="filterCtList__link" id="datosAnioText" href="javascript:void(0);" data-filtro="yearList">Año</a>
                                               <div id="yearList" class="filterCtList__opc">
                                                 <a href="javascript:void(0);" data-valor-year="2022">2022</a>
                                                 <a href="javascript:void(0);" data-valor-year="2021">2021</a>
@@ -1219,7 +1219,7 @@
                                             </div><!-- end.filterCtList -->
                                             <div class="filterCtList">
                                               <input type="hidden" name="inptMonth" id="inptMonth" value="">
-                                              <a class="filterCtList__link" href="javascript:void(0);" data-filtro="monthList">Mes</a>
+                                              <a class="filterCtList__link" id="datosMesText" href="javascript:void(0);" data-filtro="monthList">Mes</a>
                                               <div id="monthList" class="filterCtList__opc">
                                                 <a href="javascript:void(0);" data-valor-month="06-09-22">06 - Septiembre</a>
                                                 <a href="javascript:void(0);" data-valor-month="06-08-22">06 - Agosto</a>
@@ -1686,6 +1686,24 @@
               var idClose = $(this).data('filtro');
               $('#'+idClose).removeClass('filterCtList__opc--active');
               $(this).removeClass('filterCtList__link--open');
+            });
+            $(document).on('click', '[data-valor-year]', function (e) {
+              e.preventDefault();
+              var valorR = $(this).data('valor-year'),
+                datosB = $('#inptYear');
+              $('#datosAnioText').text(valorR);
+              datosB.val(valorR);
+              $('#yearList').removeClass('filterCtList__opc--active');
+              $('#datosAnioText').removeClass('filterCtList__link--open');
+            });
+            $(document).on('click', '[data-valor-month]', function (e) {
+              e.preventDefault();
+              var valorS = $(this).data('valor-month'),
+                datosC = $('#inptMonth');
+              $('#datosMesText').text(valorS);
+              datosC.val(valorS);
+              $('#monthList').removeClass('filterCtList__opc--active');
+              $('#datosMesText').removeClass('filterCtList__link--open');
             });
         });
 

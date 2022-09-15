@@ -369,6 +369,43 @@ hr.dividerTarjeta {
     }
   }
 }
+.posRel {
+  position: relative;
+}
+.checkGenArrow {
+  width: 100%; height: auto; padding: 0; margin: 0; position: relative; box-sizing: border-box;
+  &__inp {
+    position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0;
+    & ~ label {
+      box-sizing: border-box; position: relative; cursor: pointer; margin: 0; padding: 0; color: var(--klu-color-gray-light); font-family: 'Montserrat'; font-weight: 600; font-size: 13px;
+    }
+    & ~ label:before {
+      content: ''; margin-right: 5px; display: inline-block; vertical-align: middle; width: 18px; height: 18px; background: var(--klu-white); border: 1.5px solid var(--klu-color-gray-light); border-radius: 2px; @include box-sizing(border-box); @include transition(all 0.25s ease); background-image: url(../../images/icons/envios/checkbox-ready.svg); background-repeat: no-repeat; background-position: center center; background-size: 12px;
+    }
+    &:hover ~ label:before {
+      background-color: var(--klu-white); border-color: rgba(32, 61, 92, 0.50);
+    }
+    &:focus ~ label:before {
+      background-color: var(--klu-white); border-color: var(--klu-color-gray-light);
+    }
+    &:checked ~ label {
+      color: var(--klu-primary-color);
+    }
+    &:checked ~ label:before {
+      background-color: var(--klu-primary-color); border-color: var(--klu-primary-color);
+    }
+    // &:checked ~ label:after {
+    //   content: ''; position: absolute; left: 4px; top: 4px; background: $rojo; width: 12px; height: 12px;
+    // }
+  }
+  &.noMarg {
+    & .checkGenArrow__inp {
+      & ~ label:before {
+        margin-right: 0;
+      }
+    }
+  }
+}
 
 /*****************************************
 Media queries
